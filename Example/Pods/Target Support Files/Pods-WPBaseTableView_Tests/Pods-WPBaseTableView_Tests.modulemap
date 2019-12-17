@@ -1,0 +1,6 @@
+framework module Pods_WPBaseTableView_Tests {
+  umbrella header "Pods-WPBaseTableView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
