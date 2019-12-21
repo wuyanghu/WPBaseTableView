@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) WPBaseSectionsModel * sectionsModel;
 
 #pragma mark - tableview方法
+- (void)requestDetailInfo:(BOOL)isRefresh;
 //以下方法子类可重载
 @property (nonatomic,assign) WPBaseSectionTableViewLoadType loadType;//默认网络数据,
 @property (nonatomic,copy) NSString * cellIdentify;

@@ -12,7 +12,6 @@
 #import "WPBaseSectionCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "WPBaseSectionModel.h"
-#import "WPRequestVCJsonAPI.h"
 #import "WPParseVCJsonAPI.h"
 #import "NSObject+Json.h"
 #import "WPBaseHeader.h"
@@ -23,7 +22,7 @@
 #import "WPBaseHeaderFooterView.h"
 
 @interface WPBaseSectionTableViewViewController ()
-@property (nonatomic,strong) WPRequestVCJsonAPI * requestVCJsonApi;
+
 @end
 
 @implementation WPBaseSectionTableViewViewController
@@ -100,32 +99,12 @@
 
 //request
 - (void)requestDetailInfo:(BOOL)isRefresh{
-    if (isRefresh) {
-        [self.tableView.mj_header beginRefreshing];
-    }
-    [self.requestVCJsonApi queryClassNameDetailInfoWithClassName:NSStringFromClass([self class]) block:^(WPBaseNetWorkModel * model, NSError *error) {
-        if (isRefresh) {
-            [self.tableView.mj_header endRefreshing];
-        }
-        if (error) {
-            id json = [self readJsonWithName:NSStringFromClass([self class])];
-            self.sectionsModel =  [WPParseVCJsonAPI parseLocalJsonToBaseSetcionModel:json];
-        }else{
-            self.sectionsModel =  [WPParseVCJsonAPI parseServerJsonToBaseSetcionModel:model.dictFromResult];
-        }
-        [self.tableView reloadData];
-    }];
+    
     
 }
 
 - (void)loadConfigInfo{
-    WPBaseNetWorkConfig * netWorkConfig = [[WPBaseNetWorkConfig alloc] init];
-    NSData * data = [self readJsonDataWithName:NSStringFromClass([self class])];
-    if (netWorkConfig.urlString.length>0) {
-        _loadType = WPBaseSectionTableViewRequestType;
-    }else if(data){
-        _loadType = WPBaseSectionTableViewLoadLocalType;
-    }
+    
 }
 //提供一个默认的section
 - (WPBaseSectionModel *)defaultSectionsModel{
@@ -422,13 +401,6 @@
         _tableView.tableFooterView = [[UIView alloc] init];
     }
     return _tableView;
-}
-
-- (WPRequestVCJsonAPI *)requestVCJsonApi{
-    if (!_requestVCJsonApi) {
-        _requestVCJsonApi = [WPRequestVCJsonAPI new];
-    }
-    return _requestVCJsonApi;
 }
 
 @end
