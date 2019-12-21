@@ -12,13 +12,12 @@
 #import "WPBaseSectionCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "WPBaseSectionModel.h"
-#import "WPParseVCJsonAPI.h"
+#import "WPParseSectionsModel.h"
 #import "NSObject+Json.h"
 #import "WPBaseHeader.h"
 #import "MJRefresh.h"
 #import "WPTableViewPlaceHolderView.h"
 #import "UITableView+Placeholder.h"
-#import "CMPhotoBrowserViewController.h"
 #import "WPBaseHeaderFooterView.h"
 
 @interface WPBaseSectionTableViewViewController ()
@@ -27,20 +26,11 @@
 
 @implementation WPBaseSectionTableViewViewController
 
-- (instancetype)init{
-    self = [super init];
-    if (self) {
-        [self loadConfigInfo];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self addSubView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vcJsonChanged) name:kVCJsonChangedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(switchConfigUrl) name:kSwitchConfigUrlNotification object:nil];
     
     [self loadData:NO];
 }
@@ -73,10 +63,6 @@
     [self loadData:NO];
 }
 
-- (void)switchConfigUrl{
-    [self loadConfigInfo];
-}
-
 #pragma mark - 加载数据
 
 - (void)loadData:(BOOL)isRefresh{
@@ -93,19 +79,15 @@
 //加载本地数据
 - (void)loadLocalJson{
     id json = [self readJsonWithName:NSStringFromClass([self class])];
-    self.sectionsModel =  [WPParseVCJsonAPI parseLocalJsonToBaseSetcionModel:json];
+    self.sectionsModel =  [WPParseSectionsModel parseLocalJsonToBaseSetcionModel:json];
     [self.tableView reloadData];
 }
 
 //request
 - (void)requestDetailInfo:(BOOL)isRefresh{
     
-    
 }
 
-- (void)loadConfigInfo{
-    
-}
 //提供一个默认的section
 - (WPBaseSectionModel *)defaultSectionsModel{
     if (!self.sectionsModel) {
@@ -125,98 +107,7 @@
 #pragma mark - 浏览图片
 
 - (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{
-    WPBaseSectionModel * sectionModel = self.sectionsModel.contentArray[indexPath.section];
-    __block NSInteger newIndex = indexPath.row;
-    NSMutableArray * urlArray = [NSMutableArray arrayWithCapacity:3];
-    [sectionModel.rowArray enumerateObjectsUsingBlock:^(WPBaseRowModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.imageModel.url) {
-            [urlArray addObject:obj.imageModel.url];//过滤掉没有url的
-        }
-        if (idx<indexPath.row && obj.imageModel.url.length == 0) {
-            newIndex --;//计算index的偏移,需要过滤掉没有url
-        }
-    }];
     
-    NSArray * reusltArray = [self indexprePostArrayWithArray:urlArray index:newIndex];//纯计算偏移
-    
-    if (newIndex == 0) {
-        newIndex = 0;
-    }else if (newIndex == urlArray.count-1){
-        newIndex = 2;
-    }else{
-        newIndex = 1;
-    }
-    
-    if (newIndex>=reusltArray.count) {
-        newIndex = 0;
-    }
-    NSIndexPath * newIndexPath = [NSIndexPath indexPathForRow:newIndex inSection:indexPath.section];
-    [self presentPhotoBrowserVC:reusltArray indexPath:newIndexPath isUrl:YES];
-}
-/*
- 返回index前后NSArray
- 怎么浏览三张,当前这张在中间;保证数组前后不能越界?
- 如果是在第0个位置,数量够时,取0,1,2;如果是最后一个位置,取最后一个位置
- 扩展:如果是4张，5张呢?算法的扩展性
- */
-- (NSArray *)indexprePostArrayWithArray:(NSArray *)array index:(NSInteger)index{
-    NSAssert(index>=0 && index<array.count, @"index应在数组范围内");
-    NSInteger beign = index-1;
-    NSInteger end = index+1;
-    
-    NSMutableArray * resultArray = [NSMutableArray arrayWithCapacity:3];
-    
-    if (beign<0) {
-        end = end-beign;//减去负值
-        beign = 0;
-        if (end >= array.count) {
-            end = array.count - 1;
-        }
-    }else if(end>=array.count){
-        NSInteger absolute = end-(array.count-1);
-        beign = beign-absolute;
-        end = array.count-1;
-        if (beign<0) {
-            beign = 0;
-        }
-    }
-    
-    NSAssert(beign>=0, @"begin不会小于0");
-    NSAssert(end<array.count, @"end不能大于等于count");
-    
-    for (NSInteger i = beign; i<=end; i++) {
-        [resultArray addObject:array[i]];
-    }
-    if (array.count>=3) {
-        NSAssert(resultArray.count == 3, @"应该有3个");
-    }else{
-        NSAssert(resultArray.count == array.count, @"与数组个数相等");
-    }
-    
-    return resultArray;
-}
-
-//模态图片浏览
-- (void)presentPhotoBrowserVC:(NSArray *)imageArray indexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{
-    CMPhotoBrowserViewController *photoVC = [[CMPhotoBrowserViewController alloc]init];
-    if (isUrl) {
-        photoVC.smallImageURLs = imageArray;
-        photoVC.imageURLs = imageArray;
-    }else{
-        photoVC.imageArray = imageArray;
-    }
-    NSInteger index = indexPath.row;
-    if (index>=imageArray.count) {
-        index = 0;
-    }
-    photoVC.index = index;
-    
-    CMPhotoBrowserAnimator * animator = [[CMPhotoBrowserAnimator alloc] init];
-    animator.index = index;
-    animator.animationDismissDelegate = photoVC;
-    photoVC.transitioningDelegate = animator;
-    photoVC.modalPresentationStyle = UIModalPresentationCustom;
-    [self presentViewController:photoVC animated:YES completion:nil];
 }
 
 #pragma mark - configcell

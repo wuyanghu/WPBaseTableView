@@ -5,11 +5,11 @@
 //  Created by wupeng on 2019/11/17.
 //
 
-#import "WPParseVCJsonAPI.h"
+#import "WPParseSectionsModel.h"
 #import "WPBaseSectionModel.h"
 #import "NSObject+Json.h"
 
-@implementation WPParseVCJsonAPI
+@implementation WPParseSectionsModel
 
 #pragma mark - 解析数据
 

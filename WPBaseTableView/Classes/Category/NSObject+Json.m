@@ -11,7 +11,7 @@
 
 @implementation NSObject (Json)
 
-#pragma mark - 读取文件
+#pragma mark - 读取json文件
 
 //读取json
 - (id)readJsonWithName:(NSString *)name{

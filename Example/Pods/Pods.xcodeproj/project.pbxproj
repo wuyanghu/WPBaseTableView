@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00AD1D67F957535771170899D9B87731 /* WPCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9BD8A939943111273276A25BCBA218 /* WPCommonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0116999205A46198CC6443778A8BAE52 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E23114A9ABD36E38612BB65F1AA5DE4 /* MJRefreshHeader.m */; };
 		01E6D4389EC3D788ECAD124D0EAE0F56 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5113E3E14CF1A0DD0DDAAD93F2ADD3 /* UIProgressView+AFNetworking.m */; };
+		0308D6E2F327261C30F24D8EA0D3230A /* WPParseSectionsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 135AACBA40C14B9A01D27944F87CFFD9 /* WPParseSectionsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		037D0258B92735BF2B23FFFC3E96BFE7 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6FE990E672BD000CF20BA1D1EA10E0 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03E9D1028B1D0E597D04CEBD49D6F05D /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19765B071E998BCBAE5700F110CA5222 /* MJRefreshFooter.m */; };
 		05706C90FBFBCDBB6971DDE66046BA32 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D1B32C94656098E0C32EDA81D8DCBB /* UITableView+FDIndexPathHeightCache.m */; };
@@ -17,50 +19,50 @@
 		0626D996B07CA49543CE1B207D168121 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 672A528BBD2BAFB570F82475DAB4CD99 /* SDWebImageTransition.m */; };
 		07F19DEC94C57D35617A7F524FC68259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
 		089271A8DF0F635E86B5930A58747485 /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78745B3E9C9A82AFC1F7AFA84DAC9BC4 /* SDAnimatedImageView.m */; };
+		08D2A9388AEDE5DCE6EE1AB5ECAAC9DD /* NSObject+Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = FED1F3A979A67B332C09018B953A82EF /* NSObject+Swizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		092EC0144C2F4D16F5DC20461953BF81 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F4B8616DB32D11D8FDA801DF675722 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4549F87EBF1081AFD30B973262512C /* ViewController+MASAdditions.m */; };
 		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BFF9B13914EF5D78FAFC99792CB957 /* NSArray+MASAdditions.m */; };
 		0A293BC418AA0CF64EECEE3C86AE851D /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7FCC3AA10D545C47EFB67DFEE00B6C /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AD22C36BC32B472CDB6DA9CFC4E454B /* WPBaseSectionTableViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB32B73F06163468C88736DDE49FB4B /* WPBaseSectionTableViewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A78F09D48DD95C7488BC34A3F26A9547 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B845742F5129AE1B41DCBFAEFD36489 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB21596E9937A2D411878B0E0F96CD9 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C0514900B6EE4465EB97A4536D41EFF /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1126D58DD15C316F39819E16BCB729 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C4F333EB35DA96E5D5388611B83BFA0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9494B38E5EA2FAB5C22E45551DA2422 /* AFURLSessionManager.m */; };
 		0CA1A34AB951F5575A4F8A557876BE1D /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB16CDC5A08E2F5711E68DDB51C3D0F /* NSData+ImageContentType.m */; };
 		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5036CE944E4D1B5CB664E48D6921BCF3 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CB19961ECD7D24729893C3DA6AEEFD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A1A40CEFF0A79F8C73C21A0F3ED68D /* UIKit.framework */; };
+		0CF6278C3FB78C3B42C55775C5076E2F /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7B1F97D3CEAEB45BE9C836AB16FB30 /* Masonry.framework */; };
 		0ED96C2BFBC7238A100BC7CD916440B0 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6C8B9539F2CFC7A07940B441C44E1B /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10027A5962B410F3B8AE5F43F4BDB5FB /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3423EEDA683B11370D354547C759246E /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		107FAE670642E6B0BDD77CDB48CD86DA /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D97F6D24925598D7E596B1570EDEF676 /* UIImageView+HighlightedWebCache.m */; };
 		110357C54F66EE91F0293DEE6DD901AF /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 382DFA6E840DD1976644DAA8F91AD71A /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1203EDEC87C3F4E9866CE688B80E4F7B /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6F7546D1F97B882BB3AACD1F77A69A /* NSObject+Json.m */; };
 		12E3E6A50760BBD5D1D451538ADAFDAE /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D871A52EA387AFFBD10F37F995034C0 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14A1F8F0AC0D3D614E226EB2F875E0ED /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2538A3A4E0B26ED39CD85D801DBE5EC /* MJRefreshNormalHeader.m */; };
-		155CC8BE282133C1768AC0A0A2AB612C /* WPBaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 861602C2A041927DCCF5F47B021A89B8 /* WPBaseSectionModel.m */; };
+		15A8547BF148CEE7C62C4142562BEAEE /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EDEB3CEB6A0F6B61A2F4A4E4106BD7 /* NSObject+Swizzle.m */; };
 		1732957A1E335355309522F5230DDEB5 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5262E56B8EA09049E7E7EC6E67FE8D5A /* UIRefreshControl+AFNetworking.m */; };
 		1799DD61C47CE2524F772CE9FE3E57BB /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D22CFB21ED8444D35426DB5347712 /* SDWebImageCompat.m */; };
 		17ADB7F9CBD09461CC1B9DE0D2A24358 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AB541D7E94845F17D11159D556809C3E /* UIWebView+AFNetworking.m */; };
+		17E3B9AB209E649EB02E50BA536EEDBB /* UIImageView+WPLoadBundleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A126550A1A5A315A8314E384245FCD /* UIImageView+WPLoadBundleImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183AE69089AB6722B60089859F51CC91 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CB0ED8479DE84F90A675C9CC17F6B1 /* NSButton+WebCache.m */; };
+		191C0249A43B5131D1A1622FB2DADF38 /* WPBaseHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB85A12F1065FFDC6EF0D9E9CAA9681F /* WPBaseHeaderFooterView.m */; };
 		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA6A9BB8ABDC97EDA2D64246F340B2 /* Masonry-dummy.m */; };
 		1A73F528427B197C94E28BE4FE8E8497 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB720FCED76F7F17AFA62B6F324306D /* Security.framework */; };
-		1ACCE30C341EE0C8EAE1BF686C107576 /* CMPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCFC4CE597E0083EE8E0CA1EBC9049F /* CMPhotoBrowserViewController.m */; };
 		1AE9AE32F98D855FF16996E8346F5A4F /* UIImage+Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E0ABB37AD9418BD5B31AE94F5E5894 /* UIImage+Metadata.m */; };
-		1B1D63A710DDD294D4575EF7FFACD3F1 /* CMCircleLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DEE9F0126A6676DF0522850BE20500 /* CMCircleLoadingLayer.m */; };
+		1B81D4D4D82D20F8FFD75442843F7138 /* UITableView_FDTemplateLayoutCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3103470A8A27514580184418BA910885 /* UITableView_FDTemplateLayoutCell.framework */; };
 		1C3CEEBD4EC70DE8E9B794394DB88E98 /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9F5743DFA9795249B2DA325F6E14F7 /* SDWeakProxy.m */; };
-		1C8FD4F73850B89566A1E29D2C6C3864 /* NSObject+Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EF2FA99A4E75915FC6F7A603BE8F3E /* NSObject+Swizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D3E94F63FDC6E189AD0FD24CCDD2B41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
 		1DDECCA91E19A3DE2B76D55BD114B12F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 748F753D470A5883A8936011A67D8D04 /* AFNetworkReachabilityManager.m */; };
 		201921931F66DEB554F3E92A1C76103D /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCCB710ADF86178BBF42424CAB9A6C9 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20C7AF36AF29FFB79E5A5B5B646BC63B /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3C466BA2D0C3EDE0D1EB7392288B15 /* SDImageCacheConfig.m */; };
 		221F4AB77ACAFA552B41C09F86743AA4 /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CE3D2737B1E7846D445F78E6E5824 /* SDImageIOCoder.m */; };
 		2226D61A6D5A4D83E6A0454DB5C1FBF6 /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB18BAA1A17FB3010E75688B374ACBC /* SDImageCacheDefine.m */; };
-		2292F0DC181379A4DAC626C5B31A854F /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0D8A132BAFC70AA07A56735E36CB57 /* MJRefresh.framework */; };
 		22964457252D04396E94426CB5C2A2F9 /* SDImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 947DA8F67E772BB0BCA59233C1D34507 /* SDImageFrame.m */; };
-		22D82ACF779F625762C77AFF234A78B6 /* NSObject+Json.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8124EAFD63CBCAE1AABCB66A03A07B /* NSObject+Json.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23DABB6B46EECA61F2393D00F3F486FD /* WPBaseTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DAE95BF185862E6D6B1E3264AF2395C /* WPBaseTableView.bundle */; };
 		255276C4DEEB80E023A0F6B847F31C42 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 187392A06BA2A508AD0DFAC99B4A179D /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A17ED5AEDEEE839F58E2E5B5B2EF9C84 /* SVProgressHUD.bundle */; };
+		26E6C3BBDDFF6FF7816BA9E3E0CBF47B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F3B6810AC549C5629226B1F56F57B /* AFNetworking.framework */; };
 		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AAF33F0DBFDEE1F0D20B1A800EFC6A /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2810665D418DC3AC5ADE2B26B19FF2D3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E5F0C8AD0D3300655037823AB1731C /* UIImageView+WebCache.m */; };
-		287EA226643893823D31C461567D4C9B /* WPBaseHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7F2A644BAFBFB0DABFBF3D91ECDA5 /* WPBaseHeaderFooterView.m */; };
 		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE24E712FEB23D84E4113B4BB0F0F9B /* MASViewAttribute.m */; };
 		299F12937C90218A3807CC95AA639487 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5AB62E4CA6038855DA1B2F2F3586A /* MJRefreshBackNormalFooter.m */; };
 		2A1576930A205BE96C820872C87EEE7B /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2586D2EE66C4C8EFCF74173B76816 /* UIColor+HexString.m */; };
@@ -71,35 +73,32 @@
 		2CF884A28822E1D9859FD2F2B228560A /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B718B7EB692625FCFF3669DCF49505E /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2D6661CAB3F8AB6D44AC854C040E2C23 /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 212022CEAE2DB2FDDCFF0079BE1A4E1F /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FE40604ABA7405B498718F7AD1A7173 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AC3D490CE1050C6D4C84B72A633CA421 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310380EF1C3CD6D26E0AD334C854609F /* WPBaseTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F82800A0521E6C3F4847ED8BD9F35746 /* WPBaseTableView-dummy.m */; };
 		333C4DEF0BED4CA16CCF8A22EEB05C2B /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 420E195E91944B2D779F565EEE07298D /* MJRefreshBackGifFooter.m */; };
 		33923A6BF750CA3FF1F02B2C23CFAA3F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 77BE07AD0DA548BFABC56E4C1E41D485 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D78C321422D993D28D06DF7839BA3F6 /* SVProgressHUD.m */; };
 		33E28C19D5BF581C63D3597A0DC72380 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8456342B60F9C2C1848B0FAA4EA306B6 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E5258A99BFCE6EF6C1A82D9AA6FBAF /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D24AF1B009C29A7E1AE5265E8EDF76E /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33E99F37D78E6D0ADD6DDDDC7F011D20 /* WPBaseSectionTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E961B3380AD25C79F3557E5067195A14 /* WPBaseSectionTableViewViewController.m */; };
 		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 266EAC29C0AF31EC3AB9DA8D4F29DEFC /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37845927AF3B0431639D3589EBE92CEC /* NSImage+Compatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCCD8E0D0C65F7C264EA45E689348C0 /* NSImage+Compatibility.m */; };
-		37E5327F3DDC23B2F268896C0B2D6767 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A1A40CEFF0A79F8C73C21A0F3ED68D /* UIKit.framework */; };
 		3896AEE03DED0805E2EBB8247CAA322E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DA6A382125C1EFF18526E13DD13038 /* CoreGraphics.framework */; };
-		397212DFCA369BEF62C1B52897DA3572 /* UITableViewCell+BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2856876BB7A71995F4855B0DBDAB7B29 /* UITableViewCell+BaseCategory.m */; };
+		392CCA0F5E1A498189042E70EDF7E4D9 /* UITableViewCell+BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 275DA3C761EBCADD13BEBB73DE58FC36 /* UITableViewCell+BaseCategory.m */; };
 		39B6E7D27620A6C0819C31040B227AAE /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9763B0ECC7F86C67A7473D6C962B68E2 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B722780528C5C876828FBA6F0D58921 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BC423522BABCEA6FA49C0626759E69CF /* SDWebImageDownloaderConfig.m */; };
-		3BA17EDA938C5B82E6BE063BB1B7FC02 /* WPBaseHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = A8503D628124AE44F176086E7D318EC3 /* WPBaseHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C49237ABF1CC83635F1D0BA74EE3DE8 /* SDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E47AA794F805D2AC1C655DFF24DE3C93 /* SDDiskCache.m */; };
 		3D074AA7E6C8CB30B879378BAF6FE9C2 /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF358389F367BED656072EBEF8C5480 /* SDImageGraphics.m */; };
+		3D250F7BEFD78AFD0F7DC5A695E5174C /* UITableViewCell+BaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 27037AA1E971E9F950068523DC92DEE2 /* UITableViewCell+BaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDA69B10F19DE28E453AF678BAA732A /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E05153D7ED2768CCE755D51CD3C8184 /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = 50811DCA8672C41F6439668D47E3DF3E /* SDWebImageError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EFEDDB67852F65FE8CD2FA36817081A /* UITableViewHeaderFooterView+WPBaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 699BD0861464FAB1E0DEDABB5490CEB7 /* UITableViewHeaderFooterView+WPBaseCategory.m */; };
 		3F16D804325593344A0F85AE492A5C79 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 234A6F8C4C830184CDC9C5C0F9260E8B /* UIScrollView+MJExtension.m */; };
-		413579AD0F6D7D5EE62AC944EA022485 /* CMPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D120A40E9FDE06731D273A410540ECC5 /* CMPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C7B9683EADEA1857E499CA52503DF2 /* WPBaseTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 677CD6340AFE517C7563A04512493412 /* WPBaseTableView.bundle */; };
 		41A17DCE3C993697D925585A26297D1C /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707193F86B4480E74A82837D3DDAC49 /* SDWebImageIndicator.m */; };
 		42927E3270EBE2D3F27F2BAA1750736E /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 97695B4B6279B73D0DEBF889F0725A2A /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439464E37FBB3EEA16786B84187EDE4D /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2183BEBEF2A58BF260E3DBB565B35EE9 /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43CA92608F127EFB9247427E4701FA60 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A18F4D41DEE970910F8F05FDDFDBE5 /* UIImage+GIF.m */; };
 		447DD41B5CA1E121219ECA2B0B1B874F /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = CA76F99E2C17EA3477FF1B20AA06CD1E /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		448D9B31236C49689088B98E7955E6D0 /* CMPhotoBrowserAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = F068F4B12DAE970456130A1D2B6DE1D1 /* CMPhotoBrowserAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44AB83515CFF8FF4918CBD52B22DE20C /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3EDFF8BFF463BCE566A24F38355FC /* SDImageLoader.m */; };
-		44E1ECEABD9488A6DFF24D53A0D72EAA /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280607E1EFAA8F6C519D658C43067F04 /* SDWebImage.framework */; };
+		46090788701C6AD99E8106B262C281CA /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0D8A132BAFC70AA07A56735E36CB57 /* MJRefresh.framework */; };
 		48881623240E26BA71BC25107EE78525 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C176CEFEBFD7490344FF5E83773D3D9D /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		488A104C3A6BDA7F87D23B6685F7AB38 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D81E929F2AD584942B80C3E5C14C7812 /* UIActivityIndicatorView+AFNetworking.m */; };
 		48F540E573B474B6F3061E72DD110BD6 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 357DB6C16CD096BF729230FBD97C8A24 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,69 +107,62 @@
 		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 124025BB1F231287A91A5FFC98007307 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B2EFDE24B936A233E770BCACA7055C9 /* SDAnimatedImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5D11BA2B092A31E0B0AAD8EA1DB564 /* SDAnimatedImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F5453330A2C82B176C71EEEC4DF7D98 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BA4E530CFCFBA74590D956C9ABEFB4 /* MJRefreshAutoStateFooter.m */; };
+		520B8BEADF04C122D15BED8750646C3A /* NSObject+Json.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA15A080196403544F9B1E29A384A7D /* NSObject+Json.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52A2CB672FC63C183E03500D89DA39F5 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 02269C72C00723C4F8FEDCA3A7467D26 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53834B26BF5BBEDB5CBFD2429BF42FD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
 		54AADB59F5CB3BCE4DC007534817DE3A /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB2D58555A4F9925C812DE3028FD963 /* UIView+WebCache.m */; };
+		5604C617C8FDD9858E5D90672D169085 /* UITableViewHeaderFooterView+WPBaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 11599675053D38A34E2BF4AAE54DFB99 /* UITableViewHeaderFooterView+WPBaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		560C2A8D8419109DF7040B33E0307C3E /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CD308089D09302B749B3FE9A6F43195E /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5651B2E29497007B84904C0739C9B071 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EBB892A2E9F7E027B3899307338C36 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57E47DE0DBB18DBE0AF52F656E1D112C /* UITableViewCell+BaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9E5A7232EA567632E5E619386660C /* UITableViewCell+BaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5889D2D375EE8ED08E18C3D34ABB3D69 /* WPBaseSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 910C8B529EEA6F7957A86C2AAFE48B14 /* WPBaseSectionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58DA1ECEEDA7E199900C5D141177E10E /* SDImageCacheDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3273E09B8D17BF0E7916F8583D7C13E1 /* SDImageCacheDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5974934DABA59165EFAEA834A6277B86 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C9BDFB3828B147BF466B7BD25260F /* AFNetworkActivityIndicatorManager.m */; };
-		5BA164F397EA387B7A31BCA60D3886E4 /* WPBaseSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D223FA7E317206158FA0C100BCF81005 /* WPBaseSectionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E03053B4B4FCEE9927F3E9E01656FB0 /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2590E8385F4CCBCBCB8D52236641F /* SDImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FAC4980DAC3CF66FDEBCD6581400661 /* WPParseVCJsonAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1754D17EE4A67FD50B8BE0E94A31F4C3 /* WPParseVCJsonAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60403B1325FCFE9F45636378419334E2 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B1C8450A187F7FF302989B3425816A /* AFAutoPurgingImageCache.m */; };
-		6049E3AD1145A38DDE8780C2C68BE416 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B162D7C407058AAE54B2066001673F1 /* SVProgressHUD.framework */; };
-		612E7681F039678AED60C96CF88F6F06 /* WPTableViewPlaceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B55E053478172C0F793C82F3A996F8F /* WPTableViewPlaceHolderView.m */; };
 		6187342ED6991E6B18AA1B08D29AD30F /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A782567706EB6A5F0CF7448550A89EFF /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62128B32A5076513EFD9025C581EBA07 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2ED2C162A338926FC15B6F38AA0A3A /* UIImage+Transform.m */; };
 		62B32B513F591B993CF722FE403D91D6 /* SDImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA77677360F228DC2241D18A008403 /* SDImageCoderHelper.m */; };
 		6378B0F5C6F46F18823A58FE04B49842 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2A765B03B5C6B075BF61020AEE86DF /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63BCF4EAF69B83898F32C56C3A59351D /* SDImageCachesManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D891B35D5A7C578555E0A0FD16AE302 /* SDImageCachesManagerOperation.m */; };
-		641D051A7F6FA4ABB9E7D8453C9FB0A7 /* CMCircleLoadingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B05C199735CAC48614A8E111E6BB31 /* CMCircleLoadingLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6496446016C149A05E360793BC94A085 /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7103CBB8900C6ACA630E946925DDD1ED /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D469536131C23B95AAAA5CD3DC6542 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A518D449F2AC6750457755DB523A9EA1 /* UIButton+AFNetworking.m */; };
 		65A4DBCEBF46707517AF98EE9171EAA2 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = D3273F38999B56D3B07A3CF5ADE62DA0 /* UIImage+MultiFormat.m */; };
 		66457B4A6802B94B61C6ADAC5D7A5C62 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D4A1E56AAFAEBAA734E7FAC2FA7FF4 /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6782DF51127156DB56E217BCD507B3FE /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6371ABCD5DBF9E59E7DFA04EE2B92B /* MJRefreshAutoGifFooter.m */; };
 		6805D50DEC98127D9BB2BD93B7E07F8A /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2E087EC918E1A846C332F79BE64445 /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6806B0DD1A06A90213E2F3DC26450BE8 /* WPTableViewPlaceHolderView.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3A10F9456F31702F9E807EA2DBE851 /* WPTableViewPlaceHolderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		691A1EC2F39654C5C2B23352AF23D065 /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C88B62D354D2CF72A5C7885B8BA697BA /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A00FB9CEA3EA72446CD8D7DCCD71769 /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 97CEDF22C70F237DAA5EC3FC3B08F428 /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A470BF4E9F0D3C3712D9FC582F7C9BD /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CA6660C8379BB2B19FF654529FC658 /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB02A63C527063157CF63E01CCDD776 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BC9C3EB851D88AB966B637752EAADEA /* CMPhotoBrowserScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BBE86A54E4E1BB4E5719298DB7963 /* CMPhotoBrowserScrollView.m */; };
-		6D04D14312197D83716056D567B4F749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
-		6DA6CC217BF1CF2DF587C94C706F0155 /* WPCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = EED84C329F56C2AC0BF86BB154C44A52 /* WPCommonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F44B4C9DB53FDABDBA5EC3ACF78260A /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3566DE0EC169422B46826AAEA2B0C42E /* UITableView+Placeholder.m */; };
+		6B80D7102B1FFCF9E7B194205CD6D03E /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7236C6DEB88DC5387EACD179E8241467 /* UITableView+Placeholder.m */; };
+		6CCC912EB26E52A6AD9541E292F4A339 /* WPBaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF31084239E12D4C570F2473CECAC0 /* WPBaseSectionModel.m */; };
 		70B77BE487CE9527EA3E66C689111F25 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E2841189A5168255C9BBC7C75173DA /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7160C135B0F26AF5F3475A0E1688EDFE /* SDImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C76017BA95DDD55EB6CF91EAB9957D /* SDImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71A05387793F1897323FFDA19CE9D018 /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AA3DB7A3D547FF459B3D6DCDE2EAB3 /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		744DAF747EB3C1839034AFF657A99B8A /* WPBaseHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 825E11EA8FE4C841B21E4398B7995A6A /* WPBaseHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		758A9D35B886D997244C6B25384CF60F /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8013F487C3A189A73654A08A81F4C24A /* SDImageAssetManager.m */; };
 		762E3951F3B8372E5A5B8BBE96E0C17B /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED9D8968FE897AAB57004F580EC1EB6 /* MJRefreshBackStateFooter.m */; };
+		763B2F35D5128F5DD701EB24309DBAAD /* NSObject+AddParams.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D64DF67091837B1DA2AEE7BC8AF516 /* NSObject+AddParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77C4519DB02F5D6165AB0846DD34D9F7 /* UITableViewHeaderFooterView+WPBaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A619ECEE7EC2165F639DB919F0DFB568 /* UITableViewHeaderFooterView+WPBaseCategory.m */; };
 		77F713F33EDEDBB359D0864ACECFA907 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E96BCB6CE9FC6E7AFEDED16FC08E5FC4 /* SDImageLoadersManager.m */; };
 		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F043FC32362679926AF0103D1C5A53F /* MASConstraintMaker.m */; };
 		792F197DCB7F7574450087CA56F24FF8 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9ADCEFED4EA1BA589ABC5860AF8BC6 /* UITableView+FDTemplateLayoutCell.m */; };
 		79AD396149E07F44C0313EA769ACB978 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 41651E303EE0E5D1B3A6471F62BB7293 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79D0267270244C4F8437E0038879E8E4 /* Pods-WPBaseTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94964939AB117B81EF0811F7981D6435 /* Pods-WPBaseTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B5060E821143F973E67108B4BC34EEB /* CMPhotoBrowserAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A4D69A928B9761959566B8B319A29 /* CMPhotoBrowserAnimator.m */; };
 		7BC2174DB47F14169C5557F188A48F46 /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF13CB051C0D138537A51E883C229BC /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BE0BD01FE847A924BD531F237B3E936 /* SDImageGIFCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F7E10596B02855EEB17FC5D38A78FB /* SDImageGIFCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB20D5248305686B6ADDA1580BE4CF7 /* MASCompositeConstraint.m */; };
 		7C652966713F0F85144D88639C35A35D /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F359A3E971EB47D713F28109B59E3D /* UITableView+FDKeyedHeightCache.m */; };
-		7DA33CED53B5952F05AA5ACFF9D22742 /* WPBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC9A414D5E1CF0AA6D45620C6C5E6FE /* WPBaseTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F08EEB0542B3073A4DAC928A94B17D6 /* SDAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5406FEFEF3292699B3E16B9E2D9701DE /* SDAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FEDADFFF77DF4114E6036F29D09F136 /* UITableViewHeaderFooterView+WPBaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = DC607ED00BEFA019AEB04DCA8F3C988B /* UITableViewHeaderFooterView+WPBaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FB0527994149CADF4DE5C0671D16382 /* NSObject+AddParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 6969389C649D193F2BAC46D41CD7F310 /* NSObject+AddParams.m */; };
 		82264A6CEC234B8D5D33E3F6D0DCAF09 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CF88190DD6F822184C75F9E3DF80A /* AFImageDownloader.m */; };
-		833F8DC5DE3E4392433FC982E70F3FA9 /* NSObject+AddParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2C990A49257819B6BA0A4AD2689A65 /* NSObject+AddParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83AF015D0DAD115AB7C4F9062D1DE732 /* NSObject+AddParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 514FE97A3A78B2763E90C67DBD2859C8 /* NSObject+AddParams.m */; };
 		85035F1729A70C6E09AE5B998BBB970C /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 272ECD7917841BAA837F363F74B1C35D /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F1CB9B099849D0EDA228BB4DF0D260 /* MASLayoutConstraint.m */; };
+		85EB0FDCEC045B4A38A72B06292BAED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
 		866EBD0376BB5BF1552233D725F0271E /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D3332FAD3CAC9F8D7BEDC9034ADF5BC8 /* UIImageView+AFNetworking.m */; };
 		86A6AF46D8B0DED6508F346C2A6ED37B /* UITableView+FDKeyedHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5194516805BCF0A971F9189D16515A /* UITableView+FDKeyedHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86BA81E8184895A67C1FFF3138A7E101 /* SDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208A44766111F585CA60C2D9AEE186E /* SDMemoryCache.m */; };
-		8813D62FB21F874E7555FC22E1B9F700 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7B1F97D3CEAEB45BE9C836AB16FB30 /* Masonry.framework */; };
-		8899A2E85647B4F925CD5781FA81462F /* UIImageView+WPLoadBundleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B999CFB67E577CC207721B773F5498E /* UIImageView+WPLoadBundleImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88495146CDEA1F5E59F1B413F130F4BA /* WPBaseHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 82C7F95B1A163B93A9602443AA7147BA /* WPBaseHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B98F53C86DDDE8F26E2C50601789037C /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9B45424EDF5F9768D42D9D49E216ED /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C46B4916E0243944B2F6CA51D8200CEC /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -194,7 +186,6 @@
 		99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6765AC40B662F340243545D84865261C /* QuartzCore.framework */; };
 		99AC2AF7ABE5CD9F488C2B312E29B6D1 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE20068542067D3EA1620204215AE537 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A19445560C68B053A665476C55501AF /* SDWebImageCacheSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C7B7663AEE206A6A29FF8632B859F /* SDWebImageCacheSerializer.m */; };
-		9A1A37DE84B6E9D06141BDDFE3717137 /* WPBaseTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DDE6C9E0FBD861A3CD4121DE0B7A2 /* WPBaseTableView-dummy.m */; };
 		9AA295EE6B1C10DA83CC36E860BAB5CF /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEE7039C7512BA2D0CA95CEBA282BA5 /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AAA9E5633B7133055EC66BAF3E48157 /* SDAsyncBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C758C41B575860F595B79E00E3C938BD /* SDAsyncBlockOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9C7270EBCF8E3A78D25B514D52064315 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618456D4EE614A03F05194DBA9E3F4AE /* SystemConfiguration.framework */; };
@@ -205,16 +196,16 @@
 		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0CA33E7316C13ED52EFF63D8388E91 /* SVProgressHUD-dummy.m */; };
 		A031C032CFEDFE915279E275A04EF334 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC1C16490BD6362CB16EAA6EBED9E5F /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0B17F1BAD8DBE3AC3F38CE1051C0934 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = D1809902EAFFF98A3FCD8E07854BB157 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F7A9ED140B43DFF27580B7B73B870A /* WPBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9708E8F2E52045D18F7F3F7A2E1413 /* WPBaseTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6CB0B9EFA8552CC5FB71FC85AB6175 /* View+MASAdditions.m */; };
 		A457833EB6AC89B4A48D1FDC38AE85C4 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F4DE544BCC20B1470A614DB15E2EA1D /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A556058B0B08B94156481722C30BEEF3 /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C86C8017BB872D2715725EC183E654 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A59301B048725931AD8366DAFBABB6E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2749BA6A02F666314AB3720CF81B05BF /* MobileCoreServices.framework */; };
 		A6CA2BD4D44B5D2EEAD7458D6B9F7793 /* SDImageAPNGCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 92EDBE6C86C8D22DC49F2A87D4B5B35C /* SDImageAPNGCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A6E402C18F00B0D3F2CCE2C530517036 /* WPParseVCJsonAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C3193DC37488B8F7992BBEBD287DC6 /* WPParseVCJsonAPI.m */; };
 		A766900DA4F0A1DDD1C60583DE48829B /* Pods-WPBaseTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C38D9B2B313336B11A8E2133BA21D /* Pods-WPBaseTableView_Tests-dummy.m */; };
+		A94DBC004A9F9674FE8F507542996866 /* WPTableViewPlaceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0430DCB86EEF174FF8F2531AC8174B9 /* WPTableViewPlaceHolderView.m */; };
 		AA7EB7C4CD8FD28BC710451738BBB523 /* NSBezierPath+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 321D82EF8EEF62714ECEB7458C417870 /* NSBezierPath+RoundedCorners.m */; };
 		AB9FB1075E6B9C0BF3EC8BAC7007BD93 /* MJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E6B08012F166480CFB6903532839F21 /* MJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADA4DAE7A1251E3A85B4FAD6B6D1BA3F /* WPBaseSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0244CEEB451B636D16E64136C4444CF4 /* WPBaseSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADB6418A4EB9FCC268D7222AEF319682 /* SDAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A6FC431E547E9BF824D32D2505A093 /* SDAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ADF991E5F80B9F75D2E72F1DD02B1EF1 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C623A5C687A6B716EAF84FFC1B8A845 /* SDWebImage-dummy.m */; };
 		AE0C7049B358AE2EA85ADCCD81DEF2B1 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = B6960867B220E75D9526E005EA1DDA6B /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -227,29 +218,29 @@
 		B25295C403A59D714D1670EEF4AB9CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
 		B25DF27CC398820D46B9B493FFC2F41C /* SDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E91BF896EF9941B9AE176264559B9CE /* SDImageGIFCoder.m */; };
 		B373020D1219FEEC8CBE5C6B2678FAA5 /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA9577588C2FEA356CE8573AF308BD6 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B52E605DC7DD39FFF7B4F151BF2DC7F1 /* WPBaseSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCA335F2AAA35133A89E447A122AAA4 /* WPBaseSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C1C3E2891580C3824BB6263C31F3C8 /* SVIndefiniteAnimatedView.m */; };
 		B7544ADD7DAB706BF84A58442071284A /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BF47B7CE781E976CD8186402CF920 /* SDAnimatedImageRep.m */; };
 		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D50F4F9023A4B175868CA055E4B9B878 /* MASViewConstraint.m */; };
-		B85A6A967E42AA829681E7C0148624E1 /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 666D8AC2D331718E32CC3DCAE6466053 /* NSObject+Json.m */; };
 		B8812EC9258E228E36D44D4D460B120E /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 21722F9BDF169CB19E9594B63D52239E /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB9148B210B22B407CCFB0031303A7D0 /* UIImageView+WPLoadBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 523EB416388743A7DFC9CEA67D3AE62C /* UIImageView+WPLoadBundleImage.m */; };
+		BD5D46E6B05922A48F973F1B36BC5C2F /* WPBaseTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68FAE66C59C5E7234800DFE8EAC7D861 /* WPBaseTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF11E95479C3BA067178EBFF9B669FC /* WPParseSectionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22687D0758A4C47E403DF667DDB791E0 /* WPParseSectionsModel.m */; };
 		BE641F472D38BA5A1FD79471D702B8C4 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED46CE24F0A51F8187524E8A45E27F7A /* UIView+WebCacheOperation.m */; };
 		BEBF1E3CB08A7809E7EAEA8C5695DFD6 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F9F7EFA941F8D92E084FB5700A0617 /* UIButton+WebCache.m */; };
-		BF48CFE11B2D80142D60109733A8FD4D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F3B6810AC549C5629226B1F56F57B /* AFNetworking.framework */; };
 		BF6E5B44793BBF7970F11D83DAF20A63 /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0FBCFE79E64129C97C6C8744CCED1A /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E931229F8C51DA9365C00320E5349CC0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		C0AE738760989C91B1C7669B67D70FA6 /* WPBaseSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A115A2EB1780F26E882381704DF80683 /* WPBaseSectionCell.m */; };
 		C13696F3D7605143956F3324210B004A /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA477AF01F2D668491F0129946B514F /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C227E6DE2BA7105D9EC03DA495B33B79 /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 208AB885CC7EFD9D80E4868DF3C5AB53 /* SDAsyncBlockOperation.m */; };
 		C232718E645D731D4A5B6AD33667E93A /* SDImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 581FBF00C7E493FAF3BCE21773A42C95 /* SDImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2B0CC3E7784AC1A782C7F2DFDC06B19 /* WPBaseTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E2586F9128FBE29B789DEEE5AA6A84 /* WPBaseTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2E3485A8B9154A71FE201CA17CBF16E /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6F7111C2EA42703668E8712BC037ED /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C312DE8B4CE049329207E74BBE4A3664 /* SDWebImageDownloaderRequestModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 6719EFB072B488FB7AFADE53FFFF4786 /* SDWebImageDownloaderRequestModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C423F144F0AB773B02897D6345B2DB95 /* SDWebImageCacheKeyFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CF097C7C0F396657AC9183F759778937 /* SDWebImageCacheKeyFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C579128CC4586FF6D56E7F0DF9E3F165 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 455078FF9FAD1BE8E82CC35E87F67230 /* MJRefreshStateHeader.m */; };
 		C6AB0474FF7F3D1DF8E02803F9FF6D84 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ECBA81BCD1B90510F2A6FA57D11BE6 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6C34FF5166D33DA8B2BA3E70CA546AF /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B06E8918C446D4DE7ACBD1D573B7B6 /* SDImageCoder.m */; };
-		C737C66B83B1C702E0F5482F8BEA6E62 /* UITableView_FDTemplateLayoutCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3103470A8A27514580184418BA910885 /* UITableView_FDTemplateLayoutCell.framework */; };
 		C7B0979AB5F9DD07ED6DA0E3AC8DA076 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EA3C222970524FCAD9D4C3899135ED /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7BE4BDDFB2651CF488EEF5DB554F5A9 /* UIImageView+WPLoadBundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2CB1B8FEE3300AB84336718888B52F /* UIImageView+WPLoadBundleImage.m */; };
 		C871AA5A05F822F63F28120011FC9F7C /* SDImageLoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5ABEA7F4FAC5CB27ACC017CA965E62 /* SDImageLoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8A9EBF9005117A00C30CE6438ECEF95 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8E1D2DC46C590417438000A7B3D42 /* UIImage+ForceDecode.m */; };
 		C8CEBF8E736425C1E16D14D2A13DF9F4 /* SDWebImageCacheKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAF8576CD98ED392BEA128AAEE44DC /* SDWebImageCacheKeyFilter.m */; };
@@ -257,7 +248,6 @@
 		CBACE8617E480B756EE6647BCC05C897 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6089ABACEED7B4FAD8F77E37E944FE83 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC155255C94E418E54EFB31E99012803 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3143DF12BFF485492FCC207C23AC1979 /* AFNetworking-dummy.m */; };
 		CC2C1BC1078B8E4C57C9CE94E442BA2B /* SDImageCachesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F1DE1971A4C50BA4AE82B5E938D78A /* SDImageCachesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD19E17F89DF739C2EDB341B86EBA536 /* UITableView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB303DE245FD6A51A0C9DBF9303C761 /* UITableView+Placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD2BC67D43E054CE0695B46CD225F388 /* SDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E431B44FB88B1D589CB54BC4AA5111 /* SDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A1A40CEFF0A79F8C73C21A0F3ED68D /* UIKit.framework */; };
 		D0CCA29D563BD5C9A80FA6D02BCBD5BB /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E47A7946F36F8C9BC6962F706ACD2 /* UIView+MJExtension.m */; };
@@ -280,12 +270,13 @@
 		DF30BC7207EF8187786C62CD258D7382 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2783CB3164394E1194869661FD453368 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0108CBE45353D64552D5A1E4BF93FC9 /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF9295A4276FFDC6910CBEF5B216B19 /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC6D4B0B351E26327C6778C67C32AEE /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1AD14A2BAE6FE686255A74E415C2C1B /* WPBaseSectionTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7640FE23458674B89EEEE0E197642664 /* WPBaseSectionTableViewViewController.m */; };
 		E200E3645E90B13AA4B5136E39D99A52 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24110E3CFE130A8CCA048EBB57D677A8 /* ImageIO.framework */; };
 		E3134A5DCAD73B31584488AA4E02186B /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED505EAC6DB788F1D189D815B224A5 /* SDWebImagePrefetcher.m */; };
 		E3B5FC70FBF0EB06C8C6187C9DB17258 /* Pods-WPBaseTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C16AA63ED687DC0AE1624E4443BE1C /* Pods-WPBaseTableView_Example-dummy.m */; };
 		E3FB1238F43B0CE746E5207AA0E4CD6F /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A3F723CAE9BB44F63B6EFC8E133A95 /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E442EC9FEABA4563AD0DA7A34DEF5AB0 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B162D7C407058AAE54B2066001673F1 /* SVProgressHUD.framework */; };
 		E44D4596E5DFAF2458FEA91D23447B1A /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE54425173F8AE76B8368E17D0B031E /* MJRefresh-dummy.m */; };
-		E4C987F40BD1A9F9C3BB8D67545D8A34 /* WPBaseSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0FEE6ECED7EF7E3AB37EDE8F85C5734 /* WPBaseSectionCell.m */; };
 		E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F923FD6CE4B711EE9BE4B41C70619A /* Foundation.framework */; };
 		E5BE56FD56550CB2990EA400C3EAAD35 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC4D453520C972AFA41403393909E1C /* SDWebImageDownloader.m */; };
 		E6412640046F0363F4EE04419A75169D /* Pods-WPBaseTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA36FF9E6E119EAE6497599158A8F58 /* Pods-WPBaseTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -294,6 +285,7 @@
 		E797B8F018A179A66CE750C2DD7CCE3C /* SDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1B392F502717F812D07EE92A3DB0F5 /* SDImageAPNGCoder.m */; };
 		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D1C83941E6AD8D8A5D2398CCEED1CA /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC13A1D504B7D2BD605ADA07A07E801 /* MASConstraint.m */; };
+		E93A0CD180BE5747169E79F401164F44 /* WPTableViewPlaceHolderView.h in Headers */ = {isa = PBXBuildFile; fileRef = C276DF037338BD683776534D6638AC91 /* WPTableViewPlaceHolderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD12D3AF5060927D753D4A9DB8A4923 /* SDWebImageCacheSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2609785A7B07049E6BBDAA1629CE75D /* SDWebImageCacheSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB3E3B88F2EC5527085864C1462F474 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB64C8DAC8B7902A180B486B03CE8DF7 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EDE0A06EE85E7F639CEBE2284EFDCFE /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -302,35 +294,28 @@
 		EDD70CE2C2ECB482CFFB0EF720EAA798 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C40061FC108FAB9188764E60871E4E /* NSBundle+MJRefresh.m */; };
 		EDF22D485E9480A525852898A09FBA38 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = EAFD42E8998B3AD46105A66D2AEB0593 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6BD614A47888EACC0058B9492F1899 /* SVProgressAnimatedView.m */; };
+		EEF7A4A5C90CAE58144F4A67F612F9B3 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280607E1EFAA8F6C519D658C43067F04 /* SDWebImage.framework */; };
 		EF5A7E8F8F1650C6C844216B538C34EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C63B58C0CED2608D9F14C69ACC7178DD /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF7EC9557C1586B1B333A752D02B9CF2 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE5D156F594DD6AAEC7708E9471739 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		EFA3C0EF355F236A0FD24C24DDA47ABB /* WPBaseSectionTableViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6F95F3DEC4D38C807356DC8E8FB2C9 /* WPBaseSectionTableViewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1AAD41762E0D3B06E6E9589F0F8C05A /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A961DAB102B9C169558705B7DC629E /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2210091A3DFD1A756FE4B023111DB11 /* UITableView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B6368B9E695B1D32C1DE8A89EEF93A /* UITableView+Placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F36D82FC7FB63AFB333FBCCEBC57E219 /* SDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 50235D4A948DC2D5E6B49896BC2890BE /* SDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F56484945077A3AAFD43E74C4CB07C25 /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = AA92B25824AD4397104FA9311E79A2AF /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F610FE6F2D5CC8B11DE46598F1319D35 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 978C130240F72844B100CBB0D0298730 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F75D23DC90510DEF164CE4FD3E8302F9 /* WPBaseHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F393C94C72452BC0C86D19E0EE899A0 /* WPBaseHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F84A90988B4712411DF4596BF9F86457 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C4A3DCC9C9ACE990AE6787963B4F0 /* NSObject+Swizzle.m */; };
 		F8AAB6789B0A59CC99A8466A64543BE1 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9C86647E271D840530EC0E05CC45EE /* MJRefreshGifHeader.m */; };
 		F8EDB27FC6C293B5126EDC476524EDB5 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAEF92058AB5EF470ECA28A34C8E8F4 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9EFE513FA35A1CE09BC8A74FF7A7694 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 729528C967298D999377798A41EDCD7D /* SDImageTransformer.m */; };
-		FA90754E16963C9484F2F57A2D28E879 /* CMPhotoBrowserScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE5EF7FEFE3D55E75109E86C6B42CCA /* CMPhotoBrowserScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A71356B056F147E00EED85846C97C4AA /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07D2E98FF3DEED5756450AD3101AE54A /* PBXContainerItemProxy */ = {
+		2A98F8AAAA45F2326E9FD222D4E53B24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
-			remoteInfo = SDWebImage;
-		};
-		0FB0C45965C0CFE2CA7CC0A6C44300AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
-			remoteInfo = SVProgressHUD;
+			remoteGlobalIDString = 2006263064A94C0063192AE0D2C3F409;
+			remoteInfo = "UITableView+FDTemplateLayoutCell";
 		};
 		56938D5D6FF5A13A701C5F9DCBD7B952 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -360,12 +345,33 @@
 			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
 			remoteInfo = SDWebImage;
 		};
+		8CF0007CA2A9D168B9C340409860183F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		B04DB212A938C4DDCB061C51128F1EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
+		};
 		B897E460FCDBD5525971DA6BFFA38D2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 36F92E4A61CF0D859164F336C7CC7631;
 			remoteInfo = "Pods-WPBaseTableView_Example";
+		};
+		BB4E7E596742CEFB46DECB2D83232714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
 		};
 		C76F01F438FFEADDDDF9EDFC76E3B8CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -374,20 +380,6 @@
 			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
 			remoteInfo = MJRefresh;
 		};
-		D55203F05095839474E8BACACAB55B73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
-		};
-		DDAAA5B999F7EDB2E266B74A4FCE6FEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
 		DF9DB33766B645480D3D8BC8C533AC5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -395,19 +387,19 @@
 			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
 			remoteInfo = AFNetworking;
 		};
-		E10A90986CA1393C19F515C686CC37E6 /* PBXContainerItemProxy */ = {
+		E91421A182A449E7A78B5EA1987E5B33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		EA318361A205BA193A7506AC781C38C2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
 			remoteInfo = MJRefresh;
-		};
-		ECDF53EE4CEB91CC28AE6C8B63F15A7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2006263064A94C0063192AE0D2C3F409;
-			remoteInfo = "UITableView+FDTemplateLayoutCell";
 		};
 		FBB6B3FEEC316DE7191AD25A13FCA2C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -420,7 +412,6 @@
 
 /* Begin PBXFileReference section */
 		02269C72C00723C4F8FEDCA3A7467D26 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		0244CEEB451B636D16E64136C4444CF4 /* WPBaseSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionCell.h; sourceTree = "<group>"; };
 		03B08CEBB2265A1DE437D3E1B7BA6038 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		043D73A68D076DC5DACEA3CB7A365697 /* SDImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCodersManager.h; path = SDWebImage/SDImageCodersManager.h; sourceTree = "<group>"; };
 		06C288DA0E62350BA56CFFA649D7FB39 /* SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDWebImage-Info.plist"; sourceTree = "<group>"; };
@@ -431,28 +422,30 @@
 		0B7FCC3AA10D545C47EFB67DFEE00B6C /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		0BB720FCED76F7F17AFA62B6F324306D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		0BF34597863353E7D264F3DEBED9FF46 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		0C2CB1B8FEE3300AB84336718888B52F /* UIImageView+WPLoadBundleImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WPLoadBundleImage.m"; sourceTree = "<group>"; };
 		0E1A5801D8BAB386C409E7CA4F90DE0C /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		0E5194516805BCF0A971F9189D16515A /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDKeyedHeightCache.h"; path = "Classes/UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
 		0EDE0A06EE85E7F639CEBE2284EFDCFE /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		0F043FC32362679926AF0103D1C5A53F /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		0F5D11BA2B092A31E0B0AAD8EA1DB564 /* SDAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDAnimatedImageView+WebCache.h"; path = "SDWebImage/SDAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
-		11A755710A38233C642AFD74941FFF0A /* Pods_WPBaseTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPBaseTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11599675053D38A34E2BF4AAE54DFB99 /* UITableViewHeaderFooterView+WPBaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+WPBaseCategory.h"; sourceTree = "<group>"; };
+		11A755710A38233C642AFD74941FFF0A /* Pods_WPBaseTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPBaseTableView_Tests.framework; path = "Pods-WPBaseTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		124025BB1F231287A91A5FFC98007307 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		1754D17EE4A67FD50B8BE0E94A31F4C3 /* WPParseVCJsonAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPParseVCJsonAPI.h; sourceTree = "<group>"; };
+		135AACBA40C14B9A01D27944F87CFFD9 /* WPParseSectionsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPParseSectionsModel.h; sourceTree = "<group>"; };
+		17F76697E93695F5EE1EC93D33F2E75D /* WPBaseTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPBaseTableView-prefix.pch"; sourceTree = "<group>"; };
 		187392A06BA2A508AD0DFAC99B4A179D /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		1895368341C4EED6A000AABE357E80ED /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		18AA3DB7A3D547FF459B3D6DCDE2EAB3 /* UIImage+Metadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Metadata.h"; path = "SDWebImage/UIImage+Metadata.h"; sourceTree = "<group>"; };
 		18B1ABA15238DADB434F8E35E2998275 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		19765B071E998BCBAE5700F110CA5222 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		1A8A4D480F50601CF5EC9E656D1EBC53 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		1A9BD8A939943111273276A25BCBA218 /* WPCommonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPCommonMacros.h; sourceTree = "<group>"; };
 		1B9C38D9B2B313336B11A8E2133BA21D /* Pods-WPBaseTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPBaseTableView_Tests-dummy.m"; sourceTree = "<group>"; };
 		1CC8E1D2DC46C590417438000A7B3D42 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
 		1CE5AC10E5E545FAA6F458317F6DC95B /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
 		1D8C7B7663AEE206A6A29FF8632B859F /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
 		1DEAF38463B00FF9CEEAA6EF5B706582 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		1ED9D8968FE897AAB57004F580EC1EB6 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		208AB885CC7EFD9D80E4868DF3C5AB53 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
 		20AAF33F0DBFDEE1F0D20B1A800EFC6A /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		20D3BC15F8E41E50EAC8BF451921ECB4 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -461,24 +454,24 @@
 		2183BEBEF2A58BF260E3DBB565B35EE9 /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/SDWebImageDefine.h; sourceTree = "<group>"; };
 		21EBB892A2E9F7E027B3899307338C36 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		21F359A3E971EB47D713F28109B59E3D /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDKeyedHeightCache.m"; path = "Classes/UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		22B05C199735CAC48614A8E111E6BB31 /* CMCircleLoadingLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CMCircleLoadingLayer.h; sourceTree = "<group>"; };
+		22687D0758A4C47E403DF667DDB791E0 /* WPParseSectionsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPParseSectionsModel.m; sourceTree = "<group>"; };
 		234A6F8C4C830184CDC9C5C0F9260E8B /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
 		23BDA6EC74EFC498BDF62986ECF1D523 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		24110E3CFE130A8CCA048EBB57D677A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		24DEE9F0126A6676DF0522850BE20500 /* CMCircleLoadingLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CMCircleLoadingLayer.m; sourceTree = "<group>"; };
 		252B5299E05A6DF44E2860527738B1BB /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
 		262460776C1FA5A076720417F75C23AF /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		266EAC29C0AF31EC3AB9DA8D4F29DEFC /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		27037AA1E971E9F950068523DC92DEE2 /* UITableViewCell+BaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BaseCategory.h"; sourceTree = "<group>"; };
 		272ECD7917841BAA837F363F74B1C35D /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		2749BA6A02F666314AB3720CF81B05BF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		275DA3C761EBCADD13BEBB73DE58FC36 /* UITableViewCell+BaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BaseCategory.m"; sourceTree = "<group>"; };
 		2783CB3164394E1194869661FD453368 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		279BF47B7CE781E976CD8186402CF920 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
-		27E7F2A644BAFBFB0DABFBF3D91ECDA5 /* WPBaseHeaderFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseHeaderFooterView.m; sourceTree = "<group>"; };
 		280607E1EFAA8F6C519D658C43067F04 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2856876BB7A71995F4855B0DBDAB7B29 /* UITableViewCell+BaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BaseCategory.m"; sourceTree = "<group>"; };
 		28BFD4E5038D99B522CA5E5FB0FB1AE8 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		2B718B7EB692625FCFF3669DCF49505E /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
 		2BB21596E9937A2D411878B0E0F96CD9 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		2CCA335F2AAA35133A89E447A122AAA4 /* WPBaseSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionCell.h; sourceTree = "<group>"; };
 		2DB20D5248305686B6ADDA1580BE4CF7 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		2E23114A9ABD36E38612BB65F1AA5DE4 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
 		2FA9577588C2FEA356CE8573AF308BD6 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
@@ -491,15 +484,16 @@
 		32BA4E530CFCFBA74590D956C9ABEFB4 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
 		33B19C6DEBC46BD40E3649DC663A3952 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		3423EEDA683B11370D354547C759246E /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		3566DE0EC169422B46826AAEA2B0C42E /* UITableView+Placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
 		357DB6C16CD096BF729230FBD97C8A24 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		35D1B32C94656098E0C32EDA81D8DCBB /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		36826BFF9D069DB3F3C9D3A55418F862 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		36C40061FC108FAB9188764E60871E4E /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		36F4B8616DB32D11D8FDA801DF675722 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		382DFA6E840DD1976644DAA8F91AD71A /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCellDebug.h"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
 		392A1091D453BB0D6297CD9A07720459 /* SDMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDMemoryCache.h; path = SDWebImage/SDMemoryCache.h; sourceTree = "<group>"; };
 		39A6FC431E547E9BF824D32D2505A093 /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/SDAnimatedImage.h; sourceTree = "<group>"; };
 		3A5F9DD95AEB3BC5CCC23848DF4ADC79 /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		3AAF31084239E12D4C570F2473CECAC0 /* WPBaseSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionModel.m; sourceTree = "<group>"; };
 		3AF8EB65F09F6CD20FC9913A2C94AA7B /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		3B90E0058DDD07A1CB7573233D441CBF /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
 		3C0D885A1097F38480A1CB73980A6409 /* Pods-WPBaseTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -507,9 +501,8 @@
 		3C6FE990E672BD000CF20BA1D1EA10E0 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		3C9B45424EDF5F9768D42D9D49E216ED /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		3D24AF1B009C29A7E1AE5265E8EDF76E /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
-		3E5DB8ADA9469486DAB054BCBFC23DD7 /* WPBaseTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPBaseTableView-prefix.pch"; sourceTree = "<group>"; };
 		3EAE38A025005793BDE5C08B11534A8A /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		3EC9A414D5E1CF0AA6D45620C6C5E6FE /* WPBaseTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPBaseTableView.h; path = WPBaseTableView/Classes/WPBaseTableView.h; sourceTree = "<group>"; };
+		3FA15A080196403544F9B1E29A384A7D /* NSObject+Json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
 		3FF13CB051C0D138537A51E883C229BC /* UIImage+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Transform.h"; path = "SDWebImage/UIImage+Transform.h"; sourceTree = "<group>"; };
 		40708231B48748CF9EC51082C069F826 /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
 		41651E303EE0E5D1B3A6471F62BB7293 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
@@ -524,19 +517,19 @@
 		4D891B35D5A7C578555E0A0FD16AE302 /* SDImageCachesManagerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManagerOperation.m; path = SDWebImage/Private/SDImageCachesManagerOperation.m; sourceTree = "<group>"; };
 		4EF57C75F4DA71AF282395F018BD838D /* Pods-WPBaseTableView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Example-Info.plist"; sourceTree = "<group>"; };
 		4F32B7CEF2CC835F9827C9AFB7E25B1E /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/SDWebImageDefine.m; sourceTree = "<group>"; };
-		4F393C94C72452BC0C86D19E0EE899A0 /* WPBaseHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseHeader.h; sourceTree = "<group>"; };
 		4F6CB0B9EFA8552CC5FB71FC85AB6175 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		4FC13A1D504B7D2BD605ADA07A07E801 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		50235D4A948DC2D5E6B49896BC2890BE /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/SDImageCoder.h; sourceTree = "<group>"; };
 		5036CE944E4D1B5CB664E48D6921BCF3 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		50811DCA8672C41F6439668D47E3DF3E /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/SDWebImageError.h; sourceTree = "<group>"; };
-		514FE97A3A78B2763E90C67DBD2859C8 /* NSObject+AddParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddParams.m"; sourceTree = "<group>"; };
-		51886B4A224C2AD3BDCE848D7401F94E /* WPBaseTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WPBaseTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		523EB416388743A7DFC9CEA67D3AE62C /* UIImageView+WPLoadBundleImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WPLoadBundleImage.m"; sourceTree = "<group>"; };
 		5262E56B8EA09049E7E7EC6E67FE8D5A /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		52EDEB3CEB6A0F6B61A2F4A4E4106BD7 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 		5386FD361D7EA4CFC4A5975C3DFD43FC /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		539C9BDFB3828B147BF466B7BD25260F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		5406FEFEF3292699B3E16B9E2D9701DE /* SDAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageView.h; path = SDWebImage/SDAnimatedImageView.h; sourceTree = "<group>"; };
 		54C0DB7532A1F2ABF2F99986A0C90FFB /* Pods-WPBaseTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPBaseTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		54E1163EA90BDE97E48A79467E5E90C8 /* WPBaseTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPBaseTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		56EE3F426339550B792D6331A84E82C1 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		581FBF00C7E493FAF3BCE21773A42C95 /* SDImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoderHelper.h; path = SDWebImage/SDImageCoderHelper.h; sourceTree = "<group>"; };
 		5A5EB1DAE6D49AE5DFC66D748A08115D /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
@@ -546,9 +539,7 @@
 		5C0D8A132BAFC70AA07A56735E36CB57 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C623A5C687A6B716EAF84FFC1B8A845 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		5CA477AF01F2D668491F0129946B514F /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		5CE5EF7FEFE3D55E75109E86C6B42CCA /* CMPhotoBrowserScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CMPhotoBrowserScrollView.h; sourceTree = "<group>"; };
 		5D78C321422D993D28D06DF7839BA3F6 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		5DAE95BF185862E6D6B1E3264AF2395C /* WPBaseTableView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WPBaseTableView.bundle; path = WPBaseTableView/WPBaseTableView.bundle; sourceTree = "<group>"; };
 		5E91BF896EF9941B9AE176264559B9CE /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/SDImageGIFCoder.m; sourceTree = "<group>"; };
 		5F4DE544BCC20B1470A614DB15E2EA1D /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		5FB16CDC5A08E2F5711E68DDB51C3D0F /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
@@ -558,26 +549,26 @@
 		618456D4EE614A03F05194DBA9E3F4AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		62637E332CD19B99FBB690F3C3139DB1 /* UITableView+FDTemplateLayoutCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITableView+FDTemplateLayoutCell.xcconfig"; sourceTree = "<group>"; };
 		648C75BB75F2BB5BB7E231F7CF4F2533 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
-		666D8AC2D331718E32CC3DCAE6466053 /* NSObject+Json.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
 		6719EFB072B488FB7AFADE53FFFF4786 /* SDWebImageDownloaderRequestModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderRequestModifier.h; path = SDWebImage/SDWebImageDownloaderRequestModifier.h; sourceTree = "<group>"; };
 		672A528BBD2BAFB570F82475DAB4CD99 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
 		674A071181E3632B07D79DDEE42BA777 /* Pods-WPBaseTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPBaseTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6765AC40B662F340243545D84865261C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		677CD6340AFE517C7563A04512493412 /* WPBaseTableView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WPBaseTableView.bundle; path = WPBaseTableView/WPBaseTableView.bundle; sourceTree = "<group>"; };
 		67AE5D156F594DD6AAEC7708E9471739 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCellDebug.m"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		699BD0861464FAB1E0DEDABB5490CEB7 /* UITableViewHeaderFooterView+WPBaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+WPBaseCategory.m"; sourceTree = "<group>"; };
+		68FAE66C59C5E7234800DFE8EAC7D861 /* WPBaseTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPBaseTableView-umbrella.h"; sourceTree = "<group>"; };
+		6969389C649D193F2BAC46D41CD7F310 /* NSObject+AddParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddParams.m"; sourceTree = "<group>"; };
 		69D25A5F4FC5C65386B33E3C4F3BE86F /* Pods-WPBaseTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPBaseTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6A6C4A3DCC9C9ACE990AE6787963B4F0 /* NSObject+Swizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
-		6D8DDE6C9E0FBD861A3CD4121DE0B7A2 /* WPBaseTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPBaseTableView-dummy.m"; sourceTree = "<group>"; };
 		6E0CA33E7316C13ED52EFF63D8388E91 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		6E84FC62DAAF0BCBA452470190B296F5 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
-		6E93729D71EF5682E5F4EA09CA7FC2D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6EC6D4B0B351E26327C6778C67C32AEE /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		70BFF9B13914EF5D78FAFC99792CB957 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		7103CBB8900C6ACA630E946925DDD1ED /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
 		715D247FB3144BC1A3AFC87CEBC0B1E2 /* Pods-WPBaseTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPBaseTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7236C6DEB88DC5387EACD179E8241467 /* UITableView+Placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
 		729528C967298D999377798A41EDCD7D /* SDImageTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageTransformer.m; path = SDWebImage/SDImageTransformer.m; sourceTree = "<group>"; };
-		72F9E694F7212A3D90AAAAC929797897 /* WPBaseTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPBaseTableView.xcconfig; sourceTree = "<group>"; };
 		748F753D470A5883A8936011A67D8D04 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		75A126550A1A5A315A8314E384245FCD /* UIImageView+WPLoadBundleImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WPLoadBundleImage.h"; sourceTree = "<group>"; };
+		7640FE23458674B89EEEE0E197642664 /* WPBaseSectionTableViewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionTableViewViewController.m; sourceTree = "<group>"; };
 		76CB0ED8479DE84F90A675C9CC17F6B1 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/NSButton+WebCache.m"; sourceTree = "<group>"; };
 		77BE07AD0DA548BFABC56E4C1E41D485 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		77C16AA63ED687DC0AE1624E4443BE1C /* Pods-WPBaseTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPBaseTableView_Example-dummy.m"; sourceTree = "<group>"; };
@@ -585,7 +576,6 @@
 		78745B3E9C9A82AFC1F7AFA84DAC9BC4 /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/SDAnimatedImageView.m; sourceTree = "<group>"; };
 		78963CC93FF95FCEF45C5CB97FCB8A05 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
 		7A9C86647E271D840530EC0E05CC45EE /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
-		7B2C990A49257819B6BA0A4AD2689A65 /* NSObject+AddParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddParams.h"; sourceTree = "<group>"; };
 		7B6371ABCD5DBF9E59E7DFA04EE2B92B /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		7BBAF8576CD98ED392BEA128AAEE44DC /* SDWebImageCacheKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheKeyFilter.m; path = SDWebImage/SDWebImageCacheKeyFilter.m; sourceTree = "<group>"; };
 		7CADCF30D94C646576A8CA58508EAAC0 /* SDWebImageError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageError.m; path = SDWebImage/SDWebImageError.m; sourceTree = "<group>"; };
@@ -594,22 +584,18 @@
 		7E6B08012F166480CFB6903532839F21 /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
 		7EB3E3B88F2EC5527085864C1462F474 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		8013F487C3A189A73654A08A81F4C24A /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
-		80EF2FA99A4E75915FC6F7A603BE8F3E /* NSObject+Swizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
 		812CF88190DD6F822184C75F9E3DF80A /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		825E11EA8FE4C841B21E4398B7995A6A /* WPBaseHeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseHeaderFooterView.h; sourceTree = "<group>"; };
+		82C7F95B1A163B93A9602443AA7147BA /* WPBaseHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseHeader.h; sourceTree = "<group>"; };
 		8456342B60F9C2C1848B0FAA4EA306B6 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		84F2590E8385F4CCBCBCB8D52236641F /* SDImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageFrame.h; path = SDWebImage/SDImageFrame.h; sourceTree = "<group>"; };
-		861602C2A041927DCCF5F47B021A89B8 /* WPBaseSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionModel.m; sourceTree = "<group>"; };
 		87CA6660C8379BB2B19FF654529FC658 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
 		88629A962F60CA52D4739DF35543FF90 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/SDImageCodersManager.m; sourceTree = "<group>"; };
-		891BBE86A54E4E1BB4E5719298DB7963 /* CMPhotoBrowserScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CMPhotoBrowserScrollView.m; sourceTree = "<group>"; };
+		8A19A1A249FB5AA67F09026B7A524A8A /* WPBaseTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPBaseTableView.xcconfig; sourceTree = "<group>"; };
 		8B162D7C407058AAE54B2066001673F1 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B55E053478172C0F793C82F3A996F8F /* WPTableViewPlaceHolderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPTableViewPlaceHolderView.m; sourceTree = "<group>"; };
-		8B999CFB67E577CC207721B773F5498E /* UIImageView+WPLoadBundleImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WPLoadBundleImage.h"; sourceTree = "<group>"; };
 		8CCCB710ADF86178BBF42424CAB9A6C9 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
-		8CF79D4D6A6019D68156B4A2BF3AAA36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8CF9295A4276FFDC6910CBEF5B216B19 /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
 		8D1CE3D2737B1E7846D445F78E6E5824 /* SDImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOCoder.m; path = SDWebImage/SDImageIOCoder.m; sourceTree = "<group>"; };
-		8DCFC4CE597E0083EE8E0CA1EBC9049F /* CMPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CMPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		8E708445B939C91DB9A9B43544D8C37E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		8E806C098F3B0232FE51BEBBCDDEA5C6 /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
 		8EE24E712FEB23D84E4113B4BB0F0F9B /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
@@ -619,6 +605,7 @@
 		9052014B0279539B92A4BEAE13112BE8 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
 		907E72CCE2F5B96DF6CF6DCB82AF7057 /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/SDImageAPNGCoder.h; sourceTree = "<group>"; };
 		9097740B72E346805C7D7099552D7671 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
+		910C8B529EEA6F7957A86C2AAFE48B14 /* WPBaseSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionModel.h; sourceTree = "<group>"; };
 		92A0D6354E12BCB5EACA3552619A0E7C /* MJRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJRefresh-Info.plist"; sourceTree = "<group>"; };
 		92DA77677360F228DC2241D18A008403 /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/SDImageCoderHelper.m; sourceTree = "<group>"; };
 		92EDBE6C86C8D22DC49F2A87D4B5B35C /* SDImageAPNGCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoderInternal.h; path = SDWebImage/Private/SDImageAPNGCoderInternal.h; sourceTree = "<group>"; };
@@ -632,22 +619,22 @@
 		978C130240F72844B100CBB0D0298730 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		97BA6A9BB8ABDC97EDA2D64246F340B2 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		97CEDF22C70F237DAA5EC3FC3B08F428 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/SDWebImageIndicator.h; sourceTree = "<group>"; };
-		99C3193DC37488B8F7992BBEBD287DC6 /* WPParseVCJsonAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPParseVCJsonAPI.m; sourceTree = "<group>"; };
 		9A782F336D2B940CDEB80154D7BE55AC /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
 		9BC1C16490BD6362CB16EAA6EBED9E5F /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
-		9BD4E1B83086BCB43213791787462711 /* WPBaseTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WPBaseTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD4E1B83086BCB43213791787462711 /* WPBaseTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPBaseTableView.framework; path = WPBaseTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB02A63C527063157CF63E01CCDD776 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E8124EAFD63CBCAE1AABCB66A03A07B /* NSObject+Json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F118A305BD74D2362AAA9B5650D8092 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		A0430DCB86EEF174FF8F2531AC8174B9 /* WPTableViewPlaceHolderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPTableViewPlaceHolderView.m; sourceTree = "<group>"; };
+		A115A2EB1780F26E882381704DF80683 /* WPBaseSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionCell.m; sourceTree = "<group>"; };
 		A17ED5AEDEEE839F58E2E5B5B2EF9C84 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		A3F1DE1971A4C50BA4AE82B5E938D78A /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/SDImageCachesManager.h; sourceTree = "<group>"; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A518D449F2AC6750457755DB523A9EA1 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		A619ECEE7EC2165F639DB919F0DFB568 /* UITableViewHeaderFooterView+WPBaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+WPBaseCategory.m"; sourceTree = "<group>"; };
 		A71356B056F147E00EED85846C97C4AA /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		A782567706EB6A5F0CF7448550A89EFF /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		A78F09D48DD95C7488BC34A3F26A9547 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		A8503D628124AE44F176086E7D318EC3 /* WPBaseHeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseHeaderFooterView.h; sourceTree = "<group>"; };
 		A8ABD0C008EA156BB8D262901A8DEBA1 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		A8D1C83941E6AD8D8A5D2398CCEED1CA /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		AA92B25824AD4397104FA9311E79A2AF /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "SDWebImage/Private/UIColor+HexString.h"; sourceTree = "<group>"; };
@@ -658,34 +645,31 @@
 		AEB2D58555A4F9925C812DE3028FD963 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
 		AF26FB0E57D8408EC05890F014ADCDD0 /* NSBezierPath+RoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+RoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.h"; sourceTree = "<group>"; };
 		AFF6A928388653DDEC6086EFE26F870A /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DA6A382125C1EFF18526E13DD13038 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		B1C86C8017BB872D2715725EC183E654 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		B23D22CFB21ED8444D35426DB5347712 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		B3C30512FFF04CC695BE7EB35F4A4D6B /* Pods-WPBaseTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPBaseTableView_Tests.modulemap"; sourceTree = "<group>"; };
-		B4A9D1DF6FC74FFDEC11B07443E952D1 /* Pods_WPBaseTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPBaseTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A9D1DF6FC74FFDEC11B07443E952D1 /* Pods_WPBaseTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPBaseTableView_Example.framework; path = "Pods-WPBaseTableView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F7E10596B02855EEB17FC5D38A78FB /* SDImageGIFCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoderInternal.h; path = SDWebImage/Private/SDImageGIFCoderInternal.h; sourceTree = "<group>"; };
 		B51E514C34D962C4AD5E97E6429E8F56 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
 		B5E0ABB37AD9418BD5B31AE94F5E5894 /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/UIImage+Metadata.m"; sourceTree = "<group>"; };
 		B6960867B220E75D9526E005EA1DDA6B /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
-		B6E2586F9128FBE29B789DEEE5AA6A84 /* WPBaseTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPBaseTableView-umbrella.h"; sourceTree = "<group>"; };
 		B884073637DB19A6A93882B952C4E047 /* SDImageCachesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManager.m; path = SDWebImage/SDImageCachesManager.m; sourceTree = "<group>"; };
 		B98F53C86DDDE8F26E2C50601789037C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		B9FD27D115182F466BBF23A72A3B3B65 /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/SDAnimatedImage.m; sourceTree = "<group>"; };
 		BA1B392F502717F812D07EE92A3DB0F5 /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/SDImageAPNGCoder.m; sourceTree = "<group>"; };
 		BA3C466BA2D0C3EDE0D1EB7392288B15 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
-		BB3A10F9456F31702F9E807EA2DBE851 /* WPTableViewPlaceHolderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPTableViewPlaceHolderView.h; sourceTree = "<group>"; };
 		BC2ED2C162A338926FC15B6F38AA0A3A /* UIImage+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Transform.m"; path = "SDWebImage/UIImage+Transform.m"; sourceTree = "<group>"; };
 		BC423522BABCEA6FA49C0626759E69CF /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		BC5113E3E14CF1A0DD0DDAAD93F2ADD3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		BC859FA6CAA7B529C8C8CE9754B2C4F2 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		BC8EC123F391764C69A7EDACD5616A42 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		BE0FBCFE79E64129C97C6C8744CCED1A /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
-		BEF2B3EB691FAFFB652B5375357A829F /* WPBaseTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPBaseTableView-Info.plist"; sourceTree = "<group>"; };
 		BF1126D58DD15C316F39819E16BCB729 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
-		BFE9E5A7232EA567632E5E619386660C /* UITableViewCell+BaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BaseCategory.h"; sourceTree = "<group>"; };
 		BFEE81110EBEA086B1F66D6FF8A45DA0 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		C176CEFEBFD7490344FF5E83773D3D9D /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		C276DF037338BD683776534D6638AC91 /* WPTableViewPlaceHolderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPTableViewPlaceHolderView.h; sourceTree = "<group>"; };
 		C2C2D3075785E9CF5027E594D6B219CA /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
 		C2D4A1E56AAFAEBAA734E7FAC2FA7FF4 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 		C2E2841189A5168255C9BBC7C75173DA /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
@@ -697,6 +681,7 @@
 		C758C41B575860F595B79E00E3C938BD /* SDAsyncBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAsyncBlockOperation.h; path = SDWebImage/Private/SDAsyncBlockOperation.h; sourceTree = "<group>"; };
 		C88B62D354D2CF72A5C7885B8BA697BA /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/SDImageIOCoder.h; sourceTree = "<group>"; };
 		C8C1C3E2891580C3824BB6263C31F3C8 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		C8D64DF67091837B1DA2AEE7BC8AF516 /* NSObject+AddParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddParams.h"; sourceTree = "<group>"; };
 		C9494B38E5EA2FAB5C22E45551DA2422 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		CA76F99E2C17EA3477FF1B20AA06CD1E /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
 		CB5F3B6810AC549C5629226B1F56F57B /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -704,15 +689,17 @@
 		CBC4D453520C972AFA41403393909E1C /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		CD308089D09302B749B3FE9A6F43195E /* SDmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDmetamacros.h; path = SDWebImage/Private/SDmetamacros.h; sourceTree = "<group>"; };
 		CD7B1F97D3CEAEB45BE9C836AB16FB30 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3EFFD4E4ED3CC33801659C6172E170 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CE9708E8F2E52045D18F7F3F7A2E1413 /* WPBaseTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPBaseTableView.h; path = WPBaseTableView/Classes/WPBaseTableView.h; sourceTree = "<group>"; };
 		CEEE7039C7512BA2D0CA95CEBA282BA5 /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/SDImageTransformer.h; sourceTree = "<group>"; };
 		CF097C7C0F396657AC9183F759778937 /* SDWebImageCacheKeyFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheKeyFilter.h; path = SDWebImage/SDWebImageCacheKeyFilter.h; sourceTree = "<group>"; };
 		D0A3F723CAE9BB44F63B6EFC8E133A95 /* SDImageGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGraphics.h; path = SDWebImage/SDImageGraphics.h; sourceTree = "<group>"; };
-		D120A40E9FDE06731D273A410540ECC5 /* CMPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CMPhotoBrowserViewController.h; sourceTree = "<group>"; };
 		D17C264B335CE2FCB83CC4F1DA25424A /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		D1809902EAFFF98A3FCD8E07854BB157 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		D18122A09289E3E59FFE308B4F875EAE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		D223FA7E317206158FA0C100BCF81005 /* WPBaseSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionModel.h; sourceTree = "<group>"; };
+		D1B6368B9E695B1D32C1DE8A89EEF93A /* UITableView+Placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
 		D2538A3A4E0B26ED39CD85D801DBE5EC /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		D255B1642870B3D4323F0A9399FDC5D5 /* WPBaseTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPBaseTableView-Info.plist"; sourceTree = "<group>"; };
 		D3273F38999B56D3B07A3CF5ADE62DA0 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		D3332FAD3CAC9F8D7BEDC9034ADF5BC8 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		D50F4F9023A4B175868CA055E4B9B878 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
@@ -722,7 +709,7 @@
 		D8EF1335BF3557E8A3B1B0BFDA8C42B2 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		D97F6D24925598D7E596B1570EDEF676 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		DAD3EDFF8BFF463BCE566A24F38355FC /* SDImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoader.m; path = SDWebImage/SDImageLoader.m; sourceTree = "<group>"; };
-		DC607ED00BEFA019AEB04DCA8F3C988B /* UITableViewHeaderFooterView+WPBaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+WPBaseCategory.h"; sourceTree = "<group>"; };
+		DB85A12F1065FFDC6EF0D9E9CAA9681F /* WPBaseHeaderFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseHeaderFooterView.m; sourceTree = "<group>"; };
 		DDCCD8E0D0C65F7C264EA45E689348C0 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/NSImage+Compatibility.m"; sourceTree = "<group>"; };
 		DDED505EAC6DB788F1D189D815B224A5 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		DE31F2B350A358DAC453054D8355A3BC /* Pods-WPBaseTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPBaseTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -733,43 +720,40 @@
 		E2609785A7B07049E6BBDAA1629CE75D /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
 		E47448C46CDA937D92036F4147D4B83E /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		E47AA794F805D2AC1C655DFF24DE3C93 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/SDDiskCache.m; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E58952291DF831A4319336F9D7D9A140 /* WPBaseTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPBaseTableView.modulemap; sourceTree = "<group>"; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53CB22DFBF4579068C718DCB06B5717 /* WPBaseTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPBaseTableView.modulemap; sourceTree = "<group>"; };
 		E6D2586D2EE66C4C8EFCF74173B76816 /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "SDWebImage/Private/UIColor+HexString.m"; sourceTree = "<group>"; };
 		E7E8C6D97E2F92FC3D3F11AACF5AADA2 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		E806C2F5D7C3C5C196C5C2A99D27E2B1 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		E8FE9B97133C6EDE3A96E35F85D6F553 /* UITableView+FDTemplateLayoutCell-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UITableView+FDTemplateLayoutCell-Info.plist"; sourceTree = "<group>"; };
 		E931229F8C51DA9365C00320E5349CC0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		E961B3380AD25C79F3557E5067195A14 /* WPBaseSectionTableViewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionTableViewViewController.m; sourceTree = "<group>"; };
 		E967C9BABB8884AC20DE908D38F3C7BA /* UITableView+FDTemplateLayoutCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell-prefix.pch"; sourceTree = "<group>"; };
 		E96BCB6CE9FC6E7AFEDED16FC08E5FC4 /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/SDImageLoadersManager.m; sourceTree = "<group>"; };
-		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F5743DFA9795249B2DA325F6E14F7 /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
 		EAFD42E8998B3AD46105A66D2AEB0593 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
 		EC5ABEA7F4FAC5CB27ACC017CA965E62 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/SDImageLoadersManager.h; sourceTree = "<group>"; };
 		ED46CE24F0A51F8187524E8A45E27F7A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		EDA36FF9E6E119EAE6497599158A8F58 /* Pods-WPBaseTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPBaseTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EE9ADCEFED4EA1BA589ABC5860AF8BC6 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDTemplateLayoutCell.m"; path = "Classes/UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		EEB303DE245FD6A51A0C9DBF9303C761 /* UITableView+Placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
-		EED84C329F56C2AC0BF86BB154C44A52 /* WPCommonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPCommonMacros.h; sourceTree = "<group>"; };
-		EF0A4D69A928B9761959566B8B319A29 /* CMPhotoBrowserAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CMPhotoBrowserAnimator.m; sourceTree = "<group>"; };
 		EF2E087EC918E1A846C332F79BE64445 /* SDInternalMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDInternalMacros.h; path = SDWebImage/Private/SDInternalMacros.h; sourceTree = "<group>"; };
 		EF39CCA2C718E8E0DC1A7A09E4BCB5AE /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
 		EFA2A52329877689C0F557E7CF3B81D1 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		EFB32B73F06163468C88736DDE49FB4B /* WPBaseSectionTableViewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionTableViewViewController.h; sourceTree = "<group>"; };
-		F068F4B12DAE970456130A1D2B6DE1D1 /* CMPhotoBrowserAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CMPhotoBrowserAnimator.h; sourceTree = "<group>"; };
 		F0883F8C22785AFFCBFF007A3524FB6F /* Pods-WPBaseTableView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Tests-Info.plist"; sourceTree = "<group>"; };
-		F0FEE6ECED7EF7E3AB37EDE8F85C5734 /* WPBaseSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionCell.m; sourceTree = "<group>"; };
 		F3EA3C222970524FCAD9D4C3899135ED /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		F4C76017BA95DDD55EB6CF91EAB9957D /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/SDImageGIFCoder.h; sourceTree = "<group>"; };
-		F68B286B9FE321CE3672C683727DBD9B /* UITableView_FDTemplateLayoutCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITableView_FDTemplateLayoutCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68B286B9FE321CE3672C683727DBD9B /* UITableView_FDTemplateLayoutCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UITableView_FDTemplateLayoutCell.framework; path = "UITableView+FDTemplateLayoutCell.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82800A0521E6C3F4847ED8BD9F35746 /* WPBaseTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPBaseTableView-dummy.m"; sourceTree = "<group>"; };
 		F9A37B2547C28254AA837D781106DF80 /* Pods-WPBaseTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FC113A68FE602605E40CE67FB9E3F7A2 /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
 		FC6BD614A47888EACC0058B9492F1899 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		FC6F95F3DEC4D38C807356DC8E8FB2C9 /* WPBaseSectionTableViewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionTableViewViewController.h; sourceTree = "<group>"; };
 		FC9A33456BD3B5A8BB3338FE9B66088C /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		FD6271E43C71100FE5E02CB8967992B7 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		FD6F7546D1F97B882BB3AACD1F77A69A /* NSObject+Json.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
 		FE20068542067D3EA1620204215AE537 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
 		FE7E47A7946F36F8C9BC6962F706ACD2 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
+		FED1F3A979A67B332C09018B953A82EF /* NSObject+Swizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
 		FEDA69B10F19DE28E453AF678BAA732A /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		FEF358389F367BED656072EBEF8C5480 /* SDImageGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGraphics.m; path = SDWebImage/SDImageGraphics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -805,21 +789,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE086886728A731AF3B4447DE41B902E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B9E75656AA0D9C7A914A8F24DD62731 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF48CFE11B2D80142D60109733A8FD4D /* AFNetworking.framework in Frameworks */,
-				6D04D14312197D83716056D567B4F749 /* Foundation.framework in Frameworks */,
-				8813D62FB21F874E7555FC22E1B9F700 /* Masonry.framework in Frameworks */,
-				2292F0DC181379A4DAC626C5B31A854F /* MJRefresh.framework in Frameworks */,
-				44E1ECEABD9488A6DFF24D53A0D72EAA /* SDWebImage.framework in Frameworks */,
-				6049E3AD1145A38DDE8780C2C68BE416 /* SVProgressHUD.framework in Frameworks */,
-				37E5327F3DDC23B2F268896C0B2D6767 /* UIKit.framework in Frameworks */,
-				C737C66B83B1C702E0F5482F8BEA6E62 /* UITableView_FDTemplateLayoutCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,6 +830,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF4E8764F51082A9AACD3653B1866FA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E6C3BBDDFF6FF7816BA9E3E0CBF47B /* AFNetworking.framework in Frameworks */,
+				85EB0FDCEC045B4A38A72B06292BAED4 /* Foundation.framework in Frameworks */,
+				0CF6278C3FB78C3B42C55775C5076E2F /* Masonry.framework in Frameworks */,
+				46090788701C6AD99E8106B262C281CA /* MJRefresh.framework in Frameworks */,
+				EEF7A4A5C90CAE58144F4A67F612F9B3 /* SDWebImage.framework in Frameworks */,
+				E442EC9FEABA4563AD0DA7A34DEF5AB0 /* SVProgressHUD.framework in Frameworks */,
+				0CB19961ECD7D24729893C3DA6AEEFD8 /* UIKit.framework in Frameworks */,
+				1B81D4D4D82D20F8FFD75442843F7138 /* UITableView_FDTemplateLayoutCell.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -879,20 +863,46 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		2E330212E33A9A3B5F34092F1AC2A686 /* PhotoBrowser */ = {
+		26A946D5C82A02464CD0C5F8CAB6B87B /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				22B05C199735CAC48614A8E111E6BB31 /* CMCircleLoadingLayer.h */,
-				24DEE9F0126A6676DF0522850BE20500 /* CMCircleLoadingLayer.m */,
-				F068F4B12DAE970456130A1D2B6DE1D1 /* CMPhotoBrowserAnimator.h */,
-				EF0A4D69A928B9761959566B8B319A29 /* CMPhotoBrowserAnimator.m */,
-				5CE5EF7FEFE3D55E75109E86C6B42CCA /* CMPhotoBrowserScrollView.h */,
-				891BBE86A54E4E1BB4E5719298DB7963 /* CMPhotoBrowserScrollView.m */,
-				D120A40E9FDE06731D273A410540ECC5 /* CMPhotoBrowserViewController.h */,
-				8DCFC4CE597E0083EE8E0CA1EBC9049F /* CMPhotoBrowserViewController.m */,
+				82C7F95B1A163B93A9602443AA7147BA /* WPBaseHeader.h */,
+				1A9BD8A939943111273276A25BCBA218 /* WPCommonMacros.h */,
 			);
-			name = PhotoBrowser;
-			path = WPBaseTableView/Classes/PhotoBrowser;
+			name = Headers;
+			path = WPBaseTableView/Classes/Headers;
+			sourceTree = "<group>";
+		};
+		31B443CB9903095CC0C5F3F49F034794 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				36826BFF9D069DB3F3C9D3A55418F862 /* LICENSE */,
+				CE3EFFD4E4ED3CC33801659C6172E170 /* README.md */,
+				54E1163EA90BDE97E48A79467E5E90C8 /* WPBaseTableView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		360242FF522D6F30D658EA3B83A15186 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C8D64DF67091837B1DA2AEE7BC8AF516 /* NSObject+AddParams.h */,
+				6969389C649D193F2BAC46D41CD7F310 /* NSObject+AddParams.m */,
+				3FA15A080196403544F9B1E29A384A7D /* NSObject+Json.h */,
+				FD6F7546D1F97B882BB3AACD1F77A69A /* NSObject+Json.m */,
+				FED1F3A979A67B332C09018B953A82EF /* NSObject+Swizzle.h */,
+				52EDEB3CEB6A0F6B61A2F4A4E4106BD7 /* NSObject+Swizzle.m */,
+				75A126550A1A5A315A8314E384245FCD /* UIImageView+WPLoadBundleImage.h */,
+				523EB416388743A7DFC9CEA67D3AE62C /* UIImageView+WPLoadBundleImage.m */,
+				D1B6368B9E695B1D32C1DE8A89EEF93A /* UITableView+Placeholder.h */,
+				7236C6DEB88DC5387EACD179E8241467 /* UITableView+Placeholder.m */,
+				27037AA1E971E9F950068523DC92DEE2 /* UITableViewCell+BaseCategory.h */,
+				275DA3C761EBCADD13BEBB73DE58FC36 /* UITableViewCell+BaseCategory.m */,
+				11599675053D38A34E2BF4AAE54DFB99 /* UITableViewHeaderFooterView+WPBaseCategory.h */,
+				A619ECEE7EC2165F639DB919F0DFB568 /* UITableViewHeaderFooterView+WPBaseCategory.m */,
+			);
+			name = Category;
+			path = WPBaseTableView/Classes/Category;
 			sourceTree = "<group>";
 		};
 		36F38312D0FD16D547005DD2D4BD32B4 /* Support Files */ = {
@@ -947,6 +957,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3E13EAC1150AF47B9C5BD8C25B043D72 /* WPBaseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				CE9708E8F2E52045D18F7F3F7A2E1413 /* WPBaseTableView.h */,
+				572D1883E28C9614D56CF363FA0EB409 /* BaseTableView */,
+				360242FF522D6F30D658EA3B83A15186 /* Category */,
+				26A946D5C82A02464CD0C5F8CAB6B87B /* Headers */,
+				FB2DBD7050427C623F69E45629F72B15 /* NetWorkAPI */,
+				31B443CB9903095CC0C5F3F49F034794 /* Pod */,
+				CC817382741BCFAF6AAAE22DAEA89144 /* Resources */,
+				6146744FA70A6F54039BAFB2B7CC2424 /* Support Files */,
+			);
+			name = WPBaseTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		4AEBE6E4A9009507E8FC4EDBE8F3BD12 /* Security */ = {
 			isa = PBXGroup;
 			children = (
@@ -954,14 +980,6 @@
 				6122FA89042E97BF7E997832D862786D /* AFSecurityPolicy.m */,
 			);
 			name = Security;
-			sourceTree = "<group>";
-		};
-		4DD6DD21C06640BDC89C8CAA32C008B2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5DAE95BF185862E6D6B1E3264AF2395C /* WPBaseTableView.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		564AA660850433EFBF2AC1E2915AB368 /* Support Files */ = {
@@ -978,6 +996,38 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
+		572D1883E28C9614D56CF363FA0EB409 /* BaseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				825E11EA8FE4C841B21E4398B7995A6A /* WPBaseHeaderFooterView.h */,
+				DB85A12F1065FFDC6EF0D9E9CAA9681F /* WPBaseHeaderFooterView.m */,
+				2CCA335F2AAA35133A89E447A122AAA4 /* WPBaseSectionCell.h */,
+				A115A2EB1780F26E882381704DF80683 /* WPBaseSectionCell.m */,
+				910C8B529EEA6F7957A86C2AAFE48B14 /* WPBaseSectionModel.h */,
+				3AAF31084239E12D4C570F2473CECAC0 /* WPBaseSectionModel.m */,
+				FC6F95F3DEC4D38C807356DC8E8FB2C9 /* WPBaseSectionTableViewViewController.h */,
+				7640FE23458674B89EEEE0E197642664 /* WPBaseSectionTableViewViewController.m */,
+				C276DF037338BD683776534D6638AC91 /* WPTableViewPlaceHolderView.h */,
+				A0430DCB86EEF174FF8F2531AC8174B9 /* WPTableViewPlaceHolderView.m */,
+			);
+			name = BaseTableView;
+			path = WPBaseTableView/Classes/BaseTableView;
+			sourceTree = "<group>";
+		};
+		6146744FA70A6F54039BAFB2B7CC2424 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E53CB22DFBF4579068C718DCB06B5717 /* WPBaseTableView.modulemap */,
+				8A19A1A249FB5AA67F09026B7A524A8A /* WPBaseTableView.xcconfig */,
+				F82800A0521E6C3F4847ED8BD9F35746 /* WPBaseTableView-dummy.m */,
+				D255B1642870B3D4323F0A9399FDC5D5 /* WPBaseTableView-Info.plist */,
+				17F76697E93695F5EE1EC93D33F2E75D /* WPBaseTableView-prefix.pch */,
+				68FAE66C59C5E7234800DFE8EAC7D861 /* WPBaseTableView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WPBaseTableView";
+			sourceTree = "<group>";
+		};
 		6B0D3BB492D000A6D41BEFD9378558AD /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
@@ -987,42 +1037,6 @@
 				C9494B38E5EA2FAB5C22E45551DA2422 /* AFURLSessionManager.m */,
 			);
 			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		6E1E6EF796A76F54B9040343004A5E55 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				7B2C990A49257819B6BA0A4AD2689A65 /* NSObject+AddParams.h */,
-				514FE97A3A78B2763E90C67DBD2859C8 /* NSObject+AddParams.m */,
-				9E8124EAFD63CBCAE1AABCB66A03A07B /* NSObject+Json.h */,
-				666D8AC2D331718E32CC3DCAE6466053 /* NSObject+Json.m */,
-				80EF2FA99A4E75915FC6F7A603BE8F3E /* NSObject+Swizzle.h */,
-				6A6C4A3DCC9C9ACE990AE6787963B4F0 /* NSObject+Swizzle.m */,
-				8B999CFB67E577CC207721B773F5498E /* UIImageView+WPLoadBundleImage.h */,
-				0C2CB1B8FEE3300AB84336718888B52F /* UIImageView+WPLoadBundleImage.m */,
-				EEB303DE245FD6A51A0C9DBF9303C761 /* UITableView+Placeholder.h */,
-				3566DE0EC169422B46826AAEA2B0C42E /* UITableView+Placeholder.m */,
-				BFE9E5A7232EA567632E5E619386660C /* UITableViewCell+BaseCategory.h */,
-				2856876BB7A71995F4855B0DBDAB7B29 /* UITableViewCell+BaseCategory.m */,
-				DC607ED00BEFA019AEB04DCA8F3C988B /* UITableViewHeaderFooterView+WPBaseCategory.h */,
-				699BD0861464FAB1E0DEDABB5490CEB7 /* UITableViewHeaderFooterView+WPBaseCategory.m */,
-			);
-			name = Category;
-			path = WPBaseTableView/Classes/Category;
-			sourceTree = "<group>";
-		};
-		7F6D22C5C8C1F52BCC3E2E1F5498296F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E58952291DF831A4319336F9D7D9A140 /* WPBaseTableView.modulemap */,
-				72F9E694F7212A3D90AAAAC929797897 /* WPBaseTableView.xcconfig */,
-				6D8DDE6C9E0FBD861A3CD4121DE0B7A2 /* WPBaseTableView-dummy.m */,
-				BEF2B3EB691FAFFB652B5375357A829F /* WPBaseTableView-Info.plist */,
-				3E5DB8ADA9469486DAB054BCBFC23DD7 /* WPBaseTableView-prefix.pch */,
-				B6E2586F9128FBE29B789DEEE5AA6A84 /* WPBaseTableView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WPBaseTableView";
 			sourceTree = "<group>";
 		};
 		82BE20EA8A1195813DEC9BD543CE3933 /* Support Files */ = {
@@ -1052,6 +1066,7 @@
 				67AE5D156F594DD6AAEC7708E9471739 /* UITableView+FDTemplateLayoutCellDebug.m */,
 				82BE20EA8A1195813DEC9BD543CE3933 /* Support Files */,
 			);
+			name = "UITableView+FDTemplateLayoutCell";
 			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
@@ -1177,16 +1192,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		8EA77DDDA436AFA6629C47BF01736FF0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6E93729D71EF5682E5F4EA09CA7FC2D6 /* LICENSE */,
-				8CF79D4D6A6019D68156B4A2BF3AAA36 /* README.md */,
-				51886B4A224C2AD3BDCE848D7401F94E /* WPBaseTableView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		9115FB8AAC4AA80A959DF4996C0F1C2A /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1201,6 +1206,7 @@
 				B0764E80651C563F7C31D7DA29C9600D /* Resources */,
 				36F38312D0FD16D547005DD2D4BD32B4 /* Support Files */,
 			);
+			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1221,16 +1227,6 @@
 				95206BF3ABD156AE8D0A3152C07736B9 /* MJRefresh.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		9BF9788F4FE8AF944F58201FBD9565FF /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				4F393C94C72452BC0C86D19E0EE899A0 /* WPBaseHeader.h */,
-				EED84C329F56C2AC0BF86BB154C44A52 /* WPCommonMacros.h */,
-			);
-			name = Headers;
-			path = WPBaseTableView/Classes/Headers;
 			sourceTree = "<group>";
 		};
 		A050848ACBD2AFAA655E95B865A65675 /* Support Files */ = {
@@ -1272,14 +1268,6 @@
 				AB541D7E94845F17D11159D556809C3E /* UIWebView+AFNetworking.m */,
 			);
 			name = UIKit;
-			sourceTree = "<group>";
-		};
-		A3E91BB736A64671BA31BC7FF5038A08 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D085A4ECE6745566AC91E3CCEEF145AC /* WPBaseTableView */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		A9347E55701610F31CC58C7608C1B357 /* MJRefresh */ = {
@@ -1327,6 +1315,7 @@
 				9B798069BE9B31CDBADF392C0C22971F /* Resources */,
 				EA646DDC8D760F73A78033BF94FF4C2C /* Support Files */,
 			);
+			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1358,6 +1347,7 @@
 				A050848ACBD2AFAA655E95B865A65675 /* Support Files */,
 				A15FDB45F54E6F298B3F1E14987A0AEE /* UIKit */,
 			);
+			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1374,12 +1364,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C7739B71165C515C664AA55DF36BB16F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E13EAC1150AF47B9C5BD8C25B043D72 /* WPBaseTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		CB3B7515AE9A90852AF48262A3AEDFA3 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
 				8B9183830B005499068092F6E9BEB4D5 /* Core */,
 				39B8E76B80278284F035286CD29A08CB /* Support Files */,
 			);
+			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1399,33 +1398,24 @@
 			path = "Target Support Files/Pods-WPBaseTableView_Tests";
 			sourceTree = "<group>";
 		};
+		CC817382741BCFAF6AAAE22DAEA89144 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				677CD6340AFE517C7563A04512493412 /* WPBaseTableView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A3E91BB736A64671BA31BC7FF5038A08 /* Development Pods */,
+				C7739B71165C515C664AA55DF36BB16F /* Development Pods */,
 				DE6693462B76AD4772D4283C4F54FECB /* Frameworks */,
 				C0DAAA27A30BCC0816293AF65C936613 /* Pods */,
 				3DB0B28C54D34315B5773C059E29A3AB /* Products */,
 				3A8206D988FDD18E544A5A9038C9B394 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D085A4ECE6745566AC91E3CCEEF145AC /* WPBaseTableView */ = {
-			isa = PBXGroup;
-			children = (
-				3EC9A414D5E1CF0AA6D45620C6C5E6FE /* WPBaseTableView.h */,
-				FF6DCC096163565E7F55E499088C510E /* BaseTableView */,
-				6E1E6EF796A76F54B9040343004A5E55 /* Category */,
-				9BF9788F4FE8AF944F58201FBD9565FF /* Headers */,
-				F4D5DF035C69BA363BFB0006C0F9BAC7 /* NetWorkAPI */,
-				2E330212E33A9A3B5F34092F1AC2A686 /* PhotoBrowser */,
-				8EA77DDDA436AFA6629C47BF01736FF0 /* Pod */,
-				4DD6DD21C06640BDC89C8CAA32C008B2 /* Resources */,
-				7F6D22C5C8C1F52BCC3E2E1F5498296F /* Support Files */,
-			);
-			name = WPBaseTableView;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		DE6693462B76AD4772D4283C4F54FECB /* Frameworks */ = {
@@ -1472,6 +1462,7 @@
 				AC4549F87EBF1081AFD30B973262512C /* ViewController+MASAdditions.m */,
 				564AA660850433EFBF2AC1E2915AB368 /* Support Files */,
 			);
+			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1487,16 +1478,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MJRefresh";
-			sourceTree = "<group>";
-		};
-		F4D5DF035C69BA363BFB0006C0F9BAC7 /* NetWorkAPI */ = {
-			isa = PBXGroup;
-			children = (
-				1754D17EE4A67FD50B8BE0E94A31F4C3 /* WPParseVCJsonAPI.h */,
-				99C3193DC37488B8F7992BBEBD287DC6 /* WPParseVCJsonAPI.m */,
-			);
-			name = NetWorkAPI;
-			path = WPBaseTableView/Classes/NetWorkAPI;
 			sourceTree = "<group>";
 		};
 		FA4DBCB5FD5111D50A520084BFB8470F /* Pods-WPBaseTableView_Example */ = {
@@ -1516,22 +1497,14 @@
 			path = "Target Support Files/Pods-WPBaseTableView_Example";
 			sourceTree = "<group>";
 		};
-		FF6DCC096163565E7F55E499088C510E /* BaseTableView */ = {
+		FB2DBD7050427C623F69E45629F72B15 /* NetWorkAPI */ = {
 			isa = PBXGroup;
 			children = (
-				A8503D628124AE44F176086E7D318EC3 /* WPBaseHeaderFooterView.h */,
-				27E7F2A644BAFBFB0DABFBF3D91ECDA5 /* WPBaseHeaderFooterView.m */,
-				0244CEEB451B636D16E64136C4444CF4 /* WPBaseSectionCell.h */,
-				F0FEE6ECED7EF7E3AB37EDE8F85C5734 /* WPBaseSectionCell.m */,
-				D223FA7E317206158FA0C100BCF81005 /* WPBaseSectionModel.h */,
-				861602C2A041927DCCF5F47B021A89B8 /* WPBaseSectionModel.m */,
-				EFB32B73F06163468C88736DDE49FB4B /* WPBaseSectionTableViewViewController.h */,
-				E961B3380AD25C79F3557E5067195A14 /* WPBaseSectionTableViewViewController.m */,
-				BB3A10F9456F31702F9E807EA2DBE851 /* WPTableViewPlaceHolderView.h */,
-				8B55E053478172C0F793C82F3A996F8F /* WPTableViewPlaceHolderView.m */,
+				135AACBA40C14B9A01D27944F87CFFD9 /* WPParseSectionsModel.h */,
+				22687D0758A4C47E403DF667DDB791E0 /* WPParseSectionsModel.m */,
 			);
-			name = BaseTableView;
-			path = WPBaseTableView/Classes/BaseTableView;
+			name = NetWorkAPI;
+			path = WPBaseTableView/Classes/NetWorkAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1610,34 +1583,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		811D9F88B9DA97D66256EE0FA99F9E76 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				641D051A7F6FA4ABB9E7D8453C9FB0A7 /* CMCircleLoadingLayer.h in Headers */,
-				448D9B31236C49689088B98E7955E6D0 /* CMPhotoBrowserAnimator.h in Headers */,
-				FA90754E16963C9484F2F57A2D28E879 /* CMPhotoBrowserScrollView.h in Headers */,
-				413579AD0F6D7D5EE62AC944EA022485 /* CMPhotoBrowserViewController.h in Headers */,
-				833F8DC5DE3E4392433FC982E70F3FA9 /* NSObject+AddParams.h in Headers */,
-				22D82ACF779F625762C77AFF234A78B6 /* NSObject+Json.h in Headers */,
-				1C8FD4F73850B89566A1E29D2C6C3864 /* NSObject+Swizzle.h in Headers */,
-				8899A2E85647B4F925CD5781FA81462F /* UIImageView+WPLoadBundleImage.h in Headers */,
-				CD19E17F89DF739C2EDB341B86EBA536 /* UITableView+Placeholder.h in Headers */,
-				57E47DE0DBB18DBE0AF52F656E1D112C /* UITableViewCell+BaseCategory.h in Headers */,
-				7FEDADFFF77DF4114E6036F29D09F136 /* UITableViewHeaderFooterView+WPBaseCategory.h in Headers */,
-				F75D23DC90510DEF164CE4FD3E8302F9 /* WPBaseHeader.h in Headers */,
-				3BA17EDA938C5B82E6BE063BB1B7FC02 /* WPBaseHeaderFooterView.h in Headers */,
-				ADA4DAE7A1251E3A85B4FAD6B6D1BA3F /* WPBaseSectionCell.h in Headers */,
-				5BA164F397EA387B7A31BCA60D3886E4 /* WPBaseSectionModel.h in Headers */,
-				0AD22C36BC32B472CDB6DA9CFC4E454B /* WPBaseSectionTableViewViewController.h in Headers */,
-				C2B0CC3E7784AC1A782C7F2DFDC06B19 /* WPBaseTableView-umbrella.h in Headers */,
-				7DA33CED53B5952F05AA5ACFF9D22742 /* WPBaseTableView.h in Headers */,
-				6DA6CC217BF1CF2DF587C94C706F0155 /* WPCommonMacros.h in Headers */,
-				5FAC4980DAC3CF66FDEBCD6581400661 /* WPParseVCJsonAPI.h in Headers */,
-				6806B0DD1A06A90213E2F3DC26450BE8 /* WPTableViewPlaceHolderView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B7EFE07F1FBB625F8CAA7CE0C41A4E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1710,6 +1655,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6412640046F0363F4EE04419A75169D /* Pods-WPBaseTableView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E9861AAF59709E686A868AB24B8BF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763B2F35D5128F5DD701EB24309DBAAD /* NSObject+AddParams.h in Headers */,
+				520B8BEADF04C122D15BED8750646C3A /* NSObject+Json.h in Headers */,
+				08D2A9388AEDE5DCE6EE1AB5ECAAC9DD /* NSObject+Swizzle.h in Headers */,
+				17E3B9AB209E649EB02E50BA536EEDBB /* UIImageView+WPLoadBundleImage.h in Headers */,
+				F2210091A3DFD1A756FE4B023111DB11 /* UITableView+Placeholder.h in Headers */,
+				3D250F7BEFD78AFD0F7DC5A695E5174C /* UITableViewCell+BaseCategory.h in Headers */,
+				5604C617C8FDD9858E5D90672D169085 /* UITableViewHeaderFooterView+WPBaseCategory.h in Headers */,
+				88495146CDEA1F5E59F1B413F130F4BA /* WPBaseHeader.h in Headers */,
+				744DAF747EB3C1839034AFF657A99B8A /* WPBaseHeaderFooterView.h in Headers */,
+				B52E605DC7DD39FFF7B4F151BF2DC7F1 /* WPBaseSectionCell.h in Headers */,
+				5889D2D375EE8ED08E18C3D34ABB3D69 /* WPBaseSectionModel.h in Headers */,
+				EFA3C0EF355F236A0FD24C24DDA47ABB /* WPBaseSectionTableViewViewController.h in Headers */,
+				BD5D46E6B05922A48F973F1B36BC5C2F /* WPBaseTableView-umbrella.h in Headers */,
+				A1F7A9ED140B43DFF27580B7B73B870A /* WPBaseTableView.h in Headers */,
+				00AD1D67F957535771170899D9B87731 /* WPCommonMacros.h in Headers */,
+				0308D6E2F327261C30F24D8EA0D3230A /* WPParseSectionsModel.h in Headers */,
+				E93A0CD180BE5747169E79F401164F44 /* WPTableViewPlaceHolderView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1906,22 +1875,22 @@
 		};
 		839EEE9537A9CBD8C043C2603FEA43CD /* WPBaseTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10085A9B34FF1CF9EFE21734C37BED84 /* Build configuration list for PBXNativeTarget "WPBaseTableView" */;
+			buildConfigurationList = 6A13001A88DBAAA7D8CE125B4A7CDD7C /* Build configuration list for PBXNativeTarget "WPBaseTableView" */;
 			buildPhases = (
-				811D9F88B9DA97D66256EE0FA99F9E76 /* Headers */,
-				288B8EB4C27F53C1FCD1415E37668522 /* Sources */,
-				8B9E75656AA0D9C7A914A8F24DD62731 /* Frameworks */,
-				B6FBB6EB82CAADC570C952CA166EF9B9 /* Resources */,
+				D0E9861AAF59709E686A868AB24B8BF1 /* Headers */,
+				B1110AC1309424C0D9C241A3470A85E6 /* Sources */,
+				EF4E8764F51082A9AACD3653B1866FA4 /* Frameworks */,
+				E9B86477E43ED7A957A75E0A479E403B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C230900740CEDD18481C54303738B27C /* PBXTargetDependency */,
-				E95176520140E100571823C9BC825C5B /* PBXTargetDependency */,
-				EC4DE6FC8595275D26B8C049E7D9021B /* PBXTargetDependency */,
-				849C3836B7F9FAC8FB63860340510556 /* PBXTargetDependency */,
-				53DCC83D32C2DBA5497D4A6A42A4E5C5 /* PBXTargetDependency */,
-				AEFBBE054BD82E15C463A7129447860A /* PBXTargetDependency */,
+				555A043F8D445ED38E6AB8B14E8C8E3D /* PBXTargetDependency */,
+				0CDF788D3574671D681B7E1634785430 /* PBXTargetDependency */,
+				83E40DBA8C64B33618555E46BD5A0867 /* PBXTargetDependency */,
+				4EA4ECEA013BF5C018E018CA8D9D5FE3 /* PBXTargetDependency */,
+				5C803F3D585B91A14AEA4A8935A0E7A2 /* PBXTargetDependency */,
+				62B8C906D7850D94D4B01C4B4E2BE2F9 /* PBXTargetDependency */,
 			);
 			name = WPBaseTableView;
 			productName = WPBaseTableView;
@@ -2007,14 +1976,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6FBB6EB82CAADC570C952CA166EF9B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23DABB6B46EECA61F2393D00F3F486FD /* WPBaseTableView.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D4F8520DBD8753BE0407CBF715BF476B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2026,6 +1987,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B86477E43ED7A957A75E0A479E403B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C7B9683EADEA1857E499CA52503DF2 /* WPBaseTableView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2047,31 +2016,6 @@
 				C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */,
 				0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		288B8EB4C27F53C1FCD1415E37668522 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B1D63A710DDD294D4575EF7FFACD3F1 /* CMCircleLoadingLayer.m in Sources */,
-				7B5060E821143F973E67108B4BC34EEB /* CMPhotoBrowserAnimator.m in Sources */,
-				6BC9C3EB851D88AB966B637752EAADEA /* CMPhotoBrowserScrollView.m in Sources */,
-				1ACCE30C341EE0C8EAE1BF686C107576 /* CMPhotoBrowserViewController.m in Sources */,
-				83AF015D0DAD115AB7C4F9062D1DE732 /* NSObject+AddParams.m in Sources */,
-				B85A6A967E42AA829681E7C0148624E1 /* NSObject+Json.m in Sources */,
-				F84A90988B4712411DF4596BF9F86457 /* NSObject+Swizzle.m in Sources */,
-				C7BE4BDDFB2651CF488EEF5DB554F5A9 /* UIImageView+WPLoadBundleImage.m in Sources */,
-				6F44B4C9DB53FDABDBA5EC3ACF78260A /* UITableView+Placeholder.m in Sources */,
-				397212DFCA369BEF62C1B52897DA3572 /* UITableViewCell+BaseCategory.m in Sources */,
-				3EFEDDB67852F65FE8CD2FA36817081A /* UITableViewHeaderFooterView+WPBaseCategory.m in Sources */,
-				287EA226643893823D31C461567D4C9B /* WPBaseHeaderFooterView.m in Sources */,
-				E4C987F40BD1A9F9C3BB8D67545D8A34 /* WPBaseSectionCell.m in Sources */,
-				155CC8BE282133C1768AC0A0A2AB612C /* WPBaseSectionModel.m in Sources */,
-				33E99F37D78E6D0ADD6DDDDC7F011D20 /* WPBaseSectionTableViewViewController.m in Sources */,
-				9A1A37DE84B6E9D06141BDDFE3717137 /* WPBaseTableView-dummy.m in Sources */,
-				A6E402C18F00B0D3F2CCE2C530517036 /* WPParseVCJsonAPI.m in Sources */,
-				612E7681F039678AED60C96CF88F6F06 /* WPTableViewPlaceHolderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2181,6 +2125,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1110AC1309424C0D9C241A3470A85E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB0527994149CADF4DE5C0671D16382 /* NSObject+AddParams.m in Sources */,
+				1203EDEC87C3F4E9866CE688B80E4F7B /* NSObject+Json.m in Sources */,
+				15A8547BF148CEE7C62C4142562BEAEE /* NSObject+Swizzle.m in Sources */,
+				BB9148B210B22B407CCFB0031303A7D0 /* UIImageView+WPLoadBundleImage.m in Sources */,
+				6B80D7102B1FFCF9E7B194205CD6D03E /* UITableView+Placeholder.m in Sources */,
+				392CCA0F5E1A498189042E70EDF7E4D9 /* UITableViewCell+BaseCategory.m in Sources */,
+				77C4519DB02F5D6165AB0846DD34D9F7 /* UITableViewHeaderFooterView+WPBaseCategory.m in Sources */,
+				191C0249A43B5131D1A1622FB2DADF38 /* WPBaseHeaderFooterView.m in Sources */,
+				C0AE738760989C91B1C7669B67D70FA6 /* WPBaseSectionCell.m in Sources */,
+				6CCC912EB26E52A6AD9541E292F4A339 /* WPBaseSectionModel.m in Sources */,
+				E1AD14A2BAE6FE686255A74E415C2C1B /* WPBaseSectionTableViewViewController.m in Sources */,
+				310380EF1C3CD6D26E0AD334C854609F /* WPBaseTableView-dummy.m in Sources */,
+				BDF11E95479C3BA067178EBFF9B669FC /* WPParseSectionsModel.m in Sources */,
+				A94DBC004A9F9674FE8F507542996866 /* WPTableViewPlaceHolderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3A52E89D47B2BC46EF3D8D64D82FF9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2231,6 +2196,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0CDF788D3574671D681B7E1634785430 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
+			targetProxy = EA318361A205BA193A7506AC781C38C2 /* PBXContainerItemProxy */;
+		};
 		4780E2F0F7A672833DF13E2FE2F7D563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "UITableView+FDTemplateLayoutCell";
@@ -2243,11 +2214,29 @@
 			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
 			targetProxy = C76F01F438FFEADDDDF9EDFC76E3B8CD /* PBXContainerItemProxy */;
 		};
-		53DCC83D32C2DBA5497D4A6A42A4E5C5 /* PBXTargetDependency */ = {
+		4EA4ECEA013BF5C018E018CA8D9D5FE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
+			targetProxy = B04DB212A938C4DDCB061C51128F1EAE /* PBXContainerItemProxy */;
+		};
+		555A043F8D445ED38E6AB8B14E8C8E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = BB4E7E596742CEFB46DECB2D83232714 /* PBXContainerItemProxy */;
+		};
+		5C803F3D585B91A14AEA4A8935A0E7A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
-			targetProxy = 0FB0C45965C0CFE2CA7CC0A6C44300AA /* PBXContainerItemProxy */;
+			targetProxy = E91421A182A449E7A78B5EA1987E5B33 /* PBXContainerItemProxy */;
+		};
+		62B8C906D7850D94D4B01C4B4E2BE2F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UITableView+FDTemplateLayoutCell";
+			target = 2006263064A94C0063192AE0D2C3F409 /* UITableView+FDTemplateLayoutCell */;
+			targetProxy = 2A98F8AAAA45F2326E9FD222D4E53B24 /* PBXContainerItemProxy */;
 		};
 		69037FCE4051A9C77119A705B386E7C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2261,11 +2250,11 @@
 			target = 36F92E4A61CF0D859164F336C7CC7631 /* Pods-WPBaseTableView_Example */;
 			targetProxy = B897E460FCDBD5525971DA6BFFA38D2E /* PBXContainerItemProxy */;
 		};
-		849C3836B7F9FAC8FB63860340510556 /* PBXTargetDependency */ = {
+		83E40DBA8C64B33618555E46BD5A0867 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = 07D2E98FF3DEED5756450AD3101AE54A /* PBXContainerItemProxy */;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 8CF0007CA2A9D168B9C340409860183F /* PBXContainerItemProxy */;
 		};
 		857FDD1B57B2D061E477A1F6CA1CD962 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2273,41 +2262,17 @@
 			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
 			targetProxy = 86E1110A87444DE04A67D389C77503F2 /* PBXContainerItemProxy */;
 		};
-		AEFBBE054BD82E15C463A7129447860A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UITableView+FDTemplateLayoutCell";
-			target = 2006263064A94C0063192AE0D2C3F409 /* UITableView+FDTemplateLayoutCell */;
-			targetProxy = ECDF53EE4CEB91CC28AE6C8B63F15A7F /* PBXContainerItemProxy */;
-		};
 		BE97318714C0D5A579A0C0D7FA6E5535 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
 			targetProxy = 56938D5D6FF5A13A701C5F9DCBD7B952 /* PBXContainerItemProxy */;
 		};
-		C230900740CEDD18481C54303738B27C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = D55203F05095839474E8BACACAB55B73 /* PBXContainerItemProxy */;
-		};
 		E0A12D7100182BC03C6BCBA81892666E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WPBaseTableView;
 			target = 839EEE9537A9CBD8C043C2603FEA43CD /* WPBaseTableView */;
 			targetProxy = FBB6B3FEEC316DE7191AD25A13FCA2C1 /* PBXContainerItemProxy */;
-		};
-		E95176520140E100571823C9BC825C5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
-			targetProxy = E10A90986CA1393C19F515C686CC37E6 /* PBXContainerItemProxy */;
-		};
-		EC4DE6FC8595275D26B8C049E7D9021B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = DDAAA5B999F7EDB2E266B74A4FCE6FEC /* PBXContainerItemProxy */;
 		};
 		FD7173E0B52C1F4D6740C8F64B3A493A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2480,9 +2445,9 @@
 			};
 			name = Release;
 		};
-		2D99ABEA1E2CE57D5C236C7B7846ED1A /* Release */ = {
+		438A7FB4C2383B68CC35E0D5CCEF71C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72F9E694F7212A3D90AAAAC929797897 /* WPBaseTableView.xcconfig */;
+			baseConfigurationReference = 8A19A1A249FB5AA67F09026B7A524A8A /* WPBaseTableView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2565,7 +2530,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -2602,6 +2568,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		682A21D0E17FD15275BF18E01891E75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A19A1A249FB5AA67F09026B7A524A8A /* WPBaseTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WPBaseTableView/WPBaseTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPBaseTableView/WPBaseTableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPBaseTableView/WPBaseTableView.modulemap";
+				PRODUCT_MODULE_NAME = WPBaseTableView;
+				PRODUCT_NAME = WPBaseTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		72305E63D066D10CBE6ED2F1D0AD7090 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2985,49 +2982,9 @@
 			};
 			name = Debug;
 		};
-		EE202AAF165AC67BCFFC6661DB780B7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72F9E694F7212A3D90AAAAC929797897 /* WPBaseTableView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WPBaseTableView/WPBaseTableView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPBaseTableView/WPBaseTableView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WPBaseTableView/WPBaseTableView.modulemap";
-				PRODUCT_MODULE_NAME = WPBaseTableView;
-				PRODUCT_NAME = WPBaseTableView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10085A9B34FF1CF9EFE21734C37BED84 /* Build configuration list for PBXNativeTarget "WPBaseTableView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE202AAF165AC67BCFFC6661DB780B7A /* Debug */,
-				2D99ABEA1E2CE57D5C236C7B7846ED1A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3042,6 +2999,15 @@
 			buildConfigurations = (
 				B69FB6E357C00184616E229B2FE01F45 /* Debug */,
 				9E9D949493F2099A7A0D3B66714EFAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A13001A88DBAAA7D8CE125B4A7CDD7C /* Build configuration list for PBXNativeTarget "WPBaseTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682A21D0E17FD15275BF18E01891E75A /* Debug */,
+				438A7FB4C2383B68CC35E0D5CCEF71C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

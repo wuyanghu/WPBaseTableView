@@ -7,7 +7,7 @@
 //
 
 #import "UITableView+Placeholder.h"
-#import "NSObject+Swizzle.h"
+#import <objc/runtime.h>
 
 @implementation UITableView (Placeholder)
 
@@ -15,7 +15,9 @@
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzleInstanceSelector:@selector(reloadData) WithSwizzledSelector:@selector(gy_reloadData)];
+        Method originMethod = class_getInstanceMethod(self, @selector(reloadData));
+        Method swizzledMethod = class_getInstanceMethod(self, @selector(gy_reloadData));
+        method_exchangeImplementations(originMethod, swizzledMethod);        
     });
 }
 

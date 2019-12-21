@@ -9,7 +9,7 @@
 @class WPBaseSectionsModel;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WPParseVCJsonAPI : NSObject
+@interface WPParseSectionsModel : NSObject
 + (WPBaseSectionsModel *)parseServerJsonToBaseSetcionModel:(NSDictionary *)jsonDict;
 + (WPBaseSectionsModel *)parseLocalJsonToBaseSetcionModel:(NSDictionary *)configDict;
 @end
