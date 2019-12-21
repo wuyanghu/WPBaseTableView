@@ -10,9 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WPRequestVCJsonAPI : WPBaseNetWorkAPI
-- (void)queryAllClassNameWithblock:(BaseNetWorkAPICallBlock)block;
 - (void)queryClassNameDetailInfoWithClassName:(NSString *)classname block:(BaseNetWorkAPICallBlock)block;
-- (void)upLoadJsonToServerWithFileName:(NSString *)fileName block:(BaseNetWorkAPICallBlock)block;
 @end
 
 NS_ASSUME_NONNULL_END

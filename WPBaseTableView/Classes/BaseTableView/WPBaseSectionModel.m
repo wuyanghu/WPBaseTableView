@@ -37,6 +37,24 @@
     return contentModel;
 }
 
+- (id)getExtensionWithIndexPath:(NSIndexPath *)indexPath{
+    WPBaseRowModel * rowModel = [self getContentModelWithIndexPath:indexPath];
+    return rowModel.extension;
+}
+
+- (void)removeWithIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section >= self.contentArray.count) {
+        return;
+    }
+    WPBaseSectionModel * sectionModel = self.contentArray[indexPath.section];
+    NSMutableArray * rowArray = [sectionModel rowArray];
+    if (rowArray.count == 1) {
+        [self.contentArray removeObjectAtIndex:indexPath.section];
+    }else{
+        [rowArray removeObjectAtIndex:indexPath.row];
+    }
+}
+
 @end
 
 @implementation WPBaseSectionModel

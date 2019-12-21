@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSMutableArray<WPBaseSectionModel *> * contentArray;
 - (WPBaseRowModel *)getContentModelWithIndexPath:(NSIndexPath *)indexPath;
 - (NSString *)getTitleWithSection:(NSInteger)section;
+- (id)getExtensionWithIndexPath:(NSIndexPath *)indexPath;
+- (void)removeWithIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @interface WPBaseSectionModel : NSObject
@@ -28,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * desc;
 @property (nonatomic,strong) WPBaseRowImageModel * imageModel;
-
+@property (nonatomic,strong) id extension;//扩展字段,实现自定义数据时可用此属性
 @property (nonatomic,copy) NSString * classname;
 @property (nonatomic,copy) NSString * storyboardname;
 @property (nonatomic,copy) NSString * method;

@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString * urlString;//请求url
 @property (nonatomic,strong) NSMutableDictionary * headersParams;
 @property (nonatomic,strong) NSMutableDictionary * bodyParams;
+- (instancetype)initWithAction:(NSString *)action encryptKey:(NSString *)encryptKey;
 @end
 
 @interface WPBaseNetWorkModel : NSObject

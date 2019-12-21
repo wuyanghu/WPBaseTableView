@@ -33,6 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)registerHeaderFooterView;
 - (void)configureHeaderFooterView:(UITableViewHeaderFooterView *)view section:(NSInteger)section;
 
+@property (nonatomic,assign) BOOL isCellEditingDelete;//是否支持删除
+- (void)cellEditingDeleteAtIndexPath:(NSIndexPath *)indexPath;//左滑删除
+
+@property (nonatomic,assign) BOOL isCanMove;//支持移动
+- (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
+
+- (void)plactHolderRefreshAction;//占位刷新:子类实现
 #pragma mark - 浏览相册
 - (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl;
 //提供一个默认的section

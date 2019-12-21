@@ -54,6 +54,7 @@
     WPTableViewPlaceHolderView * placeHolderView = [[WPTableViewPlaceHolderView alloc] initWithFrame:self.view.frame refreshBlock:^{
         CMStrongSelf;
         [self loadData:NO];
+        [self plactHolderRefreshAction];//占位刷新
     }];
     [self.tableView setPlaceHolderView:placeHolderView];
     
@@ -134,6 +135,12 @@
         [self.sectionsModel.contentArray addObject:sectionModel];
     }
     return self.sectionsModel.contentArray.firstObject;
+}
+
+#pragma mark - action
+//占位刷新:子类实现
+- (void)plactHolderRefreshAction{
+    
 }
 
 #pragma mark - 浏览图片
@@ -360,6 +367,47 @@
             ((void (*)(id, SEL))[objClass methodForSelector:selector])(objClass, selector);
         }
     }
+    
+}
+
+#pragma mark - 左滑删除
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return self.isCellEditingDelete;
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleDelete;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return @"删除";
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [self cellEditingDeleteAtIndexPath:indexPath];
+    }
+}
+
+- (void)cellEditingDeleteAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"编辑删除");//具体操作，子类实现
+}
+
+#pragma mark - 
+// 设置 cell 是否允许移动
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    return self.isCanMove;
+}
+// 移动 cell 时触发
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    // 移动cell之后更换数据数组里的循序
+    [self moveRowAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+}
+//子类实现
+- (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
     
 }
 

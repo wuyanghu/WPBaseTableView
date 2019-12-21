@@ -22,6 +22,15 @@
     return self;
 }
 
+- (instancetype)initWithAction:(NSString *)action encryptKey:(NSString *)encryptKey{
+    self = [super init];
+    if (self) {
+        [self.headersParams setObject:action forKey:@"Action"];
+        [self.headersParams setObject:encryptKey forKey:@"encryptKey"];
+    }
+    return self;
+}
+
 #pragma mark - getter
 
 - (NSMutableDictionary *)headersParams{

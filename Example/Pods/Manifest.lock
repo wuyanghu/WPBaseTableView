@@ -21,7 +21,7 @@ PODS:
   - SDWebImage/Core (5.0.2)
   - SVProgressHUD (2.2.5)
   - "UITableView+FDTemplateLayoutCell (1.6)"
-  - WPBaseTableView (0.1.0):
+  - WPBaseTableView (0.1.1):
     - AFNetworking (~> 3.1.0)
     - Masonry (= 1.1.0)
     - MJRefresh (= 3.1.15.6)
@@ -52,8 +52,8 @@ SPEC CHECKSUMS:
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
-  WPBaseTableView: d4095747844f7c7aa3aa75639adf268f5f916d54
+  WPBaseTableView: 7abd0a8f7eb69de386d6ceb1d09a501bf85a6a66
 
 PODFILE CHECKSUM: bf218654bab93b2b7309f1f917f105dc70c7c1ff
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.4
