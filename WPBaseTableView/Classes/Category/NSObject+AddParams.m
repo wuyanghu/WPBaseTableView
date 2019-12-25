@@ -10,12 +10,12 @@
 
 @implementation NSObject (AddParams)
 
-- (void)setParams:(NSDictionary *)params {
-    objc_setAssociatedObject(self, @"params", params, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setWpAddParams:(NSDictionary *)wpAddParams{
+    objc_setAssociatedObject(self, @"addParams", wpAddParams, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSDictionary *)params {
-    return objc_getAssociatedObject(self, @"params");
+- (NSDictionary *)wpAddParams{
+    return objc_getAssociatedObject(self, @"addParams");
 }
 
 @end

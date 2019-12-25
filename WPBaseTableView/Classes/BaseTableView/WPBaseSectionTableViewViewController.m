@@ -224,7 +224,7 @@
     }
     
     if (contentModel.params) {
-        [objClass setParams:contentModel.params];
+        [objClass setWpAddParams:contentModel.params];
     }
     
     if (!contentModel.method || contentModel.method.length == 0) {//没有指定方法，如果是viewController默认调push方法
