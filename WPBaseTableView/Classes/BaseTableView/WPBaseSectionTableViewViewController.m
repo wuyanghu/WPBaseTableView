@@ -116,7 +116,7 @@
     [WPBaseSectionCell registerClassWithTableView:_tableView];
 }
 
-- (NSString *)cellIdentify{
+- (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{
     return WPBaseSectionCell.cellIdentifier;
 }
 
@@ -138,7 +138,7 @@
     [WPBaseHeaderFooterView registerHeaderFooterClassWithTableView:_tableView];
 }
 
-- (NSString *)headerFooterViewCellIdentify{
+- (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section{
     return WPBaseHeaderFooterView.cellIdentifier;
 }
 
@@ -168,13 +168,13 @@
 
 #pragma mark header
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    WPBaseHeaderFooterView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:self.headerFooterViewCellIdentify];
+    WPBaseHeaderFooterView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section]];
     [self configureHeaderFooterView:headerView section:section];
     return headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return [tableView fd_heightForHeaderFooterViewWithIdentifier:self.headerFooterViewCellIdentify configuration:^(id headerFooterView) {
+    return [tableView fd_heightForHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section] configuration:^(id headerFooterView) {
         [self configureHeaderFooterView:headerFooterView section:section];
     }];
 }
@@ -182,7 +182,7 @@
 #pragma mark content
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [tableView fd_heightForCellWithIdentifier:self.cellIdentify cacheByIndexPath:indexPath configuration:^(UITableViewCell *cell) {
+    return [tableView fd_heightForCellWithIdentifier:[self cellIdentifyWithIndexPath:indexPath] cacheByIndexPath:indexPath configuration:^(UITableViewCell *cell) {
         [self configureCell:cell atIndexPath:indexPath];
     }];
 }
@@ -200,7 +200,8 @@
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:self.cellIdentify forIndexPath:indexPath];
+    NSString * identifier = [self cellIdentifyWithIndexPath:indexPath];
+    UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -242,8 +243,12 @@
 
 #pragma mark - 左滑删除
 
+- (BOOL)isCellEditingDelete{
+    return NO;
+}
+
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
-    return self.isCellEditingDelete;
+    return [self isCellEditingDelete];
 }
 
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -266,10 +271,15 @@
     NSLog(@"编辑删除");//具体操作，子类实现
 }
 
-#pragma mark - 
+#pragma mark - 移动
+
+- (BOOL)isCellCanMove{
+    return NO;
+}
+
 // 设置 cell 是否允许移动
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.isCanMove;
+    return self.isCellCanMove;
 }
 // 移动 cell 时触发
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {

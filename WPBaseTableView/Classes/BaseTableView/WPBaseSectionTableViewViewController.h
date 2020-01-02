@@ -26,18 +26,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)requestDetailInfo:(BOOL)isRefresh;
 //以下方法子类可重载
 @property (nonatomic,assign) WPBaseSectionTableViewLoadType loadType;//默认网络数据,
-@property (nonatomic,copy) NSString * cellIdentify;
+
 - (void)registerCell;
+- (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
-@property (nonatomic,copy) NSString * headerFooterViewCellIdentify;
 - (void)registerHeaderFooterView;
+- (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section;
 - (void)configureHeaderFooterView:(UITableViewHeaderFooterView *)view section:(NSInteger)section;
 
-@property (nonatomic,assign) BOOL isCellEditingDelete;//是否支持删除
+- (BOOL)isCellEditingDelete;//是否支持删除
 - (void)cellEditingDeleteAtIndexPath:(NSIndexPath *)indexPath;//左滑删除
 
-@property (nonatomic,assign) BOOL isCanMove;//支持移动
+- (BOOL)isCellCanMove;//是否支持移动
 - (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 - (void)plactHolderRefreshAction;//占位刷新:子类实现
