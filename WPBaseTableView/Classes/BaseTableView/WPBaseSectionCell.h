@@ -20,6 +20,7 @@ typedef void(^WPBaseSectionCellBlock)(void);
 @property (nonatomic,strong) WPBaseRowModel * sectionContentModel;
 @property (nonatomic,copy) WPBaseSectionCellBlock callBlock;
 
+- (NSAttributedString *)subAttributedTextWithText:(NSString *)text;
 @end
 
 NS_ASSUME_NONNULL_END

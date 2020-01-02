@@ -151,8 +151,15 @@
                                              context:nil].size.height;
         }
     }
-    label.text = text;
+//    label.text = text;
+    if (text) {
+        label.attributedText = [self subAttributedTextWithText:text];
+    }
     return labelHeight;
+}
+
+- (NSAttributedString *)subAttributedTextWithText:(NSString *)text{
+    return [[NSAttributedString alloc] initWithString:text];
 }
 
 #pragma mark - getter
