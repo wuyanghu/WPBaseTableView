@@ -124,7 +124,7 @@
     if ([cell isKindOfClass:[WPBaseSectionCell class]]) {
         CMWeakSelf;
         WPBaseSectionCell * sectionCell = (WPBaseSectionCell *)cell;
-        sectionCell.sectionContentModel = [self.sectionsModel getContentModelWithIndexPath:indexPath];
+        sectionCell.rowModel = [self.sectionsModel getContentModelWithIndexPath:indexPath];
         sectionCell.callBlock = ^() {
             CMStrongSelf;
             [self photoBrowserWithIndexPath:indexPath isUrl:YES];

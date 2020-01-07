@@ -37,6 +37,13 @@
     return contentModel;
 }
 
+- (NSMutableArray *)rowArrayWithSection:(NSInteger)section{
+    if (section<self.contentArray.count) {
+        return [self.contentArray[section] rowArray];
+    }
+    return nil;
+}
+
 - (id)getExtensionWithIndexPath:(NSIndexPath *)indexPath{
     WPBaseRowModel * rowModel = [self getContentModelWithIndexPath:indexPath];
     return rowModel.extension;
@@ -54,6 +61,13 @@
         [rowArray removeObjectAtIndex:indexPath.row];
     }
 }
+//用rowModel替换indexPath中
+- (void)replaceWithRowModel:(WPBaseRowModel *)rowModel indexPath:(NSIndexPath *)indexPath{
+    NSMutableArray * rowArray = [self rowArrayWithSection:indexPath.section];
+    if (indexPath.row<rowArray.count) {
+        [rowArray replaceObjectAtIndex:indexPath.row withObject:rowModel];
+    }
+}
 
 @end
 
@@ -69,6 +83,53 @@
 @end
 
 @implementation WPBaseRowModel
+
+#pragma mark - 提供默认的属性并计算高度
+
+- (void)setTitle:(NSString *)title{
+    if (title && ![title isEqualToString:_title]) {
+        _titleAttributedString = [self attributedWithText:title fontSize:17 height:&_titleHeight];
+    }
+    _title = title;
+}
+
+- (void)setDesc:(NSString *)desc{
+    if (desc && ![desc isEqualToString:_desc]) {
+        _descAttributedString = [self attributedWithText:desc fontSize:14 height:&_descHeight];
+    }
+    _desc = desc;
+}
+
+- (NSMutableAttributedString *)attributedWithText:(NSString *)text fontSize:(CGFloat)fontSize height:(CGFloat *)height{
+    NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:fontSize] range:NSMakeRange(0, text.length)];
+    CGSize size = [attributedString boundingRectWithSize:CGSizeMake(ScreenWidth-16*2, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
+    *height = size.height;
+    
+    return attributedString;
+}
+
+#pragma mark - 根据富文本去计算高度
+
+- (void)setTitleAttributedString:(NSMutableAttributedString *)titleAttributedString{
+    _titleAttributedString = titleAttributedString;
+    [self attributedWithAttributedText:titleAttributedString height:&_titleHeight];
+}
+
+- (void)setDescAttributedString:(NSMutableAttributedString *)descAttributedString{
+    _descAttributedString = descAttributedString;
+    [self attributedWithAttributedText:descAttributedString height:&_descHeight];
+}
+
+- (NSMutableAttributedString *)attributedWithAttributedText:(NSMutableAttributedString *)attributedText height:(CGFloat *)height{
+
+    CGSize size = [attributedText boundingRectWithSize:CGSizeMake(ScreenWidth-16*2, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
+    *height = size.height;
+    
+    return attributedText;
+}
+
+#pragma mark - getter
 
 - (WPBaseRowImageModel *)imageModel{
     if (!_imageModel) {

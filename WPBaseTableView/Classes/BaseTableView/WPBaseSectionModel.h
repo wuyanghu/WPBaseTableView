@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getTitleWithSection:(NSInteger)section;
 - (id)getExtensionWithIndexPath:(NSIndexPath *)indexPath;
 - (void)removeWithIndexPath:(NSIndexPath *)indexPath;
+- (void)replaceWithRowModel:(WPBaseRowModel *)rowModel indexPath:(NSIndexPath *)indexPath;
 @end
 
 @interface WPBaseSectionModel : NSObject
@@ -29,12 +30,22 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WPBaseRowModel : NSObject
 @property (nonatomic,copy) NSString * title;
 @property (nonatomic,copy) NSString * desc;
+
+@property (nonatomic,strong) NSMutableAttributedString * titleAttributedString;
+@property (nonatomic,strong) NSMutableAttributedString * descAttributedString;
+
+@property (nonatomic,assign) CGFloat titleHeight;
+@property (nonatomic,assign) CGFloat descHeight;
+
 @property (nonatomic,strong) WPBaseRowImageModel * imageModel;
 @property (nonatomic,strong) id extension;//扩展字段,实现自定义数据时可用此属性
 @property (nonatomic,copy) NSString * classname;
 @property (nonatomic,copy) NSString * storyboardname;
 @property (nonatomic,copy) NSString * method;
 @property (nonatomic,strong) NSMutableDictionary * params;
+
+- (NSMutableAttributedString *)attributedWithText:(NSString *)text fontSize:(CGFloat)fontSize height:(CGFloat *)height;
+- (NSMutableAttributedString *)attributedWithAttributedText:(NSMutableAttributedString *)attributedText height:(CGFloat *)height;
 @end
 
 @interface WPBaseRowImageModel : NSObject

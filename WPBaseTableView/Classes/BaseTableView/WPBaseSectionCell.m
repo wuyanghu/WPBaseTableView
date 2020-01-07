@@ -30,7 +30,7 @@
         _contentImageSize = CGSizeMake(-1, -1);
         
         [self addSubview:self.titleLabel];
-        [self addSubview:self.contentLabel];
+        [self addSubview:self.contentTextView];
         [self addSubview:self.contentImageView];
         
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -39,14 +39,14 @@
             make.top.equalTo(self).offset(10);
         }];
         
-        [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.contentTextView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.equalTo(self.titleLabel);
-            make.top.equalTo(self.titleLabel.mas_bottom).offset(10);
+            make.height.mas_equalTo(0); make.top.equalTo(self.titleLabel.mas_bottom).offset(10);
         }];
         
         [self.contentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentLabel.mas_bottom).offset(10);
-            make.left.equalTo(self.contentLabel);
+            make.top.equalTo(self.contentTextView.mas_bottom).offset(10);
+            make.left.equalTo(self.contentTextView);
             make.size.mas_equalTo(CGSizeMake(0, 0));
         }];
         
@@ -60,17 +60,18 @@
     // Configure the view for the selected state
 }
 
-- (void)setSectionContentModel:(WPBaseRowModel *)sectionContentModel{
-    if (_sectionContentModel != sectionContentModel) {
-        self.titleHeight = [self calculateLabelHeightWithChangeText:sectionContentModel.title originalHeight:_titleHeight label:self.titleLabel];
+- (void)setRowModel:(WPBaseRowModel *)rowModel{
+    if (_rowModel != rowModel) {
+        self.titleHeight = rowModel.titleHeight;
+        self.contentHeight = rowModel.descHeight;
+        self.titleLabel.attributedText = rowModel.titleAttributedString;
+        self.contentTextView.attributedText = rowModel.descAttributedString;
         
-        self.contentHeight = [self calculateLabelHeightWithChangeText:sectionContentModel.desc originalHeight:_contentHeight label:self.contentLabel];
-        
-        [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:sectionContentModel.imageModel.url]];
-        self.contentImageSize = [sectionContentModel.imageModel getImageSize];
+        [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:rowModel.imageModel.url]];
+        self.contentImageSize = [rowModel.imageModel getImageSize];
         
     }
-    _sectionContentModel = sectionContentModel;
+    _rowModel = rowModel;
     
 }
 
@@ -96,7 +97,8 @@
 - (void)setContentHeight:(CGFloat)contentHeight{
     if (_contentHeight != contentHeight) {
         CGFloat offset = contentHeight == 0?0:10;
-        [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        [self.contentTextView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(contentHeight);
             make.top.equalTo(self.titleLabel.mas_bottom).offset(offset);
         }];
     }
@@ -109,7 +111,7 @@
         CGFloat offset = CGSizeEqualToSize(CGSizeZero, contentImageSize)?0:10;
         
         [self.contentImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentLabel.mas_bottom).offset(offset);
+            make.top.equalTo(self.contentTextView.mas_bottom).offset(offset);
             make.size.mas_equalTo(contentImageSize);
         }];
     }
@@ -129,37 +131,10 @@
         totalHeight += _contentHeight+10;
     }
     
-    if (_sectionContentModel.imageModel.url) {
+    if (_rowModel.imageModel.url) {
         totalHeight+= self.contentImageSize.height+10;
     }
     return CGSizeMake(size.width, totalHeight);
-}
-
-/*
- changeText:变化的text;originalHeight起始高度;label需要计算的label
- 防止重复计算:
- 1.字符长度为0时，返回0
- 2.字符发生变化时，计算高度;字符未发生变化，保留原来高度
- */
-- (CGFloat)calculateLabelHeightWithChangeText:(NSString *)text originalHeight:(CGFloat)height label:(UILabel *)label{
-    CGFloat labelHeight = height;
-    if (text.length == 0) {
-        labelHeight = 0;
-    }else{
-        if (![label.text isEqualToString:text]) {
-            labelHeight = [text boundingRectWithSize:CGSizeMake(ScreenWidth-16*2, MAXFLOAT) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin  attributes:@{NSFontAttributeName:label.font}
-                                             context:nil].size.height;
-        }
-    }
-//    label.text = text;
-    if (text) {
-        label.attributedText = [self subAttributedTextWithText:text];
-    }
-    return labelHeight;
-}
-
-- (NSAttributedString *)subAttributedTextWithText:(NSString *)text{
-    return [[NSAttributedString alloc] initWithString:text];
 }
 
 #pragma mark - getter
@@ -178,13 +153,16 @@
     return _contentImageView;
 }
 
-- (UILabel *)contentLabel{
-    if (!_contentLabel) {
-        _contentLabel = [[UILabel alloc] init];
-        _contentLabel.numberOfLines = 0;
-        _contentLabel.font = [UIFont systemFontOfSize:14];
+- (UITextView *)contentTextView{
+    if (!_contentTextView) {
+        _contentTextView = [[UITextView alloc] init];
+        _contentTextView.editable = NO;
+        _contentTextView.scrollEnabled = NO;
+        _contentTextView.showsVerticalScrollIndicator = NO;
+        _contentTextView.textContainer.lineFragmentPadding = 0;
+        _contentTextView.textContainerInset = UIEdgeInsetsZero;
     }
-    return _contentLabel;
+    return _contentTextView;
 }
 
 - (UILabel *)titleLabel{

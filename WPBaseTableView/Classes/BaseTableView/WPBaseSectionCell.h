@@ -14,13 +14,12 @@ typedef void(^WPBaseSectionCellBlock)(void);
 
 @interface WPBaseSectionCell : UITableViewCell
 @property (nonatomic,strong) UILabel * titleLabel;
-@property (strong, nonatomic) UILabel * contentLabel;
+@property (strong, nonatomic) UITextView * contentTextView;
 @property (nonatomic,strong) UIImageView * contentImageView;
 
-@property (nonatomic,strong) WPBaseRowModel * sectionContentModel;
+@property (nonatomic,strong) WPBaseRowModel * rowModel;
 @property (nonatomic,copy) WPBaseSectionCellBlock callBlock;
 
-- (NSAttributedString *)subAttributedTextWithText:(NSString *)text;
 @end
 
 NS_ASSUME_NONNULL_END
