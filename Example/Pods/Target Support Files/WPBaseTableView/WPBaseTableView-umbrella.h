@@ -17,7 +17,6 @@
 #import "WPTableViewPlaceHolderView.h"
 #import "NSObject+AddParams.h"
 #import "NSObject+Json.h"
-#import "NSObject+Swizzle.h"
 #import "UIImageView+WPLoadBundleImage.h"
 #import "UITableView+Placeholder.h"
 #import "UITableViewCell+BaseCategory.h"

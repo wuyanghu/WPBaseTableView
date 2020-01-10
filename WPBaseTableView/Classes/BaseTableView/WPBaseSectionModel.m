@@ -7,6 +7,7 @@
 
 #import "WPBaseSectionModel.h"
 #import "WPCommonMacros.h"
+#import "YYText.h"
 
 @implementation WPBaseSectionsModel
 
@@ -103,9 +104,7 @@
 - (NSMutableAttributedString *)attributedWithText:(NSString *)text fontSize:(CGFloat)fontSize height:(CGFloat *)height{
     NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:text];
     [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:fontSize] range:NSMakeRange(0, text.length)];
-    CGSize size = [attributedString boundingRectWithSize:CGSizeMake(ScreenWidth-16*2, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
-    *height = size.height;
-    
+    [self getYYLabelHeight:attributedString height:height];
     return attributedString;
 }
 
@@ -113,20 +112,21 @@
 
 - (void)setTitleAttributedString:(NSMutableAttributedString *)titleAttributedString{
     _titleAttributedString = titleAttributedString;
-    [self attributedWithAttributedText:titleAttributedString height:&_titleHeight];
+    [self getYYLabelHeight:titleAttributedString height:&_titleHeight];
 }
 
 - (void)setDescAttributedString:(NSMutableAttributedString *)descAttributedString{
     _descAttributedString = descAttributedString;
-    [self attributedWithAttributedText:descAttributedString height:&_descHeight];
+    [self getYYLabelHeight:descAttributedString height:&_descHeight];
 }
 
-- (NSMutableAttributedString *)attributedWithAttributedText:(NSMutableAttributedString *)attributedText height:(CGFloat *)height{
+#pragma mark - YYLabel高度计算
 
-    CGSize size = [attributedText boundingRectWithSize:CGSizeMake(ScreenWidth-16*2, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
-    *height = size.height;
-    
-    return attributedText;
+//获取YYLabel动态计算的高度
+- (void)getYYLabelHeight:(NSMutableAttributedString *)attributedString height:(CGFloat *)height{
+    CGSize introSize = CGSizeMake(ScreenWidth-16*2, CGFLOAT_MAX);
+    YYTextLayout *layout = [YYTextLayout layoutWithContainerSize:introSize text:attributedString];
+    *height = layout.textBoundingSize.height;
 }
 
 #pragma mark - getter
@@ -149,25 +149,35 @@
 
 @implementation WPBaseRowImageModel
 
-- (CGSize)getImageSize{
-    if (!_url) {
-        return CGSizeZero;
-    }
-    return [self.class imageSizeWithWidth:_width height:_height];
+- (void)setWidth:(NSString *)width{
+    _width = width;
+    [self imageSizeWithWidth:_width height:_height];
 }
 
-+ (CGSize)imageSizeWithWidth:(NSString *)widthStr height:(NSString *)heightStr{
-    CGFloat screenScale = [UIScreen mainScreen].scale;
-    CGFloat imageMaxWidth = ScreenWidth-16*2;
+- (void)setHeight:(NSString *)height{
+    _height = height;
+    [self imageSizeWithWidth:_width height:_height];
+}
+
+- (void)imageSizeWithWidth:(NSString *)widthStr height:(NSString *)heightStr{
+    if (!CGSizeEqualToSize(CGSizeZero, _imageSize)) {
+        return;
+    }
     
+    CGFloat screenScale = [UIScreen mainScreen].scale;
     CGFloat width = [widthStr floatValue]/screenScale;
     CGFloat height = [heightStr floatValue]/screenScale;
     
+    if (width == 0 || height == 0) {
+        return;
+    }
+    CGFloat imageMaxWidth = ScreenWidth-16*2;
+    
     if (width<imageMaxWidth) {
-        return CGSizeMake(width, height);
+        _imageSize = CGSizeMake(width, height);
     }else{
         CGFloat scale = (imageMaxWidth)/width;
-        return CGSizeMake(imageMaxWidth, height * scale);
+        _imageSize = CGSizeMake(imageMaxWidth, height * scale);
     }
 }
 

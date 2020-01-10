@@ -14,10 +14,6 @@
 
 @interface WPBaseSectionCell()
 
-@property (nonatomic,assign) CGFloat titleHeight;//title高度
-@property (nonatomic,assign) CGFloat contentHeight;//content高度
-@property (nonatomic,assign) CGSize contentImageSize;//image宽度和高度
-
 @end
 
 @implementation WPBaseSectionCell
@@ -25,12 +21,9 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.fd_enforceFrameLayout = YES;
-        _titleHeight = -1;
-        _contentHeight = -1;
-        _contentImageSize = CGSizeMake(-1, -1);
-        
+
         [self addSubview:self.titleLabel];
-        [self addSubview:self.contentTextView];
+        [self addSubview:self.contentLabel];
         [self addSubview:self.contentImageView];
         
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -39,14 +32,14 @@
             make.top.equalTo(self).offset(10);
         }];
         
-        [self.contentTextView mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.equalTo(self.titleLabel);
             make.height.mas_equalTo(0); make.top.equalTo(self.titleLabel.mas_bottom).offset(10);
         }];
         
         [self.contentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentTextView.mas_bottom).offset(10);
-            make.left.equalTo(self.contentTextView);
+            make.top.equalTo(self.contentLabel.mas_bottom).offset(10);
+            make.left.equalTo(self.contentLabel);
             make.size.mas_equalTo(CGSizeMake(0, 0));
         }];
         
@@ -61,19 +54,42 @@
 }
 
 - (void)setRowModel:(WPBaseRowModel *)rowModel{
-    if (_rowModel != rowModel) {
-        self.titleHeight = rowModel.titleHeight;
-        self.contentHeight = rowModel.descHeight;
-        self.titleLabel.attributedText = rowModel.titleAttributedString;
-        self.contentTextView.attributedText = rowModel.descAttributedString;
-        
-        [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:rowModel.imageModel.url]];
-        self.contentImageSize = [rowModel.imageModel getImageSize];
-        
-    }
     _rowModel = rowModel;
     
+    [self updateMasConstraintsWithRowModel:rowModel];
+    
+    self.titleLabel.attributedText = rowModel.titleAttributedString;
+    self.contentLabel.attributedText = rowModel.descAttributedString;
+    
+    [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:rowModel.imageModel.url]];
 }
+
+#pragma mark - 更新约束
+
+- (void)updateMasConstraintsWithRowModel:(WPBaseRowModel *)rowModel{
+    if (!rowModel) {
+        return;
+    }
+    CGFloat offset = rowModel.titleHeight == 0?0:10;
+    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self).offset(offset);
+    }];
+    
+    offset = rowModel.descHeight == 0?0:10;
+    [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {        make.top.equalTo(self.titleLabel.mas_bottom).offset(offset);
+        make.height.mas_equalTo(rowModel.descHeight);
+    }];
+    
+    CGSize imageSize = self.rowModel.imageModel.imageSize;
+    offset = CGSizeEqualToSize(CGSizeZero, imageSize)?0:10;
+    
+    [self.contentImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.contentLabel.mas_bottom).offset(offset);
+        make.size.mas_equalTo(imageSize);
+    }];
+}
+
+#pragma mark - 手势
 
 - (void)browsePhotoTapGesture:(UITapGestureRecognizer *)tapGesture{
     if (_callBlock) {
@@ -81,58 +97,21 @@
     }
 }
 
-#pragma mark - setter
-
-- (void)setTitleHeight:(CGFloat)titleHeight{
-    if (_titleHeight != titleHeight) {
-        CGFloat offset = titleHeight == 0?0:10;
-        [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self).offset(offset);
-        }];
-    }
-    
-    _titleHeight = titleHeight;
-}
-
-- (void)setContentHeight:(CGFloat)contentHeight{
-    if (_contentHeight != contentHeight) {
-        CGFloat offset = contentHeight == 0?0:10;
-        [self.contentTextView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(contentHeight);
-            make.top.equalTo(self.titleLabel.mas_bottom).offset(offset);
-        }];
-    }
-    
-    _contentHeight = contentHeight;
-}
-
-- (void)setContentImageSize:(CGSize)contentImageSize{
-    if (!CGSizeEqualToSize(_contentImageSize, contentImageSize)) {
-        CGFloat offset = CGSizeEqualToSize(CGSizeZero, contentImageSize)?0:10;
-        
-        [self.contentImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentTextView.mas_bottom).offset(offset);
-            make.size.mas_equalTo(contentImageSize);
-        }];
-    }
-    
-    _contentImageSize = contentImageSize;
-}
-
 #pragma mark - 计算高度
 
 - (CGSize)sizeThatFits:(CGSize)size{
     CGFloat totalHeight = 10;
-    if (_titleHeight>0) {
-        totalHeight += _titleHeight+10;
+    if (_rowModel.titleHeight>0) {
+        totalHeight += _rowModel.titleHeight+10;
     }
     
-    if (_contentHeight>0) {
-        totalHeight += _contentHeight+10;
+    if (_rowModel.descHeight>0) {
+        totalHeight += _rowModel.descHeight+10;
     }
     
-    if (_rowModel.imageModel.url) {
-        totalHeight+= self.contentImageSize.height+10;
+    CGSize imageSize = self.rowModel.imageModel.imageSize;
+    if (!CGSizeEqualToSize(CGSizeZero, imageSize)) {
+        totalHeight+= imageSize.height+10;
     }
     return CGSizeMake(size.width, totalHeight);
 }
@@ -153,25 +132,27 @@
     return _contentImageView;
 }
 
-- (UITextView *)contentTextView{
-    if (!_contentTextView) {
-        _contentTextView = [[UITextView alloc] init];
-        _contentTextView.editable = NO;
-        _contentTextView.scrollEnabled = NO;
-        _contentTextView.showsVerticalScrollIndicator = NO;
-        _contentTextView.textContainer.lineFragmentPadding = 0;
-        _contentTextView.textContainerInset = UIEdgeInsetsZero;
+- (YYLabel *)contentLabel{
+    if (!_contentLabel) {
+        _contentLabel = [self createYYLabel];
     }
-    return _contentTextView;
+    return _contentLabel;
 }
 
-- (UILabel *)titleLabel{
+- (YYLabel *)titleLabel{
     if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] init];
-        _titleLabel.numberOfLines = 0;
-        _titleLabel.font = [UIFont systemFontOfSize:17];
+        _titleLabel = [self createYYLabel];
     }
     return _titleLabel;
+}
+
+- (YYLabel *)createYYLabel{
+    YYLabel * yyLabel = [[YYLabel alloc] init];
+    yyLabel.textAlignment = NSTextAlignmentLeft;
+    yyLabel.textVerticalAlignment = YYTextVerticalAlignmentTop;
+    yyLabel.numberOfLines = 0;
+    yyLabel.preferredMaxLayoutWidth = SCREEN_WIDTH-16*2;//设置最大宽度
+    return yyLabel;
 }
 
 @end

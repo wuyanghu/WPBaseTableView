@@ -34,12 +34,12 @@ json配置tableView，高度自适应、缓存，点击图片放大等
   s.resource     = 'WPBaseTableView/WPBaseTableView.bundle'
 
   s.frameworks = 'UIKit'
-  s.dependency 'AFNetworking', '~> 3.1.0'
+
   s.dependency 'SDWebImage', '5.0.2'
-  s.dependency 'SVProgressHUD','2.2.5'
   s.dependency 'MJRefresh','3.1.15.6'
   s.dependency 'Masonry','1.1.0'
   s.dependency 'UITableView+FDTemplateLayoutCell','1.6'
+  s.dependency 'YYText','1.0.7'
   # s.resource_bundles = {
   #   'WPBaseTableView' => ['WPBaseTableView/Assets/*.png']
   # }

@@ -44,16 +44,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString * method;
 @property (nonatomic,strong) NSMutableDictionary * params;
 
-- (NSMutableAttributedString *)attributedWithText:(NSString *)text fontSize:(CGFloat)fontSize height:(CGFloat *)height;
-- (NSMutableAttributedString *)attributedWithAttributedText:(NSMutableAttributedString *)attributedText height:(CGFloat *)height;
 @end
 
 @interface WPBaseRowImageModel : NSObject
 @property (nonatomic,copy) NSString * url;
 @property (nonatomic,copy) NSString * width;
 @property (nonatomic,copy) NSString * height;
-- (CGSize)getImageSize;
-+ (CGSize)imageSizeWithWidth:(NSString *)widthStr height:(NSString *)heightStr;
+
+@property (nonatomic,assign) CGSize imageSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

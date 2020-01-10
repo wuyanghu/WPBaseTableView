@@ -7,6 +7,7 @@
 //
 
 #import "WPChangeButtonClickAreaViewController.h"
+#import "NSObject+AddParams.h"
 
 @interface WPChangeButtonClickAreaViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString * type = self.wpAddParams[@"type"];
+    NSLog(@"type = %@",type);
 }
 
 /*
