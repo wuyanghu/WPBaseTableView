@@ -24,6 +24,15 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7670562823C8CC4500C07A20 /* WPStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670562723C8CC4500C07A20 /* WPStoryboardViewController.m */; };
+		7670562B23C95A5100C07A20 /* WPMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670562A23C95A5100C07A20 /* WPMoveViewController.m */; };
+		7670562D23C95A6100C07A20 /* WPMoveViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 7670562C23C95A6100C07A20 /* WPMoveViewController.json */; };
+		7670563023C95BF800C07A20 /* WPDelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670562F23C95BF800C07A20 /* WPDelViewController.m */; };
+		7670563223C95C0A00C07A20 /* WPDelViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 7670563123C95C0A00C07A20 /* WPDelViewController.json */; };
+		7670563523C95EDA00C07A20 /* WPCustomCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670563423C95EDA00C07A20 /* WPCustomCellViewController.m */; };
+		7670563723C95EE800C07A20 /* WPCustomCellViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = 7670563623C95EE800C07A20 /* WPCustomCellViewController.json */; };
+		7670563A23C95F3500C07A20 /* WPCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670563923C95F3500C07A20 /* WPCustomCell.m */; };
+		7670563E23C95F8700C07A20 /* WPCustomXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670563C23C95F8700C07A20 /* WPCustomXibCell.m */; };
+		7670563F23C95F8700C07A20 /* WPCustomXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7670563D23C95F8700C07A20 /* WPCustomXibCell.xib */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		ADA46DD1FF138102EA2B65EF /* Pods_WPBaseTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5E634EDA6169B7AA891ED1 /* Pods_WPBaseTableView_Example.framework */; };
 		BAFA71D67DC62DA9C06F9144 /* Pods_WPBaseTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1E9D42DBA05B31400C13FC /* Pods_WPBaseTableView_Tests.framework */; };
@@ -68,6 +77,20 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7670562623C8CC4500C07A20 /* WPStoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPStoryboardViewController.h; sourceTree = "<group>"; };
 		7670562723C8CC4500C07A20 /* WPStoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPStoryboardViewController.m; sourceTree = "<group>"; };
+		7670562923C95A5100C07A20 /* WPMoveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPMoveViewController.h; sourceTree = "<group>"; };
+		7670562A23C95A5100C07A20 /* WPMoveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPMoveViewController.m; sourceTree = "<group>"; };
+		7670562C23C95A6100C07A20 /* WPMoveViewController.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WPMoveViewController.json; sourceTree = "<group>"; };
+		7670562E23C95BF800C07A20 /* WPDelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDelViewController.h; sourceTree = "<group>"; };
+		7670562F23C95BF800C07A20 /* WPDelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDelViewController.m; sourceTree = "<group>"; };
+		7670563123C95C0A00C07A20 /* WPDelViewController.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WPDelViewController.json; sourceTree = "<group>"; };
+		7670563323C95EDA00C07A20 /* WPCustomCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPCustomCellViewController.h; sourceTree = "<group>"; };
+		7670563423C95EDA00C07A20 /* WPCustomCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPCustomCellViewController.m; sourceTree = "<group>"; };
+		7670563623C95EE800C07A20 /* WPCustomCellViewController.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WPCustomCellViewController.json; sourceTree = "<group>"; };
+		7670563823C95F3500C07A20 /* WPCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPCustomCell.h; sourceTree = "<group>"; };
+		7670563923C95F3500C07A20 /* WPCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPCustomCell.m; sourceTree = "<group>"; };
+		7670563B23C95F8700C07A20 /* WPCustomXibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPCustomXibCell.h; sourceTree = "<group>"; };
+		7670563C23C95F8700C07A20 /* WPCustomXibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPCustomXibCell.m; sourceTree = "<group>"; };
+		7670563D23C95F8700C07A20 /* WPCustomXibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WPCustomXibCell.xib; sourceTree = "<group>"; };
 		7C1C22E3E702B76F7DFB63ED /* Pods-WPBaseTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPBaseTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPBaseTableView_Tests/Pods-WPBaseTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E1E9D42DBA05B31400C13FC /* Pods_WPBaseTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPBaseTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +176,13 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				7670562923C95A5100C07A20 /* WPMoveViewController.h */,
+				7670562A23C95A5100C07A20 /* WPMoveViewController.m */,
+				7670562C23C95A6100C07A20 /* WPMoveViewController.json */,
+				7670562E23C95BF800C07A20 /* WPDelViewController.h */,
+				7670562F23C95BF800C07A20 /* WPDelViewController.m */,
+				7670563123C95C0A00C07A20 /* WPDelViewController.json */,
+				7670564023C9639700C07A20 /* CustomCell */,
 			);
 			name = "Example for WPBaseTableView";
 			path = WPBaseTableView;
@@ -207,6 +237,21 @@
 				7C1C22E3E702B76F7DFB63ED /* Pods-WPBaseTableView_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7670564023C9639700C07A20 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				7670563323C95EDA00C07A20 /* WPCustomCellViewController.h */,
+				7670563423C95EDA00C07A20 /* WPCustomCellViewController.m */,
+				7670563623C95EE800C07A20 /* WPCustomCellViewController.json */,
+				7670563823C95F3500C07A20 /* WPCustomCell.h */,
+				7670563923C95F3500C07A20 /* WPCustomCell.m */,
+				7670563B23C95F8700C07A20 /* WPCustomXibCell.h */,
+				7670563C23C95F8700C07A20 /* WPCustomXibCell.m */,
+				7670563D23C95F8700C07A20 /* WPCustomXibCell.xib */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7670563723C95EE800C07A20 /* WPCustomCellViewController.json in Resources */,
+				7670563223C95C0A00C07A20 /* WPDelViewController.json in Resources */,
+				7670563F23C95F8700C07A20 /* WPCustomXibCell.xib in Resources */,
 				4B4B37FC23A8733800D2BBDA /* WPViewController.json in Resources */,
+				7670562D23C95A6100C07A20 /* WPMoveViewController.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -380,9 +429,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7670563E23C95F8700C07A20 /* WPCustomXibCell.m in Sources */,
+				7670563523C95EDA00C07A20 /* WPCustomCellViewController.m in Sources */,
 				6003F59E195388D20070C39A /* WPAppDelegate.m in Sources */,
+				7670563023C95BF800C07A20 /* WPDelViewController.m in Sources */,
+				7670562B23C95A5100C07A20 /* WPMoveViewController.m in Sources */,
 				7670562823C8CC4500C07A20 /* WPStoryboardViewController.m in Sources */,
 				4B4B37FF23A8775400D2BBDA /* WPChangeButtonClickAreaViewController.m in Sources */,
+				7670563A23C95F3500C07A20 /* WPCustomCell.m in Sources */,
 				6003F5A7195388D20070C39A /* WPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

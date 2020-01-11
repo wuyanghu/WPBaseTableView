@@ -21,7 +21,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.fd_enforceFrameLayout = YES;
-
+        
         [self addSubview:self.titleLabel];
         [self addSubview:self.contentLabel];
         [self addSubview:self.contentImageView];
@@ -56,11 +56,11 @@
 - (void)setRowModel:(WPBaseRowModel *)rowModel{
     _rowModel = rowModel;
     
-    [self updateMasConstraintsWithRowModel:rowModel];
-    
     self.titleLabel.attributedText = rowModel.titleAttributedString;
     self.contentLabel.attributedText = rowModel.descAttributedString;
     
+    [self updateMasConstraintsWithRowModel:rowModel];
+
     [self.contentImageView sd_setImageWithURL:[NSURL URLWithString:rowModel.imageModel.url]];
 }
 
@@ -156,6 +156,7 @@
 }
 
 @end
+
 
 
 

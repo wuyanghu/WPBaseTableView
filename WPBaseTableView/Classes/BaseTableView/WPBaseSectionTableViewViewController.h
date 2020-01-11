@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 //以下方法子类可重载
 @property (nonatomic,assign) WPBaseSectionTableViewLoadType loadType;//默认网络数据,
 
+#pragma mark - 注册cell
 - (void)registerCell;
 - (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -35,12 +36,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section;
 - (void)configureHeaderFooterView:(UITableViewHeaderFooterView *)view section:(NSInteger)section;
 
+#pragma mark - 删除
 - (BOOL)isCellEditingDelete;//是否支持删除
 - (void)cellEditingDeleteAtIndexPath:(NSIndexPath *)indexPath;//左滑删除
-
+#pragma mark - 移动
 - (BOOL)isCellCanMove;//是否支持移动
 - (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
-
+#pragma mark - 占位
 - (void)plactHolderRefreshAction;//占位刷新:子类实现
 #pragma mark - 浏览相册
 - (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl;

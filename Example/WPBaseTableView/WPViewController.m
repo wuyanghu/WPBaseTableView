@@ -26,8 +26,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (WPBaseSectionTableViewLoadType)loadType{
-    return WPBaseSectionTableViewLoadLocalType;
-}
-
 @end

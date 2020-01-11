@@ -1,0 +1,14 @@
+{
+    "title":[
+        "简介"
+    ],
+    "content":[
+        [
+            {
+                "title":"我可删除",
+                "desc":"左滑删除，要实现isCellEditingDelete方法"
+            }
+        ]
+    ]
+}
+

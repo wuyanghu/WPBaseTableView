@@ -26,12 +26,18 @@
 
 @implementation WPBaseSectionTableViewViewController
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        [self loadConfigInfo];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self addSubView];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(vcJsonChanged) name:kVCJsonChangedNotification object:nil];
-    
     [self loadData:NO];
 }
 
@@ -39,18 +45,6 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.tableView];
     
-    CMWeakSelf;
-    WPTableViewPlaceHolderView * placeHolderView = [[WPTableViewPlaceHolderView alloc] initWithFrame:self.view.frame refreshBlock:^{
-        CMStrongSelf;
-        [self loadData:NO];
-        [self plactHolderRefreshAction];//占位刷新
-    }];
-    [self.tableView setPlaceHolderView:placeHolderView];
-    
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        CMStrongSelf;
-        [self loadData:YES];
-    }];
 }
 
 - (void)dealloc{
@@ -64,6 +58,15 @@
 }
 
 #pragma mark - 加载数据
+
+- (void)loadConfigInfo{
+    NSData * data = [self readJsonDataWithName:NSStringFromClass([self class])];
+    if(data){
+        self.loadType = WPBaseSectionTableViewLoadLocalType;
+    }else{
+        self.loadType = WPBaseSectionTableViewNoLoadType;
+    }
+}
 
 - (void)loadData:(BOOL)isRefresh{
     if (self.loadType == WPBaseSectionTableViewNoLoadType) {

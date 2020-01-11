@@ -1,6 +1,8 @@
 {
     "title":[
-        "其他"
+        "基本操作",
+        "移动与删除",
+        "自定义cell"
     ],
     "content":[
         [
@@ -20,6 +22,23 @@
                 "classname":"WPStoryboardViewController",
                 "storyboardname":"Main"
             }
+        ],
+        [
+            {
+                "title":"点击进入，我可移动",
+                "classname":"WPMoveViewController"
+            },
+            {
+                "title":"点击进入，我可删除",
+                "classname":"WPDelViewController"
+            },
+            
+        ],
+        [
+            {
+                "title":"自定义cell",
+                "classname":"WPCustomCellViewController"
+            },
         ]
     ]
 }
