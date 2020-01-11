@@ -5,7 +5,7 @@ PODS:
     - SDWebImage/Core (= 5.0.2)
   - SDWebImage/Core (5.0.2)
   - "UITableView+FDTemplateLayoutCell (1.6)"
-  - WPBaseTableView (0.1.2):
+  - WPBaseTableView (0.1.4.1):
     - Masonry (= 1.1.0)
     - MJRefresh (= 3.1.15.6)
     - SDWebImage (= 5.0.2)
@@ -36,7 +36,7 @@ SPEC CHECKSUMS:
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
-  WPBaseTableView: a137a0c1fa0e9d108ee7b97b71230fd5bd085079
+  WPBaseTableView: 745132f9006708d2ead3e7175c1757c3903eee77
   WPChained: 8d4c734e212d081d2e03c8c64215104e3fecaec6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
