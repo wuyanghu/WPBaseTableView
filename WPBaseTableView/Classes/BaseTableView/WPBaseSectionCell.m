@@ -11,6 +11,7 @@
 #import "WPBaseSectionModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "YYText.h"
 
 @interface WPBaseSectionCell()
 

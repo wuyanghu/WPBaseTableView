@@ -6,9 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYText.h"
 NS_ASSUME_NONNULL_BEGIN
 @class WPBaseRowModel;
+@class YYLabel;
 
 typedef void(^WPBaseSectionCellBlock)(void);
 
