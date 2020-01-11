@@ -1,5 +1,6 @@
 # WPBaseTableView
 ## 主要功能:使用json配置TableView,高度缓存及动态计算，使用富文本展示，支持删除、移动。
+## 快速构建列表,继承WPBaseSectionTableViewViewController加一个json文件，不需要一行代码，可实现以上功能。
 [![CI Status](https://img.shields.io/travis/823105162@qq.com/WPBaseTableView.svg?style=flat)](https://travis-ci.org/823105162@qq.com/WPBaseTableView)
 [![Version](https://img.shields.io/cocoapods/v/WPBaseTableView.svg?style=flat)](https://cocoapods.org/pods/WPBaseTableView)
 [![License](https://img.shields.io/cocoapods/l/WPBaseTableView.svg?style=flat)](https://cocoapods.org/pods/WPBaseTableView)
