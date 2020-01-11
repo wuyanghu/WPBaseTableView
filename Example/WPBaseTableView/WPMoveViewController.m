@@ -7,7 +7,9 @@
 //
 
 #import "WPMoveViewController.h"
-#import "UIBu"
+#import "UINavigationItem+WPAddBarButtonItem.h"
+#import "WPCustomCell.h"
+
 @interface WPMoveViewController ()
 
 @end
@@ -17,20 +19,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.tableView setEditing:YES animated:YES];
     
-    UIButton * button =
-    [UIButton.createButton wp_makeProperty:^(ButtonChainedMaker * _Nullable make) {
-        make.frame(CGRectMake(0, 0, 44, 44));
-        make.image(image,UIControlStateNormal);
-        make.addTarget(callBlock);
+    [self.navigationItem wp_makeNaviItem:^(WPNavigationChainedMaker * _Nullable make) {
+        make.addRightItemTitle(@"编辑",^(UIButton * button){
+            [self.tableView setEditing:!self.tableView.isEditing animated:YES];
+            if (self.tableView.isEditing) {
+                [button setTitle:@"完成" forState:UIControlStateNormal];
+            }else{
+                [button setTitle:@"编辑" forState:UIControlStateNormal];
+            }
+        });
     }];
-    
-    return [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem cu]
+}
+
+- (void)registerCell{
+    [super registerCell];
+    [WPCustomCell registerClassWithTableView:self.tableView];
+}
+
+- (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{
+    return WPCustomCell.cellIdentifier;
 }
 
 - (BOOL)isCellCanMove{
+    return YES;
+}
+
+- (BOOL)isCellEditingDelete{
     return YES;
 }
 
@@ -38,9 +53,8 @@
     NSLog(@"移动自己实现吧!");
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    cell.textLabel.text = [[self.sectionsModel getContentModelWithIndexPath:indexPath] title];
 }
 
 /*

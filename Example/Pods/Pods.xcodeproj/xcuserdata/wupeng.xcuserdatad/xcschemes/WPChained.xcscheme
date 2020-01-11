@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2006263064A94C0063192AE0D2C3F409"
-               BuildableName = "UITableView+FDTemplateLayoutCell.framework"
-               BlueprintName = "UITableView+FDTemplateLayoutCell"
+               BlueprintIdentifier = "65A6E0A42E8AADD1B102078650B5E427"
+               BuildableName = "WPChained.framework"
+               BlueprintName = "WPChained"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
