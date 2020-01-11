@@ -43,8 +43,8 @@ NS_ASSUME_NONNULL_END
 ```
 ![viewController实现.png](https://upload-images.jianshu.io/upload_images/1387554-3546dd4b3b93825c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#一、BaseSectionTableViewViewController的实现:
-##1. 通过类名读取对应的配置文件，我把解析的方法放在NSObject(Json)中:
+# 一、BaseSectionTableViewViewController的实现:
+## 1. 通过类名读取对应的配置文件，我把解析的方法放在NSObject(Json)中:
 ```
 - (id)readConfigJsonWithName:(NSString *)name{
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
@@ -56,8 +56,8 @@ NS_ASSUME_NONNULL_END
     return dataId;
 }
 ```
-##2. 解析配置文件信息
-###2.1 json配置介绍
+## 2. 解析配置文件信息
+### 2.1 json配置介绍
 title是用于展示titleForHeaderInSection的NSString，是一个数组。
 content节点可配置title、classname、storyboardname、method、params。
 ```
@@ -165,7 +165,7 @@ content节点可配置title、classname、storyboardname、method、params。
 }
 ```
 
-##2.2获取title
+## 2.2获取title
 ```
 - (NSString *)getTitleFromSectionTableView:(NSIndexPath *)indexPath{
     id content = self.contentArray[indexPath.section][indexPath.row];
@@ -181,8 +181,8 @@ content节点可配置title、classname、storyboardname、method、params。
 ```
 title分两种，如果是NSString直接展示，如果是NSDictonary,则取出其中的title。
 
-##2.3 处理点击事件
-###2.3.1考虑到UIViewController可能是xib、纯代码、或storyBoard创建。如果是UIViewController类直接push。
+## 2.3 处理点击事件
+### 2.3.1考虑到UIViewController可能是xib、纯代码、或storyBoard创建。如果是UIViewController类直接push。
 ```
 id content = self.contentArray[indexPath.section][indexPath.row];
     
@@ -209,7 +209,7 @@ id content = self.contentArray[indexPath.section][indexPath.row];
         return;
     }
 ```
-###2.3.2 params解析
+### 2.3.2 params解析
 NSObject (AddParams)来给NSObject动态添加参数
 ```
 - (void)setParams:(NSDictionary *)params {
@@ -220,7 +220,7 @@ NSObject (AddParams)来给NSObject动态添加参数
     return objc_getAssociatedObject(self, @"params");
 }
 ```
-###2.3.3 method解析
+### 2.3.3 method解析
 ```
  SEL selector = NSSelectorFromString(_method);
         if ([objClass respondsToSelector:selector]) {
@@ -228,9 +228,9 @@ NSObject (AddParams)来给NSObject动态添加参数
         }
 ```
 
-#3.使用
-##3.1[可通过pod方式集成](https://github.com/wuyanghu/WPBaseTableView.git)
-##3.2新建viewController继承BaseSectionTableViewViewController,并新建一个json文件。
+# 3.使用
+## 3.1[可通过pod方式集成](https://github.com/wuyanghu/WPBaseTableView.git)
+## 3.2新建viewController继承BaseSectionTableViewViewController,并新建一个json文件。
 ```
 {
                 "title":"标题",
@@ -241,21 +241,21 @@ NSObject (AddParams)来给NSObject动态添加参数
                 }
             }
 ```
-##3.3 配置
-###3.3.1 仅展示title
+## 3.3 配置
+### 3.3.1 仅展示title
 ```
 {
                 "title":"点赞动画",
             }
 ```
-###3.3.2 纯代码创建
+### 3.3.2 纯代码创建
 ```
 {
                 "title":"图片裁剪",
                 "classname":"ClipImageViewController"
             }
 ```
-###3.3.3 storyboard创建
+### 3.3.3 storyboard创建
 ```
 {
                 "title":"排行榜C化",
@@ -263,7 +263,7 @@ NSObject (AddParams)来给NSObject动态添加参数
                 "storyboardname":"CMClassify"
             }
 ```
-###3.3.4 创建NSObject并运行指定方法
+### 3.3.4 创建NSObject并运行指定方法
 ```
 {
                 "title":"NSString 为什么用copy",
@@ -271,7 +271,7 @@ NSObject (AddParams)来给NSObject动态添加参数
                 "method":"main"
             }
 ```
-###3.3.5 创建类并带有参数
+### 3.3.5 创建类并带有参数
 ```
 {
                 "title":"CGAffineTransform 仿射变换",
@@ -285,7 +285,6 @@ NSObject (AddParams)来给NSObject动态添加参数
 
 总结:
 这种方式使得viewController类非常整洁，新增一个列表非常方便。不用关心跳转了，由BaseTableViewViewController为我们做好。
-具体使用可参考 [WPBaseTableView](https://github.com/wuyanghu/WPBaseTableView)
 
 ## Requirements
 
