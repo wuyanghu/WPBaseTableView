@@ -12,5 +12,4 @@
 #import "WPBaseSectionTableViewViewController.h"
 #import "WPBaseHeader.h"
 
-#import <AFNetworking/AFNetworking.h>
 #endif /* WPBase_h */
