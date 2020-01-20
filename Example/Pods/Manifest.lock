@@ -5,26 +5,31 @@ PODS:
     - SDWebImage/Core (= 5.0.2)
   - SDWebImage/Core (5.0.2)
   - "UITableView+FDTemplateLayoutCell (1.6)"
-  - WPBaseTableView (0.1.4.1):
+  - WPBaseTableView (0.1.4.2):
     - Masonry (= 1.1.0)
     - MJRefresh (= 3.1.15.6)
     - SDWebImage (= 5.0.2)
     - "UITableView+FDTemplateLayoutCell (= 1.6)"
+    - WPMarkDownParse (= 0.1.0)
     - YYText (= 1.0.7)
-  - WPChained (0.1.1)
+  - WPChained (0.1.2)
+  - WPMarkDownParse (0.1.0):
+    - SDWebImage (= 5.0.2)
+    - WPChained (= 0.1.2)
+    - YYText (= 1.0.7)
   - YYText (1.0.7)
 
 DEPENDENCIES:
   - WPBaseTableView (from `../`)
-  - WPChained (= 0.1.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Masonry
     - MJRefresh
     - SDWebImage
     - "UITableView+FDTemplateLayoutCell"
     - WPChained
+    - WPMarkDownParse
     - YYText
 
 EXTERNAL SOURCES:
@@ -36,10 +41,11 @@ SPEC CHECKSUMS:
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
-  WPBaseTableView: 745132f9006708d2ead3e7175c1757c3903eee77
-  WPChained: 8d4c734e212d081d2e03c8c64215104e3fecaec6
+  WPBaseTableView: e1285657198955a4238152eadb37adc69b166803
+  WPChained: 354502cdfaf040ae05dd41b115c9169da90967cf
+  WPMarkDownParse: 1ac33eb30159a6bf406b0b1bd2259c9dd12bd05e
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 26e8b017ea85a80119ba071bdd60e4eb4335ded8
+PODFILE CHECKSUM: 8a57b3a8325401653c042a8d5b31a37756648fde
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.4

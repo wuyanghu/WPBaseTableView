@@ -40,6 +40,7 @@ json配置tableView，高度自适应、缓存，点击图片放大等
   s.dependency 'Masonry','1.1.0'
   s.dependency 'UITableView+FDTemplateLayoutCell','1.6'
   s.dependency 'YYText','1.0.7'
+  s.dependency 'WPMarkDownParse','0.1.0'
   # s.resource_bundles = {
   #   'WPBaseTableView' => ['WPBaseTableView/Assets/*.png']
   # }

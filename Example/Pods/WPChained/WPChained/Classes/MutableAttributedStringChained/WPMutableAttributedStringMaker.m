@@ -40,9 +40,17 @@
 }
 
 //插入图片
-- (void)insertImageWithImageName:(NSString *)imageName bounds:(CGRect)bounds index:(NSUInteger)index{
+- (void)insertImageWithName:(NSString *)imageName bounds:(CGRect)bounds index:(NSUInteger)index{
+    [self insertImageWithImage:[UIImage imageNamed:imageName] bounds:bounds index:index];
+}
+
+- (void)insertImageWithImage:(UIImage *)image bounds:(CGRect)bounds index:(NSUInteger)index{
+    if (!image) {
+        NSLog(@"富文本图片不能为空");
+        return;
+    }
     NSTextAttachment *attchImage = [[NSTextAttachment alloc] init];
-    attchImage.image = [UIImage imageNamed:imageName];
+    attchImage.image = image;
     attchImage.bounds = bounds;
     
     NSAttributedString *stringImage = [NSAttributedString attributedStringWithAttachment:attchImage];
@@ -134,21 +142,18 @@
 
 #pragma mark - 链式
 //设置字体颜色
-- (WPChainedAttributedBlock)textColor{
-    WPChainedAttributedBlock block = ^WPMutableAttributedStringMaker *(UIColor * color,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(UIColor *,NSRange))textColor{
+    return ^WPMutableAttributedStringMaker *(UIColor * color,NSRange range){
         [self.string addAttribute:NSForegroundColorAttributeName value:color range:range];
         return self;
     };
-    return block;
-    
 }
 //设置背景颜色
-- (WPChainedAttributedBlock)textBgColor{
-    WPChainedAttributedBlock block = ^WPMutableAttributedStringMaker *(UIColor * color,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(UIColor *,NSRange))bgColor{
+    return ^WPMutableAttributedStringMaker *(UIColor * color,NSRange range){
         [self.string addAttribute:NSBackgroundColorAttributeName value:color range:range];
         return self;
     };
-    return block;
 }
 //设置字号
 - (WPMutableAttributedStringMaker *(^) (CGFloat,NSRange))textFont{
@@ -157,72 +162,89 @@
         return self;
     };;
 }
-//插入图片
-- (WPChainedAttributedImageBlock)insertImage{
-    WPChainedAttributedImageBlock imageBlock = ^WPMutableAttributedStringMaker * (NSString * imageName ,CGRect bounds,NSInteger index){
-        [self insertImageWithImageName:imageName bounds:bounds index:index];
+
+//设置加粗
+- (WPMutableAttributedStringMaker *(^) (CGFloat,NSRange))textBoldFont{
+    return ^WPMutableAttributedStringMaker *(CGFloat fontSize,NSRange range){
+        [self.string addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:fontSize] range:range];
+        return self;
+    };;
+}
+
+//设置斜体加粗
+- (WPMutableAttributedStringMaker *(^) (CGFloat,NSRange))textBoldItalicFont{
+    return ^WPMutableAttributedStringMaker *(CGFloat fontSize,NSRange range){
+        [self.string addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Arial-BoldItalicMT" size:fontSize] range:range];
         return self;
     };
-    return imageBlock;
+}
+
+//插入图片
+- (WPMutableAttributedStringMaker * (^)(NSString * ,CGRect,NSInteger))insertImage{
+    return ^WPMutableAttributedStringMaker * (NSString * imageName ,CGRect bounds,NSInteger index){
+        [self insertImageWithName:imageName bounds:bounds index:index];
+        return self;
+    };
+}
+
+//插入图片2
+- (WPMutableAttributedStringMaker * (^)(UIImage * ,CGRect,NSInteger))insertImage2{
+    return ^WPMutableAttributedStringMaker * (UIImage * image ,CGRect bounds,NSInteger index){
+        [self insertImageWithImage:image bounds:bounds index:index];
+        return self;
+    };
 }
 
 //设置段落属性
-- (WPChainedAttributedParagraphBlock)paragraphStyle{
-    WPChainedAttributedParagraphBlock block = ^WPMutableAttributedStringMaker *(NSMutableParagraphStyle * style,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(NSMutableParagraphStyle *,NSRange))paragraphStyle{
+    return ^WPMutableAttributedStringMaker *(NSMutableParagraphStyle * style,NSRange range){
         [self paragraphStyle:style range:range];
         return self;
-    };
-    return block;
+    };;
 }
 //字间距
-- (WPChainedAttributedFloatBlock)kernWordSpace{
-    WPChainedAttributedFloatBlock block = ^WPMutableAttributedStringMaker *(CGFloat space,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(CGFloat,NSRange))kernWordSpace{
+    return ^WPMutableAttributedStringMaker *(CGFloat space,NSRange range){
         [self kernWordSpace:space range:range];
         return self;
-    };
-    return block;
+    };;
 }
 //单双删除线:1-7单线 依次加粗;9-15双线 依次加粗
 //删除线颜色
-- (WPChainedAttributedFloatColorBlock)strikethrough{
-    WPChainedAttributedFloatColorBlock block = ^WPMutableAttributedStringMaker *(CGFloat space,UIColor * color,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(CGFloat,UIColor *,NSRange))strikethrough{
+    return ^WPMutableAttributedStringMaker *(CGFloat space,UIColor * color,NSRange range){
         [self strikethrough:space color:color range:range];
         return self;
-    };
-    return block;
+    };;
 }
 
 //下划线及颜色
-- (WPChainedAttributedUnderlineStyleBlock)underlineStyle{
-    WPChainedAttributedUnderlineStyleBlock block = ^WPMutableAttributedStringMaker *(NSUnderlineStyle style,UIColor * color,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(NSUnderlineStyle,UIColor *,NSRange))underlineStyle{
+    return ^WPMutableAttributedStringMaker *(NSUnderlineStyle style,UIColor * color,NSRange range){
         [self underlineStyle:style color:color range:range];
         return self;
-    };
-    return block;
+    };;
 }
 
 /*
  文本描边颜色
  width:正值镂空 负值描边
  */
-- (WPChainedAttributedFloatColorBlock)strokeColorWithWidth{
-    WPChainedAttributedFloatColorBlock block = ^WPMutableAttributedStringMaker *(CGFloat offset,UIColor * color,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(CGFloat,UIColor *,NSRange))strokeColor{
+    return ^WPMutableAttributedStringMaker *(CGFloat offset,UIColor * color,NSRange range){
         [self strokeColorWithWidth:offset color:color range:range];
         return self;
-    };
-    return block;
+    };;
 }
-//设置阴影
-//offsetSize:阴影偏移量;color:阴影颜色;blurRadius:模糊度
-- (WPChainedAttributedShadowBlock)shadowWithOffset{
-    WPChainedAttributedShadowBlock block = ^WPMutableAttributedStringMaker *(CGSize offsetSize,UIColor * color,CGFloat blurRadius,NSRange range){
+//设置阴影 offsetSize:阴影偏移量;color:阴影颜色;blurRadius:模糊度
+- (WPMutableAttributedStringMaker *(^)(CGSize,UIColor *,CGFloat,NSRange))shadow{
+    return ^WPMutableAttributedStringMaker *(CGSize offsetSize,UIColor * color,CGFloat blurRadius,NSRange range){
         [self shadowWithOffset:offsetSize color:color blurRadius:blurRadius range:range];
         return self;
-    };
-    return block;
+    };;
 }
 //添加链接
-- (WPMutableAttributedStringMaker *(^)(NSString * url ,NSRange range))linkWithUrl{
+- (WPMutableAttributedStringMaker *(^)(NSString * url ,NSRange range))link{
     return ^ WPMutableAttributedStringMaker *(NSString * urlString,NSRange range){
         [self linkWithUrl:urlString range:range];
         return self;
@@ -232,29 +254,26 @@
  文字基线偏移
  offset:负数向下偏移;正数向上偏移
  */
-- (WPChainedAttributedFloatBlock)baselineOffset{
-    WPChainedAttributedFloatBlock block = ^WPMutableAttributedStringMaker *(CGFloat offset,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(CGFloat,NSRange))baselineOffset{
+    return ^WPMutableAttributedStringMaker *(CGFloat offset,NSRange range){
         [self baselineOffsetWithOffset:offset range:range];
         return self;
-    };
-    return block;
+    };;
 }
 //文字倾斜度
-- (WPChainedAttributedFloatBlock)obliqueness{
-    WPChainedAttributedFloatBlock block = ^WPMutableAttributedStringMaker *(CGFloat offset,NSRange range){
+- (WPMutableAttributedStringMaker * (^)(CGFloat,NSRange))obliqueness{
+    return ^WPMutableAttributedStringMaker *(CGFloat offset,NSRange range){
         [self obliquenessWithOffset:offset range:range];
         return self;
     };
-    return block;
 }
 
 //字体横向拉伸:正值拉伸，负值压缩
-- (WPChainedAttributedFloatBlock)expansionWithOffset{
-    WPChainedAttributedFloatBlock block = ^WPMutableAttributedStringMaker *(CGFloat offset,NSRange range){
+- (WPMutableAttributedStringMaker *(^)(CGFloat offset,NSRange range))expansion{
+    return ^WPMutableAttributedStringMaker *(CGFloat offset,NSRange range){
         [self expansionWithOffset:offset range:range];
         return self;
-    };
-    return block;
+    };;
 }
 
 @end

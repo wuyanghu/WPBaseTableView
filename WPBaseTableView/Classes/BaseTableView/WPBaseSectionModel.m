@@ -8,6 +8,7 @@
 #import "WPBaseSectionModel.h"
 #import "WPCommonMacros.h"
 #import "YYText.h"
+#import "WPMarkDownParseFactory.h"
 
 @implementation WPBaseSectionsModel
 
