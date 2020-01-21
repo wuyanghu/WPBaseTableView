@@ -103,7 +103,7 @@
 }
 
 - (NSMutableAttributedString *)attributedWithText:(NSString *)text fontSize:(CGFloat)fontSize height:(CGFloat *)height{
-    NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+    NSMutableAttributedString * attributedString = [WPMarkDownParseFactory parseMarkDownWithText:text];
     [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:fontSize] range:NSMakeRange(0, text.length)];
     [self getYYLabelHeight:attributedString height:height];
     return attributedString;
