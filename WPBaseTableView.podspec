@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WPBaseTableView'
-  s.version          = '0.1.4.2'
+  s.version          = '0.1.5'
   s.summary          = '使用json配置TableView'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 json配置tableView，高度自适应、缓存，点击图片放大等
+使用WPMarkDownParse解析
                        DESC
 
   s.homepage         = 'https://www.jianshu.com/u/260d120058f7'
@@ -40,7 +41,7 @@ json配置tableView，高度自适应、缓存，点击图片放大等
   s.dependency 'Masonry','1.1.0'
   s.dependency 'UITableView+FDTemplateLayoutCell','1.6'
   s.dependency 'YYText','1.0.7'
-  s.dependency 'WPMarkDownParse','0.1.0'
+  s.dependency 'WPMarkDownParse'
   # s.resource_bundles = {
   #   'WPBaseTableView' => ['WPBaseTableView/Assets/*.png']
   # }
