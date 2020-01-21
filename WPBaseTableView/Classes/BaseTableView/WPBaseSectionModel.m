@@ -8,7 +8,7 @@
 #import "WPBaseSectionModel.h"
 #import "WPCommonMacros.h"
 #import "YYText.h"
-#import "WPMarkDownParseFactory.h"
+#import "NSString+WPMarkDownParse.h"
 
 @implementation WPBaseSectionsModel
 
@@ -89,24 +89,29 @@
 #pragma mark - 提供默认的属性并计算高度
 
 - (void)setTitle:(NSString *)title{
-    if (title && ![title isEqualToString:_title]) {
-        _titleAttributedString = [self attributedWithText:title fontSize:17 height:&_titleHeight];
+    if (![_title isEqualToString:title]) {
+        [self setTitle:title fontSize:17];
+    }
+}
+
+- (void)setDesc:(NSString *)desc{
+    if (![_desc isEqualToString:desc]) {
+        [self setDesc:desc fontSize:14];
+    }
+}
+
+- (void)setTitle:(NSString *)title fontSize:(CGFloat)size{
+    if (title) {
+        self.titleAttributedString = [title wp_markDownParseWithFontSize:size];
     }
     _title = title;
 }
 
-- (void)setDesc:(NSString *)desc{
-    if (desc && ![desc isEqualToString:_desc]) {
-        _descAttributedString = [self attributedWithText:desc fontSize:14 height:&_descHeight];
+- (void)setDesc:(NSString *)desc fontSize:(CGFloat)size{
+    if (desc) {
+        self.descAttributedString = [desc wp_markDownParseWithFontSize:size];
     }
     _desc = desc;
-}
-
-- (NSMutableAttributedString *)attributedWithText:(NSString *)text fontSize:(CGFloat)fontSize height:(CGFloat *)height{
-    NSMutableAttributedString * attributedString = [WPMarkDownParseFactory parseMarkDownWithText:text];
-    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:fontSize] range:NSMakeRange(0, text.length)];
-    [self getYYLabelHeight:attributedString height:height];
-    return attributedString;
 }
 
 #pragma mark - 根据富文本去计算高度

@@ -28,8 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface WPBaseRowModel : NSObject
-@property (nonatomic,copy) NSString * title;
-@property (nonatomic,copy) NSString * desc;
+@property (nonatomic,copy) NSString * title;//默认17
+@property (nonatomic,copy) NSString * desc;//默认14
+- (void)setTitle:(NSString *)title fontSize:(CGFloat)size;
+- (void)setDesc:(NSString *)desc fontSize:(CGFloat)size;
 
 @property (nonatomic,strong) NSMutableAttributedString * titleAttributedString;
 @property (nonatomic,strong) NSMutableAttributedString * descAttributedString;
