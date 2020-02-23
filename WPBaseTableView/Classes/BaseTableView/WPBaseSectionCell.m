@@ -152,6 +152,7 @@
     yyLabel.textAlignment = NSTextAlignmentLeft;
     yyLabel.textVerticalAlignment = YYTextVerticalAlignmentTop;
     yyLabel.numberOfLines = 0;
+    yyLabel.displaysAsynchronously = YES;
     yyLabel.preferredMaxLayoutWidth = SCREEN_WIDTH-16*2;//设置最大宽度
     return yyLabel;
 }
