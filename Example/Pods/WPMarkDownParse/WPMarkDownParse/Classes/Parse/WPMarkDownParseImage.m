@@ -18,18 +18,26 @@
     for (int i = 0; i<separatedArray.count-1; i++) {
         
         NSString * leftString = separatedArray[i];
-        if ([self isBackslash:leftString]) {
+        if ([self wp_isBackslash:leftString]) {
             continue;
         }
         WPMarkDownParseImageModel * urlModel = [[WPMarkDownParseImageModel alloc] initWithSymbol:self.symbol];
-        NSArray * leftStringSeparteds = [leftString componentsSeparatedByString:@"!["];
-        if (leftStringSeparteds.count>1) {
-            urlModel.text = leftStringSeparteds.lastObject;
+        
+        NSRange leftRange = [leftString rangeOfString:@"!["];
+        if (leftRange.location != NSNotFound) {
+            urlModel.text = [leftString substringFromIndex:NSMaxRange(leftRange)];
+        }else{
+            continue;
         }
-        NSArray * rightSepartedArray = [separatedArray[i+1] componentsSeparatedByString:@")"];
-        if (rightSepartedArray.count>0) {
-            urlModel.url = rightSepartedArray.firstObject;
+        
+        NSString * rightText = separatedArray[i+1];
+        NSRange rightRange = [rightText rangeOfString:@")"];
+        if (rightRange.location != NSNotFound) {
+            urlModel.url = [rightText substringToIndex:rightRange.location];
+        }else{
+            continue;
         }
+        
         if (urlModel.text.length && urlModel.url.length) {
             [self.segmentArray addObject:urlModel];//当文字与url都不为空时，才算解析成功
         }
@@ -47,9 +55,7 @@
              设置图片,现在是固定宽高，可让url后带上宽高
              */
             UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.defaultWidth, self.defaultWidth*0.68)];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:obj.url] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-                
-            }];
+            [imageView sd_setImageWithURL:[NSURL URLWithString:obj.url] placeholderImage:nil options:SDWebImageRetryFailed];
             
             imageView.backgroundColor = [UIColor whiteColor];
             NSMutableAttributedString *attachText = [NSMutableAttributedString yy_attachmentStringWithContent:imageView contentMode:UIViewContentModeCenter attachmentSize:imageView.frame.size alignToFont:[UIFont systemFontOfSize:self.defaultFontSize] alignment:YYTextVerticalAlignmentCenter];
@@ -76,7 +82,7 @@
     WPMutableParagraphStyleModel * styleModel = [WPMutableParagraphStyleModel new];
     styleModel.headIndent =  (self.defaultWidth-width)/2;//整体缩进(首行除外)
     styleModel.firstLineHeadIndent = (self.defaultWidth-width)/2;
-    styleModel.alignment = NSTextAlignmentJustified;
+    styleModel.alignment = NSTextAlignmentLeft;
     return styleModel;
 }
 

@@ -15,18 +15,29 @@
 #pragma mark - 策略
 
 - (void)segmentString:(NSArray *)separatedArray text:(NSString *)text{
-    NSMutableArray * parseArray = [NSMutableArray arrayWithCapacity:separatedArray.count-1];
     
     for (int i = 0; i<separatedArray.count-1;i++) {
-        if ([self isBackslash:separatedArray[i]]) {
+        if ([self wp_isBackslash:separatedArray[i]]) {
             continue;
         }
-        NSArray * rightStringSeparteds = [separatedArray[i+1] componentsSeparatedByString:@"\n\n"];
-        if (rightStringSeparteds.count>0) {
-            WPMarkDownParseQuoteParagraphModel * paragraphModel = [[WPMarkDownParseQuoteParagraphModel alloc] initWithSymbol:self.symbol];
-            paragraphModel.text = rightStringSeparteds.firstObject;
-            [self.segmentArray addObject:paragraphModel];
+        NSString * leftLastString = [self wp_lastOneString:separatedArray[i]];
+        if (!leftLastString || [leftLastString isEqualToString:@"\n"]) {
+            //第一行或段首
+            
+        }else{
+            continue;
         }
+        
+        NSString * rightText = separatedArray[i+1];
+        NSRange range = [rightText rangeOfString:@"\n\n"];//匹配到第一个\n\n
+        
+        WPMarkDownParseQuoteParagraphModel * paragraphModel = [[WPMarkDownParseQuoteParagraphModel alloc] initWithSymbol:self.symbol];
+        if (range.location != 0) {
+            paragraphModel.text = [rightText substringToIndex:range.location];
+        }else{
+            paragraphModel.text = rightText;
+        }
+        [self.segmentArray addObject:paragraphModel];
     }
 }
 
@@ -60,9 +71,9 @@
 
 - (WPMutableParagraphStyleModel *)styleModel{
     WPMutableParagraphStyleModel * styleModel = [WPMutableParagraphStyleModel new];
-    styleModel.headIndent = 20;//整体缩进(首行除外)
-    styleModel.firstLineHeadIndent = 20;
-    styleModel.alignment = NSTextAlignmentJustified;
+    styleModel.headIndent = 17;//整体缩进(首行除外)
+    styleModel.firstLineHeadIndent = 17;
+    styleModel.alignment = NSTextAlignmentLeft;
     return styleModel;
 }
 

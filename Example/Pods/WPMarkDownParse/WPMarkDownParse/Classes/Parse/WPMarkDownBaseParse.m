@@ -52,9 +52,14 @@
     
 }
 
+@end
+
+
+@implementation WPMarkDownBaseParse (Util)
+
 //检查是不是反斜杠
-- (BOOL)isBackslash:(NSString *)string{
-    NSString * lastOneString = [self lastOneString:string];
+- (BOOL)wp_isBackslash:(NSString *)string{
+    NSString * lastOneString = [self wp_lastOneString:string];
     if ([lastOneString isEqualToString:@"\\"]) {
         return YES;
     }
@@ -62,18 +67,66 @@
 }
 
 //最后一个字符
-- (NSString *)lastOneString:(NSString *)string{
+- (NSString *)wp_lastOneString:(NSString *)string{
     if (string.length == 0) {
         return nil;
     }
     return [string substringFromIndex:string.length-1];
 }
 //第一个字符
-- (NSString *)firstOneString:(NSString *)string{
+- (NSString *)wp_firstOneString:(NSString *)string{
     if (string.length == 0) {
         return nil;
     }
     return [string substringToIndex:1];
+}
+
+//裁剪字符最后几位的数字
+- (NSString *)wp_subStringLastNum:(NSString *)text{
+    NSInteger i = text.length-1;
+    while (i>=0) {
+        NSString * lastString = [text substringWithRange:NSMakeRange(i, 1)];
+        if ([self wp_isNumberWithStr:lastString]) {
+            i--;
+        }else{
+            break;
+        }
+    }
+    return [text substringFromIndex:i+1];
+}
+//截取字符的最后几位数字之前的字符
+- (NSString *)wp_subLastNumPreString:(NSString *)text{
+    NSInteger i = text.length-1;
+    while (i>=0) {
+        NSString * lastString = [text substringWithRange:NSMakeRange(i, 1)];
+        if ([self wp_isNumberWithStr:lastString]) {
+            i--;
+        }else{
+            break;
+        }
+    }
+    if (i<text.length) {
+        return [text substringToIndex:i];
+    }
+    return nil;
+}
+
+- (BOOL)wp_isChineseWithText:(NSString *)text{
+    NSString *temp = text;
+    const char *u8Temp = [temp UTF8String];
+    if (3==strlen(u8Temp)){
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)wp_isNumberWithStr:(NSString *)str {
+    if (str.length == 0) {
+        return NO;
+    }
+    NSString *regex = @"[0-9]*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    return [pred evaluateWithObject:str];
 }
 
 @end

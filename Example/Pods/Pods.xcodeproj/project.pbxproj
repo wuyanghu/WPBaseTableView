@@ -13,7 +13,6 @@
 		03E9D1028B1D0E597D04CEBD49D6F05D /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F08B386CCD8133D5F6877D2C4053A /* MJRefreshFooter.m */; };
 		043965B9DEC3BBC5533C49F64F56EC04 /* WPCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9E84198C43560B45632F35D6DFCE5E /* WPCommonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		045A29699307F3CFAE1DAAD612D46140 /* UIButton+WPChained.h in Headers */ = {isa = PBXBuildFile; fileRef = E7DC43025FB4CD086A0DCF124195C47F /* UIButton+WPChained.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		048444B7EE68CD8D2A0FC27880CA6F27 /* WPMarkDownParseFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 522E468F3E30852AC00991158A396A4D /* WPMarkDownParseFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05706C90FBFBCDBB6971DDE66046BA32 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 98758D8FEFDB5C993B43D53E9018520C /* UITableView+FDIndexPathHeightCache.m */; };
 		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7325ADF5DCA37E5E84FB35EC64A81F83 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE7B172C2DB5E1DABF49296D446A710 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +25,7 @@
 		092EC0144C2F4D16F5DC20461953BF81 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 256295DADE95DB10F79ECC35A3B857D9 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F1C1980B310E82F5209C2D716FD84 /* ViewController+MASAdditions.m */; };
 		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7974B9F551B892A80B4C7BD061ABA0 /* NSArray+MASAdditions.m */; };
+		09AE6634B9C2536982E2FF05399A035A /* WPMarkDownParseQuoteParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 7812CD20E03BCB3B5124B6462BC0005E /* WPMarkDownParseQuoteParagraph.m */; };
 		09CC50CF451F142375D091C0CA2B3C90 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6189E54C34BF99AFC50C015763A2AF3 /* Masonry.framework */; };
 		0A293BC418AA0CF64EECEE3C86AE851D /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 795455CBAC7552523E3B1324787E5356 /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 385FE73EDC8F6A794A4264AA55648946 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,12 +36,13 @@
 		0ECBC673287BC016BB11C6784EA656FB /* WPButtonChainedMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EFE443F7BEDB53198C5F11FF6640F4 /* WPButtonChainedMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ED96C2BFBC7238A100BC7CD916440B0 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0259B30878AB1F3A452BF7FAA783F57A /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		107FAE670642E6B0BDD77CDB48CD86DA /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B35D83FEC70BC3DEC0B192CD0AA074F /* UIImageView+HighlightedWebCache.m */; };
+		10BC71F753C62804395D81B9E2A78389 /* WPMarkDownMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC22870F4B7B216547B8C5DCDD58F42 /* WPMarkDownMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10EDD448A4E67D67539851A1CCD88C64 /* WPChained-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 694BDEFFC59FD98E9CD2918EC665199C /* WPChained-dummy.m */; };
 		110357C54F66EE91F0293DEE6DD901AF /* UITableView+FDTemplateLayoutCellDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B890140EC476A53354025999EBAB61F /* UITableView+FDTemplateLayoutCellDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		111954E5ACFCF14C60B42980BF63E516 /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 649A8FD7BBBF3C15C80080B1281D8B77 /* YYTextLayout.m */; };
 		117A0C7B7982B0DBC2EE86914D3E1484 /* WPBaseHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FE9EB699B4F905D448DD0B2346B805 /* WPBaseHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		120C18C122B0DDB5B9C755F5471561B9 /* WPTableViewPlaceHolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A69E21FCF6E50F62C06231FB856DC6 /* WPTableViewPlaceHolderView.m */; };
-		1212C587C2F6C55D95D1E5D6C4BAAEE1 /* WPMarkDownParseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D44E39CB78F6B26196CE604B2C6087 /* WPMarkDownParseOrder.m */; };
+		12802DB9EBE34CE2B9D923D8DA82D870 /* NSString+WPMarkDownParse.h in Headers */ = {isa = PBXBuildFile; fileRef = 53151B2D5DFCD75F4E412BC86DE4393C /* NSString+WPMarkDownParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13A7A28BB7B201E1879ECE07F96FED7B /* WPParseSectionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 401BBA96AAAAC0D342E0753B5C636DA6 /* WPParseSectionsModel.m */; };
 		14A1F8F0AC0D3D614E226EB2F875E0ED /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AEB587EF0D91618E72E64F35AB99BD /* MJRefreshNormalHeader.m */; };
 		1799DD61C47CE2524F772CE9FE3E57BB /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBBA34CAC77E9CC3835DDA176F365D /* SDWebImageCompat.m */; };
@@ -49,24 +50,24 @@
 		183AE69089AB6722B60089859F51CC91 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6214F7B1B5DB324F96E547664D183B4F /* NSButton+WebCache.m */; };
 		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4CDA12D3F81BBB94C73D1516449AF /* Masonry-dummy.m */; };
 		198ACE3229C751CB153419BE19985C92 /* UILabel+WPChained.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A6362A7B6E6E915AAF2BCE7850D31D /* UILabel+WPChained.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19ACF31F20F2AF3E8134B7EC5C577DF4 /* WPMarkDownBaseParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 145B858D32453BBB39550230B22A4EB1 /* WPMarkDownBaseParse.m */; };
+		19F461AAB92FA22F54D386D24429D445 /* WPMarkDownParseDisorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 63318DAD7EFAD1FF4E6283B8DDA56D40 /* WPMarkDownParseDisorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AE9AE32F98D855FF16996E8346F5A4F /* UIImage+Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E9D8A675011A59EE02759EFD582BB7 /* UIImage+Metadata.m */; };
 		1C3CEEBD4EC70DE8E9B794394DB88E98 /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 468504A50E283EA8AA6ABF4FDB39A543 /* SDWeakProxy.m */; };
 		1C81A34D6CF55FCDD342111D7E464A55 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8B9E9F85C1D2BFFD69A720BD92F274 /* YYTextView.m */; };
-		1EE178AB7EE071A4A13647286E94E03B /* NSString+WPMarkDownParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D66E057B87D1DCC1C6495F8B699CE80 /* NSString+WPMarkDownParse.m */; };
 		201921931F66DEB554F3E92A1C76103D /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB2AA9AE158EC562C3DA25D4B6B881E /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		20200CF504BA7DB3436056C9465934C8 /* WPBaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 715920A95B3CB809E6B9D50B1E32BFD0 /* WPBaseSectionModel.m */; };
 		20C7AF36AF29FFB79E5A5B5B646BC63B /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E552F7AFBC8F4C329F5C8267C5D62A0 /* SDImageCacheConfig.m */; };
+		218AE651BB54F84643F40BA1854F01F8 /* WPMarkDownParseDisorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B3E2F7CBED7329905A5E131F6F08C0 /* WPMarkDownParseDisorder.m */; };
 		221F4AB77ACAFA552B41C09F86743AA4 /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6278446DFF36A4C2AE9E4739401D8031 /* SDImageIOCoder.m */; };
 		2226D61A6D5A4D83E6A0454DB5C1FBF6 /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD4BE05936C7E6AF9FBC998B32B5C5C /* SDImageCacheDefine.m */; };
 		22964457252D04396E94426CB5C2A2F9 /* SDImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A6AB6AE1702742D1741D46F7639A03 /* SDImageFrame.m */; };
-		22EA9FB8B01653E38645FDC447A34FBE /* WPMarkDownParseBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7442F6CD0D34F6F231A9BFC528AA0F1F /* WPMarkDownParseBaseModel.m */; };
 		255276C4DEEB80E023A0F6B847F31C42 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C0E408E739ED386F581432D5223E286 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		262D019CABE424D5E678EA7FFB003752 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698C044DFC0DB49B0D689A7947A55D0 /* YYTextDebugOption.m */; };
 		2766266601B8DD8D921BA21A56A14EB1 /* WPBaseSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 61568826C2E3EB49DC4B19432D403809 /* WPBaseSectionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B65D5860D2B12CDD04A35AD5AAC645F9 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2810665D418DC3AC5ADE2B26B19FF2D3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6997FE8798A1D20A93FFB1C244E503 /* UIImageView+WebCache.m */; };
 		282881B7BC5A990AD22B1C6025DB76DA /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD8C08B323A83F9357DDD33745E3E61 /* YYTextLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		287E8818C3147FD3C5E211677BA2C9B3 /* WPMarkDownParseOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1F74FA42CE2C69AAD628D53C060E30 /* WPMarkDownParseOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761B6036902D6D60EA7AF152F995028 /* MASViewAttribute.m */; };
 		299F12937C90218A3807CC95AA639487 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 269BB5FBD1368CDA726AA7B40B335156 /* MJRefreshBackNormalFooter.m */; };
 		2A1576930A205BE96C820872C87EEE7B /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CD393230E5F98BFA3612E8318963D3 /* UIColor+HexString.m */; };
@@ -74,11 +75,10 @@
 		2A52D0C8B5DEEB1EFF24F8061E91AABA /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CD1F26CE83100F2187F0CA6D71E87F /* UIScrollView+MJRefresh.m */; };
 		2A7FD4939378213CCC6222BF5A2CD57D /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9345E2663C93253FB9F0F09788FCA140 /* MJRefreshAutoNormalFooter.m */; };
 		2A8447887507FDB9EA36AFA989B821AA /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC37CE81B1C7E9FDCC59DFF3111F655 /* YYTextArchiver.m */; };
+		2AA35F9B8FE891EDF28926EFF1BE454E /* WPMarkDownParseItalic.m in Sources */ = {isa = PBXBuildFile; fileRef = 046807A2AB44EF9C447BF877583BC96C /* WPMarkDownParseItalic.m */; };
 		2C8950112B8EE2D95FB7F971B580A374 /* SDImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6FEE38081AC8C0F142779AD6DC704 /* SDImageCodersManager.m */; };
-		2CCC7E8DC684CEBC5D4CA81C49C6C96E /* WPMarkDownMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E6E12368817EFC0DD6C177F60003FF /* WPMarkDownMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CF884A28822E1D9859FD2F2B228560A /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EF877B331106B571061AF207092BF6 /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2D6661CAB3F8AB6D44AC854C040E2C23 /* UITableView+FDTemplateLayoutCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F16FB3BE502F3944BA3951C8CAD7C12 /* UITableView+FDTemplateLayoutCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E7B701DFCE87743312224C5441E25C8 /* WPMarkDownParseBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C3BABF2ABE339A0533097DEDA366A1 /* WPMarkDownParseBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FE40604ABA7405B498718F7AD1A7173 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FB80759C3053C51AAAC5EF6F48466F /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32E7C4989CF3CDD3227C57C767D4B05F /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA25128CCA5277B7E6E0551737FDC7BB /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		332C72C5B8C3C09A506066914FD76D91 /* UINavigationItem+WPAddBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2650858C83F02998DAC39560072271A1 /* UINavigationItem+WPAddBarButtonItem.m */; };
@@ -94,7 +94,6 @@
 		399D1DAEFD906549CBB1BCE134402C5A /* YYText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0954C229D24F5516368539BE0873E3A9 /* YYText.framework */; };
 		39B6E7D27620A6C0819C31040B227AAE /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BD80F6E4F5A519EF7303F7C2588AAFC6 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A074F3ABAD50DA640069CD16682D987 /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A8D77EED8A5EE5AB28CB714A91C870 /* YYTextRunDelegate.m */; };
-		3AA4B5245928CADEAAB4EF48400C24EE /* WPMarkDownParseTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB508ED6F2B0383DE30C3766711D3E3 /* WPMarkDownParseTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B68BA5E81EDE50C5CE62166137043D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE761FFB60B37672847032B27ADD6440 /* Accelerate.framework */; };
 		3B722780528C5C876828FBA6F0D58921 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D253F29FFA0DD5546E8B11F18D43AE92 /* SDWebImageDownloaderConfig.m */; };
 		3C49237ABF1CC83635F1D0BA74EE3DE8 /* SDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D41B5D1AC0226C6DA2A9F9A072F5A2 /* SDDiskCache.m */; };
@@ -103,26 +102,23 @@
 		3DE236F3B45A1FC36B6791AA2E6DDAAF /* UIView+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 6639A9A6033018B7074BAEC72A60D37A /* UIView+YYText.m */; };
 		3E05153D7ED2768CCE755D51CD3C8184 /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = EED9774B5718385CFD2459171070F455 /* SDWebImageError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F16D804325593344A0F85AE492A5C79 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C02EF5F40BDC1BD5BFFAC06B515B0150 /* UIScrollView+MJExtension.m */; };
-		3FA6B7128E9865D9E81F051991ABC227 /* WPMarkDownParseItalic.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3170535A881EC24BBA83C1231E839C /* WPMarkDownParseItalic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FC39085496EFFB176B9A72C0EC592EA /* YYTextKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C027774FB7E21503FF80EA1FD65B3AF8 /* YYTextKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41A17DCE3C993697D925585A26297D1C /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D01CBC9556305C2CC596448605C19E7 /* SDWebImageIndicator.m */; };
 		42927E3270EBE2D3F27F2BAA1750736E /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BF285EE4147A0118121BC5117210FF /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42ADD0E051085D0483C21718F5F63316 /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 507AD0620B159DE73BF9BA64A9AE5178 /* YYTextRubyAnnotation.m */; };
 		439464E37FBB3EEA16786B84187EDE4D /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5FA7F64EDFB6C6E7C426E697C047EC /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43CA92608F127EFB9247427E4701FA60 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F054B35B04C9D2005E2EA63724B967 /* UIImage+GIF.m */; };
-		4413A3F3CA28556848127B2D98F67522 /* WPMarkDownBaseParse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED295A86C8326EC711466BD80A20757 /* WPMarkDownBaseParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		447DD41B5CA1E121219ECA2B0B1B874F /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E0500D57E90744D1437BFA6D6B387CCC /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44AB83515CFF8FF4918CBD52B22DE20C /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BA24C1E9F18CE800D966AD1AFE4DD /* SDImageLoader.m */; };
-		46808701887046EADE1C9BC754BE5708 /* WPMarkDownParseBold.h in Headers */ = {isa = PBXBuildFile; fileRef = BF265BD221610338527353B3910BCADB /* WPMarkDownParseBold.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		487D61AEF39892B3AB3165B8D5CCEF28 /* YYText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF5701D39205B7162B42344929D6C8 /* YYText-dummy.m */; };
 		48881623240E26BA71BC25107EE78525 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6DE3672C4B6A1A2E8717678A1605F8 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4955C693FE3E6F879065339EF9F7BA20 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 523A8F3D29D0B448490A2AF616750427 /* SDWebImageDownloaderOperation.m */; };
+		4ADCC8D7FB9040324872117AD3AD3189 /* WPMarkDownParseImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E28F8428905C067628528BAEA6CBA5 /* WPMarkDownParseImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8645D0EABAE22C015086ADB1EA654500 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B2EFDE24B936A233E770BCACA7055C9 /* SDAnimatedImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0DC49F01E3B23E0B3D778DF3493409 /* SDAnimatedImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E90454EB3B7732F018432B961F41A71 /* WPBaseSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 450DF01A9101D26A20B86E219A692958 /* WPBaseSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F3550374ED5CF58854ED7C0F04417D3 /* WPBaseTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CA2BF4BC33D03F165718391BB29C65 /* WPBaseTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F5453330A2C82B176C71EEEC4DF7D98 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEC6A4229B56842AD3E661EAECC21F0 /* MJRefreshAutoStateFooter.m */; };
-		504DF53EA62BB01D7ECB2B537765EC8C /* WPMarkDownParse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA02845B890B0C74942D6ED09D45358 /* WPMarkDownParse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5079BEA7BEE8ACE4DDAEA9C72582DCA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC1C8498FC979449857F20D39CCD956 /* UIKit.framework */; };
 		531A21EBDBF0AAD2A9EA0222F8D37739 /* WPLabelChainedMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 12690FFA9A4C0D4961F8B037F92758F3 /* WPLabelChainedMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53834B26BF5BBEDB5CBFD2429BF42FD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA84A6D0585BEA159C367456F3E3B37 /* Foundation.framework */; };
@@ -137,7 +133,6 @@
 		5E03053B4B4FCEE9927F3E9E01656FB0 /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6BA5404812CD163236C47C0F36F230 /* SDImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FE17834C930E537D0C794BCF32B7AEC /* YYTextAsyncLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A7A693316FF874B196B80499B0EDC7 /* YYTextAsyncLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60690E1B4C819AA9BF87C8B95EE3AFEB /* WPChained.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3208AEB9102411D8B513A30FC054E0B /* WPChained.framework */; };
-		607D9F4EB7CC762DAAC74CB812C725DC /* WPMarkDownBaseParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A06B04DC101770CDEEE83E32210C3 /* WPMarkDownBaseParse.m */; };
 		62128B32A5076513EFD9025C581EBA07 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C49D70DEFBDB458C9DCCA4B09CA046D /* UIImage+Transform.m */; };
 		62B32B513F591B993CF722FE403D91D6 /* SDImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BEAB1D181D9BE0A3385B4E420C440 /* SDImageCoderHelper.m */; };
 		6378B0F5C6F46F18823A58FE04B49842 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB3D99B6FE395EBB6E9D31176AF41E1 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -148,13 +143,15 @@
 		65A4DBCEBF46707517AF98EE9171EAA2 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6E500CE4549B5E94C445D64B7B9AA1 /* UIImage+MultiFormat.m */; };
 		66457B4A6802B94B61C6ADAC5D7A5C62 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2009121CEC3CE32133938D039276DD8B /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6782DF51127156DB56E217BCD507B3FE /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6606A817C7C4465BF49FAE755C1329F /* MJRefreshAutoGifFooter.m */; };
+		67C9EA4C70F6C3DF47856E1305432943 /* WPMarkDownParseBold.m in Sources */ = {isa = PBXBuildFile; fileRef = 538E6F24A1B6D1AF7D9342C0A73530FB /* WPMarkDownParseBold.m */; };
 		6805D50DEC98127D9BB2BD93B7E07F8A /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE0E619C908B612DAF9E71B8BD1EA0C /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		685DAC8BBF892491E4D699389EA6F0B7 /* WPMarkDownParseTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CED12A04FD1BCC25B6908B3A8AE3DC2 /* WPMarkDownParseTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		691A1EC2F39654C5C2B23352AF23D065 /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C3EF528E3EF3013E438A7627F8B500 /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A00FB9CEA3EA72446CD8D7DCCD71769 /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = FD394DCEB72298E940553C23C4C130C2 /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A470BF4E9F0D3C3712D9FC582F7C9BD /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E03CED5A215B9215BB1A4DAAA938CC1 /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DFAA15EA7535C9C02FBB4D6D77AC38 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E925C6ED08370D682C83CC4FBED9E25 /* WPMarkDownParse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E692076989271680D239FDC5796BF /* WPMarkDownParse-dummy.m */; };
-		6F1D75B70BCC83A0942BC44A5C0F0DDC /* WPMarkDownParseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC0D0C675B42FAD09B2695BA16E1DC9 /* WPMarkDownParseFactory.m */; };
+		6C55D1C85030944A373E4997E79CFEE6 /* WPMarkDownParseFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0E2C2D23B43A455F5C1E56D8B59F28 /* WPMarkDownParseFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D089D68100F52F7AAB43DE032BB2AF8 /* WPMarkDownParseLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFE0A337D5350B66C8B4CC422A919D8 /* WPMarkDownParseLink.m */; };
 		6F85496741B4148918474A7608869970 /* WPBaseSectionTableViewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 192A5840F0816EC9EE8BBDFCFCDB53DA /* WPBaseSectionTableViewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70ADEA592C0C6B344ECC93F9B8526308 /* YYTextLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FC393C3E8213206BD0CE2CF7615137 /* YYTextLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70B77BE487CE9527EA3E66C689111F25 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7346BEDB01C066EC82D2A077BE087B19 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -164,7 +161,7 @@
 		72CCC420FF54024CDFA43833D4B48FB9 /* WPBaseHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A35B16C99756920D7CB073B6445CCBB /* WPBaseHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72D03E7ED16F9635CDCB623338241654 /* YYTextTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C6657523D736B2B110193FBECCFA0B /* YYTextTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		732ECAE3DEDA8D0BA6564EFC8AF73822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA84A6D0585BEA159C367456F3E3B37 /* Foundation.framework */; };
-		744D2134C601E93B40F064E41490927A /* WPMarkDownParseItalic.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E4FD4CE4159A4094D22C9317DB7125 /* WPMarkDownParseItalic.m */; };
+		744F121BA77094B7EE67FF24AD166D18 /* WPMarkDownParse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D299D7FDA147A58EA061B7C98C4683A /* WPMarkDownParse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		748207D726B06FCE31B09CDFC0C85023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA84A6D0585BEA159C367456F3E3B37 /* Foundation.framework */; };
 		758A9D35B886D997244C6B25384CF60F /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C84ADF16B4319F59B7443ACB1960A014 /* SDImageAssetManager.m */; };
 		762E3951F3B8372E5A5B8BBE96E0C17B /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC636679B7397F3FA71CD3EE8A780BDF /* MJRefreshBackStateFooter.m */; };
@@ -172,20 +169,20 @@
 		77D33D7608720991E41B2000CB619D5B /* YYTextEffectWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C21338A3E0A66F13B7DBD423AC7130C /* YYTextEffectWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77F713F33EDEDBB359D0864ACECFA907 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 478C1452B222AF82C29696781B90496F /* SDImageLoadersManager.m */; };
 		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 838F2AE62CF448123B88E3EBB5F6EC4D /* MASConstraintMaker.m */; };
+		7925980BD9AE549A1F8E701C6572FB84 /* WPMarkDownParseItalic.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F8FF46B757B49E6E2EF1CD348A65FB /* WPMarkDownParseItalic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		792F197DCB7F7574450087CA56F24FF8 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED651E0C5C10B958E53973A8E8973CEA /* UITableView+FDTemplateLayoutCell.m */; };
 		7A82DBD4262D4CAF3FF9DC8B17DB6F27 /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = C195A7FD2A88A7A86D9F01910C9078BB /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B39FFD6A09A95472D553508CFDD6B26 /* WPMarkDownParseOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9063ABD4F65C862BFC4F1A889EAB102E /* WPMarkDownParseOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BC2174DB47F14169C5557F188A48F46 /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FAB4B8DD64746FC47CF0EB1892F8D7 /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BE0BD01FE847A924BD531F237B3E936 /* SDImageGIFCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBACE2315693DED37DD0F1E6DF07BAE /* SDImageGIFCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B4705A145DF8E94FC7E13E87F793554C /* MASCompositeConstraint.m */; };
 		7C652966713F0F85144D88639C35A35D /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F939EAB322B647D33C965CCB55D82D4 /* UITableView+FDKeyedHeightCache.m */; };
 		7C98C43DABD81E0A9956F1F55AFF5FF2 /* UITableView_FDTemplateLayoutCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C092849427EE8AD5E11FDD8DFC8907 /* UITableView_FDTemplateLayoutCell.framework */; };
 		7D5F7BA2428318A110F4D4FEAC3BE5CA /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = B68F1AB9854DE054F4FF8CF70EE72C05 /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D62F05C57FE902D3B2A40869D6C9838 /* WPMarkDownParseCodeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5A6E8FC3C22E8E930B74EE860B3F6 /* WPMarkDownParseCodeBlock.m */; };
 		7F08EEB0542B3073A4DAC928A94B17D6 /* SDAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8599A251299202DFA23929724207F5ED /* SDAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		800F2F7227BDAE4B662263704FB79D0B /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6E91522E2CB039C289837A965BD64 /* YYTextEffectWindow.m */; };
 		827E8E48B228EC709DA7736839B72B7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC1C8498FC979449857F20D39CCD956 /* UIKit.framework */; };
 		83085148758E976D0525D949CF4745BE /* WPNavigationChainedMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5425F2D49DADC0C94C231AE3357AECD0 /* WPNavigationChainedMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		839A5A19F0E38861BD1CCFD93E73DE13 /* NSString+WPMarkDownParse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7154F9F233D70E132915B494112A4B23 /* NSString+WPMarkDownParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85035F1729A70C6E09AE5B998BBB970C /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F22D56F73C0023502AA705D686A0E0B /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE33185CE8F5BA5090F38E60558F6B8 /* MASLayoutConstraint.m */; };
 		8544997E13018760234C459D40F9625C /* UIView+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE8197C4FD3062278F2BAA6FC18A18A /* UIView+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -198,16 +195,17 @@
 		89F043C05716B17EADFBF3B877F70424 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 810A54DE23E86C51EDBBEB3E0E076A93 /* NSAttributedString+YYText.m */; };
 		8A1382E2E405685A532FE08CAAD78263 /* YYTextDebugOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 141523167634A849586E7B9EE1C712C8 /* YYTextDebugOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E93EADFA5DB0358ABAA97F54AF9DC8F /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D1D0E649A28C70E8FC7042CA41D806C /* WPMarkDownParseImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFE6F6355AC6497CF7268CCE1181360 /* WPMarkDownParseImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BD6ED2A9FFCE6577F36DD16B048B3E5 /* WPMarkDownParseQuoteParagraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 900AB2FF4F8508B32C55C2575BB776B6 /* WPMarkDownParseQuoteParagraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CD64A6D75F5CA1ACCB73C3FB4EBFCE7 /* WPMarkDownParseBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 441DD804CE457ABF3B1A02DA0E473AF2 /* WPMarkDownParseBaseModel.m */; };
 		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B80E34BCDD46C8654D40A541E894F8 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6A4ABC62FD961D9F94CC4E64DE79AE /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D7A1DCC00A9E5DD67963C01CADDBC2E /* NSBezierPath+RoundedCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B1E27578C4285F4F9CAC6C038B7147 /* NSBezierPath+RoundedCorners.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8DCF64D1A2B0342ADC7F0270790A13A8 /* YYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDF1205C4F1F424D021B5F09A27E4EC /* YYTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD4E835F14C12BF2013756C59A3679A /* WPMarkDownParseFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 175AF5A96B8A6BDEF7C1B42208FA1D54 /* WPMarkDownParseFade.m */; };
 		8F31819454827D1670CAC8F6B8BAC0A5 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCF919167DBD412EC2B2A998DB312367 /* MJRefresh.bundle */; };
 		900E77D15203CB028A99E8B28EE1057B /* SDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 472C3F6E4A21A036127B7DE1473BAA60 /* SDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		920013CD1586180C0DC8C8C15B46C2C2 /* SDImageAPNGCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA070AE84977C31B5164E7951C9F2816 /* SDImageAPNGCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		921E4A316897364EF80733A2CBD0C3D0 /* WPMarkDownParseStrageInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = A3616D89C9F1C3C51D35EED3A599896C /* WPMarkDownParseStrageInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92F36BE4C44D1A96C2D78A8612432C39 /* WPMarkDownParseLink.m in Sources */ = {isa = PBXBuildFile; fileRef = D565FEAB5AACDF4084567363D80F8C26 /* WPMarkDownParseLink.m */; };
+		9202A73164A83E94D304CED7BF2C4045 /* WPMarkDownParseCodeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAB62B067D18CE916DEEC15842032B /* WPMarkDownParseCodeBlock.m */; };
 		9314DE2F5D2709BA57D5AAEC57E342FA /* WPChainedHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C67F828DB36F34D30266436822D81F /* WPChainedHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		936C6B65EE70F270AC775A79D193AE10 /* UITableView+FDTemplateLayoutCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1A514536FCA965C99F1142772CC4BC /* UITableView+FDTemplateLayoutCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1710F8CDF94A7E8D61450008651A091D /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -221,6 +219,7 @@
 		970F14BBE9FEF12A8BA7ECDC7BF9E2C6 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE57D489E9D5CE3ED28F1D94CCDC146 /* MJRefreshConst.m */; };
 		97794390CC5632485420816F8AD53E98 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 405222F3407175772D1A84B6E840BA70 /* SDImageCache.m */; };
 		98337F23B46EC94A2789C0DE21BFD96D /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 93DC5DCDADADE27D7D29269FE0BA796C /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		988438FA7C30F84BDB2F6832866BFA13 /* WPMarkDownBaseParse.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA0F6BA92849CEDF880DF4A273D4D74 /* WPMarkDownBaseParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99AC2AF7ABE5CD9F488C2B312E29B6D1 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 647F2D3DBD6729BCB9EC3C5F195ED256 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A19445560C68B053A665476C55501AF /* SDWebImageCacheSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB525EF77799FD415CFFC6CF91BC3DF /* SDWebImageCacheSerializer.m */; };
 		9AA295EE6B1C10DA83CC36E860BAB5CF /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 369CD62DD004DE2871B00BDD80CCBD1F /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -232,7 +231,6 @@
 		A031C032CFEDFE915279E275A04EF334 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = C952688A06DE1E2BB689A600B6FEE6B4 /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A332E34139BD03640AAE72F7CD65C000 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C07C7C55A2AE906413CBA25DE27D622 /* CoreFoundation.framework */; };
 		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B38BD1649488B7D201A974B95738F5 /* View+MASAdditions.m */; };
-		A3EE17EE0A7975718BD733EE674D9A27 /* WPMarkDownParseImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0348A3B493251F5724E0E02403B38ECF /* WPMarkDownParseImage.m */; };
 		A457833EB6AC89B4A48D1FDC38AE85C4 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 943C0433CE66DA2D74B35C5B29E475AC /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4F9D6548DE913FDE268739DDC1B78F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA84A6D0585BEA159C367456F3E3B37 /* Foundation.framework */; };
 		A556058B0B08B94156481722C30BEEF3 /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0ECFE7AED8CC634BBC7566F5629580 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -249,6 +247,7 @@
 		AE0C7049B358AE2EA85ADCCD81DEF2B1 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E236DAAAE01D09B466A66549E4517CF /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE34B585C58188DCDD6143855DAF4892 /* SDInternalMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AE5EDF6BC2B0131EE2B60D81DE3EAB /* SDInternalMacros.m */; };
 		AE60ACF74B9A37267C92B2A3D6DDE44D /* YYTextWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A817D49237E804724351580A017290 /* YYTextWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B8436F0F58119B224E4E4D27C85FC5 /* WPMarkDownParse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D1BA5BE1EDE3266341E1B6A845BA8F /* WPMarkDownParse-dummy.m */; };
 		B13528A00F87788EFADA0C8FA8D07C55 /* UITableView+FDTemplateLayoutCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B26B8F17CD90A90B6DA3736EBD3B514E /* UITableView+FDTemplateLayoutCell-dummy.m */; };
 		B13DF6C52581072CDE880A07270D80C9 /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD08221239881795C78E2E47BA8083 /* SDWebImageDefine.m */; };
 		B14EB82CF4A3EA74730C385ECEC1E025 /* SDImageCachesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4685CFB97E5BFCA1B64850A4B39E1A08 /* SDImageCachesManager.m */; };
@@ -270,6 +269,7 @@
 		BE430B42899D6E6D50C2F1A552C6E4B9 /* WPBaseTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A12A47047CBA8940806E83E5503C38 /* WPBaseTableView-dummy.m */; };
 		BE641F472D38BA5A1FD79471D702B8C4 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF914FF8767D911213E8A83FBEFC94A /* UIView+WebCacheOperation.m */; };
 		BEA79E930FAC8F25F5C18706FCC43B57 /* NSObject+AddParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D5E43FAEBD159B0767A444A48A611 /* NSObject+AddParams.m */; };
+		BEB4B1A6A8D280FC67F2D38C21CBEA57 /* WPMarkDownParseStrageInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4E65430B51A7EFC295EB95738F9D74 /* WPMarkDownParseStrageInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBF1E3CB08A7809E7EAEA8C5695DFD6 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B9E1F0D45D731C49974C65727785B /* UIButton+WebCache.m */; };
 		BF6E5B44793BBF7970F11D83DAF20A63 /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B184373963B4AE1C0BF5853FD09E57D /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF81D8186AFED2837F08E24EF8B8082 /* UIImageView+WPLoadBundleImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE50A34BF62C5ED161D62BFBE3B3B4B /* UIImageView+WPLoadBundleImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -288,13 +288,11 @@
 		C579128CC4586FF6D56E7F0DF9E3F165 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = AD36625586C83827ADBCEDC54C97F23A /* MJRefreshStateHeader.m */; };
 		C6AB0474FF7F3D1DF8E02803F9FF6D84 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0185C97614682B8C3D16B41CCE38E4AB /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6C34FF5166D33DA8B2BA3E70CA546AF /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FB5295A37EE41E87963017203F2A9 /* SDImageCoder.m */; };
-		C73B48D0E6D12ED929A6DE0AC0C08B12 /* WPMarkDownParseLink.h in Headers */ = {isa = PBXBuildFile; fileRef = DB14318484B2C6B2C4841BB21B418ACF /* WPMarkDownParseLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7B0979AB5F9DD07ED6DA0E3AC8DA076 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 968D79D6A547B56C97D686B8AA97373D /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C861FC0D2F4BD4F83BF39218452EBF1F /* YYText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0954C229D24F5516368539BE0873E3A9 /* YYText.framework */; };
 		C871AA5A05F822F63F28120011FC9F7C /* SDImageLoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 330E028B38676BEA72FF1BF74009D23B /* SDImageLoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8A9EBF9005117A00C30CE6438ECEF95 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2095AEA18AE0A2EDF38DE50EC898B705 /* UIImage+ForceDecode.m */; };
 		C8CEBF8E736425C1E16D14D2A13DF9F4 /* SDWebImageCacheKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B46C2049D34EEB43A2B7D8C7BCCC4D /* SDWebImageCacheKeyFilter.m */; };
-		C93CAB185185BEF6CF97E3C22E1BCC58 /* WPMarkDownParseQuoteParagraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 710A2CB757B41F3A95EC04E2BB256644 /* WPMarkDownParseQuoteParagraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB56413DD0DFAD3E5497FE3D84873FA1 /* UITableView+FDIndexPathHeightCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B9C7DDC1A351F64D00648145D5579FF /* UITableView+FDIndexPathHeightCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC2C1BC1078B8E4C57C9CE94E442BA2B /* SDImageCachesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A220C423A136E2F6FEB39BF1C9DC14 /* SDImageCachesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD2BC67D43E054CE0695B46CD225F388 /* SDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B3F4E01145D4B479E60F621726B7FB /* SDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -303,15 +301,15 @@
 		CEF8CABC65331C6D32B78FFB8ACE1C70 /* UIButton+WPChained.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D7FB876125ACA7D8F55133A2D8209C /* UIButton+WPChained.m */; };
 		D0CCA29D563BD5C9A80FA6D02BCBD5BB /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E07BEE0B8725FD6670E473C8CCC0 /* UIView+MJExtension.m */; };
 		D35B1701FA1279B0673A14DB7E5FA0EE /* WPParseSectionsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F3F1ABDB0DC61B815A67B1FD0975D18 /* WPParseSectionsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D42784122CEE3633E6F324B5DFDE8948 /* WPMarkDownParseDisorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 342290F796D2284FBC529676E3ACA6B8 /* WPMarkDownParseDisorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45611E8F8D8A0E92449ED0A155C09FD /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE240129C2BA08C648AAF68B00A8C87 /* MJRefreshAutoFooter.m */; };
 		D464E308ED1BC7D2455033A5BB6FF52F /* WPNavigationChainedMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED464111B8522B5C9EB94BA07E09 /* WPNavigationChainedMaker.m */; };
 		D4A0390355773D9EA4FF9A9A72F63299 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F9825562EE85DEF5BAE5071337804AE4 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D51CAC29FE745C463D112589DBDEFC3D /* WPMarkDownParseBold.m in Sources */ = {isa = PBXBuildFile; fileRef = E73686D4317B39627712B2340FBB4E24 /* WPMarkDownParseBold.m */; };
+		D56C8CE2B72E8FECC1B0C49A8BC4FB4F /* WPMarkDownParseImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 075D057F4CA58F91D6DCACB132A18456 /* WPMarkDownParseImage.m */; };
 		D588651E26BF34631DA35F2F0815B464 /* NSObject+AddParams.h in Headers */ = {isa = PBXBuildFile; fileRef = BA005C53A34598FA5571F07848DFB547 /* NSObject+AddParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D67A793A0BB1AF12062583F4D693857D /* UITableViewHeaderFooterView+WPBaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D8521AA3BEAFD758158D0D4A0FE59 /* UITableViewHeaderFooterView+WPBaseCategory.m */; };
 		D760D8C1A8F0B0E21553050A605D7772 /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E6BC0BC7E861179BEF1E29E0DE045096 /* SDImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7BD4A625C5EBD8B5D8E6B4F4F1A5B94 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A1FB03C965EA20131407E6EEDE3E14 /* CoreText.framework */; };
+		DA3BAF4F1847D2C7DF627618B8ECFC65 /* WPMarkDownParseBold.h in Headers */ = {isa = PBXBuildFile; fileRef = 29008B60F73400FA4D7D54AF5891EE88 /* WPMarkDownParseBold.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBA44417332597992D4158D73EF1BE9C /* SDWebImageDownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = AED36FBDF8BEEC889882D6D5B9708067 /* SDWebImageDownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCF536E6A68D4498B25A5FF5A5F6AEA0 /* WPBaseSectionTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E32204FC04E5462E60D62621C845F /* WPBaseSectionTableViewViewController.m */; };
 		DD3688418C07206BD415AC2C2F23C251 /* WPBaseSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8334DD5359EE79CDD8CDEDCD34839D /* WPBaseSectionCell.m */; };
@@ -322,7 +320,9 @@
 		DED320C097B8C1FEAEBD3F9203577CF2 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 9909C1D14D2795A32CB0E5E6E4DBD66F /* UIImage+MemoryCacheCost.m */; };
 		DEF5DD8E827E95979EDB9042146514B8 /* WPMutableAttributedStringMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FF21397F1D88E695D1B9ACB888B175 /* WPMutableAttributedStringMaker.m */; };
 		DF30BC7207EF8187786C62CD258D7382 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 068275423CC87EB8A992CF6F61FD75CC /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF93C9D14FC6D24B834B64459FDE9B58 /* WPMarkDownParseCodeBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE031B8035D93FA5C750A163353AB82 /* WPMarkDownParseCodeBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0108CBE45353D64552D5A1E4BF93FC9 /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFADD8BAB596F9DB96F89C7FF45E9DD /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E1CE3074A135EBC2E0C6B29FD8A14E09 /* NSString+WPMarkDownParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F025FDF49255E0CD511A68F6F96AC46 /* NSString+WPMarkDownParse.m */; };
 		E200E3645E90B13AA4B5136E39D99A52 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201429DD10C5696C404B08FD54534D6D /* ImageIO.framework */; };
 		E21A1CAC00E2FCA681262344147FC6C1 /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC0D2C9AAD04AF28DC090B9D0B8D61E /* YYTextLine.m */; };
 		E2842B61610DAAF36FE71561C2737A9F /* WPBaseHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A54C5E3EE7D6DD5F3B57D34983FB975 /* WPBaseHeaderFooterView.m */; };
@@ -332,6 +332,7 @@
 		E3D23241C9B954EEDAB9B1E7BD83A306 /* UITableViewCell+BaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = D9BC46C05A188404C507CFE744B3682D /* UITableViewCell+BaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3FB1238F43B0CE746E5207AA0E4CD6F /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = C88AE48C1CCC1DAE152B072559330C99 /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E44D4596E5DFAF2458FEA91D23447B1A /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6B7F74D276F4205F99C3032ACE252 /* MJRefresh-dummy.m */; };
+		E48DA4C02F96B132CF13E5DA80127D58 /* WPMarkDownParseLink.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA9F5454863131EB8EC04144D2A1BC9 /* WPMarkDownParseLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4BE2B08DB1CA50DEC19D6C6574E5205 /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3171507746AD8A1978DBA87A39EF5674 /* YYTextMagnifier.m */; };
 		E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA84A6D0585BEA159C367456F3E3B37 /* Foundation.framework */; };
 		E5BE56FD56550CB2990EA400C3EAAD35 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AC72B5B000AAC5C3E60C519C10C9D1F1 /* SDWebImageDownloader.m */; };
@@ -341,10 +342,9 @@
 		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 892626CFCEA343283240264F130E2C25 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E899DC394CD479AA990A47DC4910F5D6 /* WPMutableParagraphStyleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CC92D965D2C6295E9124B69294C7AD /* WPMutableParagraphStyleModel.m */; };
 		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AB35B1433803BC4D758AB9DEE9AD23DB /* MASConstraint.m */; };
-		E95EBA465AC3F9A288804EE0DB7EFB11 /* WPMarkDownParseDisorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 09989454E1B4AD30F3C279B30E7608ED /* WPMarkDownParseDisorder.m */; };
+		E97AFBE099D0FE2492C5372D0CD12796 /* WPMarkDownParseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AA38D1E1C68159E8DA5BACE823EE07 /* WPMarkDownParseOrder.m */; };
 		EAD12D3AF5060927D753D4A9DB8A4923 /* SDWebImageCacheSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E63F77F6F2442BF56BE1C0B323812282 /* SDWebImageCacheSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C7EEBFF329C179A2F079C3B9CAD834 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB4D997519B8F3E5869E3E303577224B /* WPMarkDownParseTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E460254F1B330822696106F758176 /* WPMarkDownParseTitle.m */; };
 		EB64C8DAC8B7902A180B486B03CE8DF7 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE2EFE67A2F60BE35F93A9F4A7CD8E3 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB9E9BBE0A5AAE78F902BAB881AF8857 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF3182D3E416C037B1CBFC733D9B607 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECEA1DFDE6D8AD75CD2EC083B801F1DD /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F314B2FA50B90ADFAEDC78328B3D75FE /* MJRefreshComponent.m */; };
@@ -355,14 +355,14 @@
 		EF7EC9557C1586B1B333A752D02B9CF2 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 599E18E63F2FAC3C92A0F8086190B197 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		F07F28A58C758D24BCFB07B0A30FD1BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC1C8498FC979449857F20D39CCD956 /* UIKit.framework */; };
 		F1AAD41762E0D3B06E6E9589F0F8C05A /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 831542CA28784B3003A985F53AF1235C /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F275FACAD2CC51F3B4FAF7E8FADECB77 /* WPMarkDownParseTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C65017C077257532BB2A3883B7356CB /* WPMarkDownParseTitle.m */; };
 		F36D82FC7FB63AFB333FBCCEBC57E219 /* SDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B0EFDBC9BAFF248FEA6C27EB61ACA8E /* SDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5615A64B5F111F2D8FD532B082AA131 /* WPMarkDownParseBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B9639C6CE496F3AF4DF87EDCA176FD9A /* WPMarkDownParseBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F56484945077A3AAFD43E74C4CB07C25 /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B67529A369D8650285AE45A3932105D /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F610FE6F2D5CC8B11DE46598F1319D35 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = F52EB5C02B7C23ABDAFEA86D2EDF2D01 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6C93F2189BE432CEF4FAEFC210EC23C /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B0632C71F473B57304977C596C8377 /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F796EC91CAF2286558381772D9CACD6B /* WPMarkDownParseCodeBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = F750C5DE09C9139735B5A83FF591B8FC /* WPMarkDownParseCodeBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8AAB6789B0A59CC99A8466A64543BE1 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD3A6160738F22E0A910526CA2FACD /* MJRefreshGifHeader.m */; };
 		F8EDB27FC6C293B5126EDC476524EDB5 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C499DE861545938E5B0CCCD6E6219E /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F93EE966BDD06C931CEE26CAE1649907 /* WPMarkDownParseQuoteParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = E1554D2D7D930AE9107D8C3CBFABD55F /* WPMarkDownParseQuoteParagraph.m */; };
 		F9B8867160BC92E792F1D5C9935F20E8 /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBE98D8C51AF2E7E993DF04DC535E7B /* NSObject+Json.m */; };
 		F9E73434E2B0BE24C67006EE7161E93C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E49BF1598046A6DF1CC5097783635C /* MobileCoreServices.framework */; };
 		F9EFE513FA35A1CE09BC8A74FF7A7694 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8538DCEE53C7E8222249DA401CAAA227 /* SDImageTransformer.m */; };
@@ -505,18 +505,18 @@
 		01A220C423A136E2F6FEB39BF1C9DC14 /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/SDImageCachesManager.h; sourceTree = "<group>"; };
 		01C6BAEBF77929178BE955FD67D0F247 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		0259B30878AB1F3A452BF7FAA783F57A /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
-		0348A3B493251F5724E0E02403B38ECF /* WPMarkDownParseImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseImage.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseImage.m; sourceTree = "<group>"; };
 		0356DF211B0D20D9FE6FFDAA5E192836 /* SDImageAPNGCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoderInternal.h; path = SDWebImage/Private/SDImageAPNGCoderInternal.h; sourceTree = "<group>"; };
 		03C6E91522E2CB039C289837A965BD64 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYText/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
 		0402F704BFA1D12EA41BBD700B7ED0A8 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		042D5E43FAEBD159B0767A444A48A611 /* NSObject+AddParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddParams.m"; sourceTree = "<group>"; };
+		046807A2AB44EF9C447BF877583BC96C /* WPMarkDownParseItalic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseItalic.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseItalic.m; sourceTree = "<group>"; };
 		061A4FD269AEC469B66725B03B531860 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYText/Utility/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
 		066A56BFE69CDB8E3397496D08851C0A /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		068275423CC87EB8A992CF6F61FD75CC /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		070951F50A6EC9E10C057E7C0D8B09EC /* SDAsyncBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAsyncBlockOperation.h; path = SDWebImage/Private/SDAsyncBlockOperation.h; sourceTree = "<group>"; };
+		075D057F4CA58F91D6DCACB132A18456 /* WPMarkDownParseImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseImage.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseImage.m; sourceTree = "<group>"; };
 		094E32204FC04E5462E60D62621C845F /* WPBaseSectionTableViewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionTableViewViewController.m; sourceTree = "<group>"; };
 		0954C229D24F5516368539BE0873E3A9 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09989454E1B4AD30F3C279B30E7608ED /* WPMarkDownParseDisorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseDisorder.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseDisorder.m; sourceTree = "<group>"; };
 		09B0175CE4BB0DC7EA5C11E7E6AD910B /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B38BD1649488B7D201A974B95738F5 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		09E5D0FF1B25F01B43047AF1FC8A9B50 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
@@ -527,31 +527,33 @@
 		0BF82B38846030EBE91BBFB26062E99E /* WPChained.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPChained.framework; path = WPChained.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C21338A3E0A66F13B7DBD423AC7130C /* YYTextEffectWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextEffectWindow.h; path = YYText/Component/YYTextEffectWindow.h; sourceTree = "<group>"; };
 		0C661E45DE7AF385927826D56BED175E /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYText/YYLabel.m; sourceTree = "<group>"; };
+		0D299D7FDA147A58EA061B7C98C4683A /* WPMarkDownParse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPMarkDownParse-umbrella.h"; sourceTree = "<group>"; };
 		0D2A94EAF4CADA3AEE8622EEDFF50365 /* YYTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextInput.m; path = YYText/Component/YYTextInput.m; sourceTree = "<group>"; };
 		0DC0CE5123E7FDEEA6C31F3C2DC96F7C /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		0F9F08B386CCD8133D5F6877D2C4053A /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		0FF183C399B5DBBB838D0DD21EE0E2C5 /* YYTextTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextTransaction.m; path = YYText/Utility/YYTextTransaction.m; sourceTree = "<group>"; };
 		11A755710A38233C642AFD74941FFF0A /* Pods_WPBaseTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPBaseTableView_Tests.framework; path = "Pods-WPBaseTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11D44E39CB78F6B26196CE604B2C6087 /* WPMarkDownParseOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseOrder.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseOrder.m; sourceTree = "<group>"; };
 		12690FFA9A4C0D4961F8B037F92758F3 /* WPLabelChainedMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPLabelChainedMaker.h; path = WPChained/Classes/LabelChained/WPLabelChainedMaker.h; sourceTree = "<group>"; };
 		12C1CDC414A69E24BE65170BBCFC2F66 /* NSObject+Json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+Json.h"; sourceTree = "<group>"; };
 		141523167634A849586E7B9EE1C712C8 /* YYTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextDebugOption.h; path = YYText/Component/YYTextDebugOption.h; sourceTree = "<group>"; };
+		145B858D32453BBB39550230B22A4EB1 /* WPMarkDownBaseParse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownBaseParse.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownBaseParse.m; sourceTree = "<group>"; };
 		15D73915261118C26BAF30183EBB1C8C /* WPBaseTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPBaseTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		16E4FD4CE4159A4094D22C9317DB7125 /* WPMarkDownParseItalic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseItalic.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseItalic.m; sourceTree = "<group>"; };
 		1710F8CDF94A7E8D61450008651A091D /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		175AF5A96B8A6BDEF7C1B42208FA1D54 /* WPMarkDownParseFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseFade.m; path = WPMarkDownParse/Classes/Entry/WPMarkDownParseFade.m; sourceTree = "<group>"; };
 		181BCB3823AAA3548347448D1D6FC182 /* UITableViewCell+BaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BaseCategory.m"; sourceTree = "<group>"; };
 		189D60878CB3A35AECB2698FB8759E81 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
 		192A5840F0816EC9EE8BBDFCFCDB53DA /* WPBaseSectionTableViewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionTableViewViewController.h; sourceTree = "<group>"; };
 		1A0FB5295A37EE41E87963017203F2A9 /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/SDImageCoder.m; sourceTree = "<group>"; };
+		1AFAB62B067D18CE916DEEC15842032B /* WPMarkDownParseCodeBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseCodeBlock.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseCodeBlock.m; sourceTree = "<group>"; };
 		1B9C38D9B2B313336B11A8E2133BA21D /* Pods-WPBaseTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPBaseTableView_Tests-dummy.m"; sourceTree = "<group>"; };
 		1C49D70DEFBDB458C9DCCA4B09CA046D /* UIImage+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Transform.m"; path = "SDWebImage/UIImage+Transform.m"; sourceTree = "<group>"; };
+		1C71224D8C2B98EB27BF76306FD01286 /* WPMarkDownParse-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPMarkDownParse-Info.plist"; sourceTree = "<group>"; };
 		1CEBBA34CAC77E9CC3835DDA176F365D /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		1D50E9BD14BA4712BCC90D042EF9DED5 /* WPMarkDownParse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPMarkDownParse.modulemap; sourceTree = "<group>"; };
 		1D5FA7F64EDFB6C6E7C426E697C047EC /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/SDWebImageDefine.h; sourceTree = "<group>"; };
 		1E236DAAAE01D09B466A66549E4517CF /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
-		1E81A77055FDDC24EDDE1E4564DC785E /* WPMarkDownParse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPMarkDownParse-prefix.pch"; sourceTree = "<group>"; };
 		1E93EADFA5DB0358ABAA97F54AF9DC8F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		1EC37CE81B1C7E9FDCC59DFF3111F655 /* YYTextArchiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextArchiver.m; path = YYText/String/YYTextArchiver.m; sourceTree = "<group>"; };
+		1F025FDF49255E0CD511A68F6F96AC46 /* NSString+WPMarkDownParse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+WPMarkDownParse.m"; path = "WPMarkDownParse/Classes/Entry/NSString+WPMarkDownParse.m"; sourceTree = "<group>"; };
 		1F8334DD5359EE79CDD8CDEDCD34839D /* WPBaseSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionCell.m; sourceTree = "<group>"; };
 		1FFADD8BAB596F9DB96F89C7FF45E9DD /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -559,7 +561,7 @@
 		201429DD10C5696C404B08FD54534D6D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		2095AEA18AE0A2EDF38DE50EC898B705 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
 		20F52BA988ED6F4A4D344D3A91CC3FA6 /* WPChained-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPChained-Info.plist"; sourceTree = "<group>"; };
-		24C3BABF2ABE339A0533097DEDA366A1 /* WPMarkDownParseBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseBaseModel.h; path = WPMarkDownParse/Classes/Model/WPMarkDownParseBaseModel.h; sourceTree = "<group>"; };
+		23E28F8428905C067628528BAEA6CBA5 /* WPMarkDownParseImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseImage.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseImage.h; sourceTree = "<group>"; };
 		256295DADE95DB10F79ECC35A3B857D9 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		25768BAF13614589D38220DD296F4CB1 /* SDImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoderHelper.h; path = SDWebImage/SDImageCoderHelper.h; sourceTree = "<group>"; };
 		2650858C83F02998DAC39560072271A1 /* UINavigationItem+WPAddBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+WPAddBarButtonItem.m"; path = "WPChained/Classes/BarButtonItem/UINavigationItem+WPAddBarButtonItem.m"; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 		27AE5EDF6BC2B0131EE2B60D81DE3EAB /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
 		28B80E34BCDD46C8654D40A541E894F8 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		28CD1F26CE83100F2187F0CA6D71E87F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		29008B60F73400FA4D7D54AF5891EE88 /* WPMarkDownParseBold.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseBold.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseBold.h; sourceTree = "<group>"; };
 		2AA35C64CAEEAA132EA03BE9A9C2CA59 /* UILabel+WPChained.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+WPChained.m"; path = "WPChained/Classes/LabelChained/UILabel+WPChained.m"; sourceTree = "<group>"; };
 		2B2E2C1BECE307B560F54C4212CA6EAB /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		2B9C7DDC1A351F64D00648145D5579FF /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDIndexPathHeightCache.h"; path = "Classes/UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
@@ -581,24 +584,23 @@
 		330E028B38676BEA72FF1BF74009D23B /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/SDImageLoadersManager.h; sourceTree = "<group>"; };
 		33697D7B27DAF970A01E3CB2DCE3FDD6 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
 		33D41B5D1AC0226C6DA2A9F9A072F5A2 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/SDDiskCache.m; sourceTree = "<group>"; };
-		342290F796D2284FBC529676E3ACA6B8 /* WPMarkDownParseDisorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseDisorder.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseDisorder.h; sourceTree = "<group>"; };
 		3433C3C078EFED4C62714840075A04E4 /* WPLabelChainedMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPLabelChainedMaker.m; path = WPChained/Classes/LabelChained/WPLabelChainedMaker.m; sourceTree = "<group>"; };
 		345C34243517D1B2BCB31D8781A2D55F /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		34EF18E689FA7F1FAF4F5B5C67A1AEB9 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		34FE9EB699B4F905D448DD0B2346B805 /* WPBaseHeaderFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseHeaderFooterView.h; sourceTree = "<group>"; };
 		369CD62DD004DE2871B00BDD80CCBD1F /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/SDImageTransformer.h; sourceTree = "<group>"; };
 		36AEB587EF0D91618E72E64F35AB99BD /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		36B3E2F7CBED7329905A5E131F6F08C0 /* WPMarkDownParseDisorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseDisorder.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseDisorder.m; sourceTree = "<group>"; };
 		385FE73EDC8F6A794A4264AA55648946 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		38F17B9651BE9E35833DA8A4BAA61F3B /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/SDMemoryCache.m; sourceTree = "<group>"; };
 		3938E079C9FFD4368E9332370DD46C80 /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
 		3951E00824E951A72F34884FD0A0DBB5 /* YYTextAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAttribute.m; path = YYText/String/YYTextAttribute.m; sourceTree = "<group>"; };
 		39DC29684BFCA2C08DB4D6881993DC35 /* SDmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDmetamacros.h; path = SDWebImage/Private/SDmetamacros.h; sourceTree = "<group>"; };
-		3A1F74FA42CE2C69AAD628D53C060E30 /* WPMarkDownParseOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseOrder.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseOrder.h; sourceTree = "<group>"; };
 		3A6A4ABC62FD961D9F94CC4E64DE79AE /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		3A705AEC0119D044C039952DD8C5C1AD /* WPMutableAttributedStringMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMutableAttributedStringMaker.h; path = WPChained/Classes/MutableAttributedStringChained/WPMutableAttributedStringMaker.h; sourceTree = "<group>"; };
 		3B890140EC476A53354025999EBAB61F /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FDTemplateLayoutCellDebug.h"; path = "Classes/UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		3B8E460254F1B330822696106F758176 /* WPMarkDownParseTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseTitle.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseTitle.m; sourceTree = "<group>"; };
 		3C0D885A1097F38480A1CB73980A6409 /* Pods-WPBaseTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3C65017C077257532BB2A3883B7356CB /* WPMarkDownParseTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseTitle.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseTitle.m; sourceTree = "<group>"; };
 		3C6DE3672C4B6A1A2E8717678A1605F8 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		3D0E6E077247767D6BAAE06FDD307AEB /* SDWebImageDownloaderRequestModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderRequestModifier.h; path = SDWebImage/SDWebImageDownloaderRequestModifier.h; sourceTree = "<group>"; };
 		3EE8197C4FD3062278F2BAA6FC18A18A /* UIView+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYText.h"; path = "YYText/Utility/UIView+YYText.h"; sourceTree = "<group>"; };
@@ -612,6 +614,7 @@
 		42FB80759C3053C51AAAC5EF6F48466F /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		43B46C2049D34EEB43A2B7D8C7BCCC4D /* SDWebImageCacheKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheKeyFilter.m; path = SDWebImage/SDWebImageCacheKeyFilter.m; sourceTree = "<group>"; };
 		43E9D8A675011A59EE02759EFD582BB7 /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/UIImage+Metadata.m"; sourceTree = "<group>"; };
+		441DD804CE457ABF3B1A02DA0E473AF2 /* WPMarkDownParseBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseBaseModel.m; path = WPMarkDownParse/Classes/Model/WPMarkDownParseBaseModel.m; sourceTree = "<group>"; };
 		450DF01A9101D26A20B86E219A692958 /* WPBaseSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPBaseSectionCell.h; sourceTree = "<group>"; };
 		465609EE281C71116496EE711F2C9D50 /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
 		468504A50E283EA8AA6ABF4FDB39A543 /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
@@ -621,6 +624,7 @@
 		482B9EF3319A495E45BF3332584517CD /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/SDImageGIFCoder.m; sourceTree = "<group>"; };
 		48CA2BF4BC33D03F165718391BB29C65 /* WPBaseTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPBaseTableView.h; path = WPBaseTableView/Classes/WPBaseTableView.h; sourceTree = "<group>"; };
 		4923ED464111B8522B5C9EB94BA07E09 /* WPNavigationChainedMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPNavigationChainedMaker.m; path = WPChained/Classes/BarButtonItem/WPNavigationChainedMaker.m; sourceTree = "<group>"; };
+		4A0E2C2D23B43A455F5C1E56D8B59F28 /* WPMarkDownParseFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseFade.h; path = WPMarkDownParse/Classes/Entry/WPMarkDownParseFade.h; sourceTree = "<group>"; };
 		4A9485FFCDF3DAB577E99FA19A9FF0C4 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		4AB3D99B6FE395EBB6E9D31176AF41E1 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		4AB6FEE38081AC8C0F142779AD6DC704 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/SDImageCodersManager.m; sourceTree = "<group>"; };
@@ -628,17 +632,16 @@
 		4B200EBF24B26541EB49DB8B12461A4E /* WPChained.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPChained.xcconfig; sourceTree = "<group>"; };
 		4D544ACBC283D46ED3B6BB90C37E08D0 /* YYTextSelectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextSelectionView.m; path = YYText/Component/YYTextSelectionView.m; sourceTree = "<group>"; };
 		4D7974B9F551B892A80B4C7BD061ABA0 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		4DFE6F6355AC6497CF7268CCE1181360 /* WPMarkDownParseImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseImage.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseImage.h; sourceTree = "<group>"; };
 		4E38D110BA12C35AE35CE5ADB94E0C6B /* YYText.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYText.xcconfig; sourceTree = "<group>"; };
 		4EF57C75F4DA71AF282395F018BD838D /* Pods-WPBaseTableView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Example-Info.plist"; sourceTree = "<group>"; };
 		4F67B789023E63C76629A6C3530CD49E /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
-		4F6901B4C625DF0A750767EF64AF10CE /* WPMarkDownParse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPMarkDownParse.xcconfig; sourceTree = "<group>"; };
 		4F6BA24C1E9F18CE800D966AD1AFE4DD /* SDImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoader.m; path = SDWebImage/SDImageLoader.m; sourceTree = "<group>"; };
 		507AD0620B159DE73BF9BA64A9AE5178 /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYText/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
 		520C54E5E8D845BDEC9D3EF73E8EEADD /* WPButtonChainedMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPButtonChainedMaker.m; path = WPChained/Classes/ButtonChained/WPButtonChainedMaker.m; sourceTree = "<group>"; };
-		522E468F3E30852AC00991158A396A4D /* WPMarkDownParseFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseFactory.h; path = WPMarkDownParse/Classes/Entry/WPMarkDownParseFactory.h; sourceTree = "<group>"; };
 		523A8F3D29D0B448490A2AF616750427 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		52542037DA5A55215CAE838CB49CEFEC /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
+		53151B2D5DFCD75F4E412BC86DE4393C /* NSString+WPMarkDownParse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+WPMarkDownParse.h"; path = "WPMarkDownParse/Classes/Entry/NSString+WPMarkDownParse.h"; sourceTree = "<group>"; };
+		538E6F24A1B6D1AF7D9342C0A73530FB /* WPMarkDownParseBold.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseBold.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseBold.m; sourceTree = "<group>"; };
 		5425F2D49DADC0C94C231AE3357AECD0 /* WPNavigationChainedMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPNavigationChainedMaker.h; path = WPChained/Classes/BarButtonItem/WPNavigationChainedMaker.h; sourceTree = "<group>"; };
 		54C0DB7532A1F2ABF2F99986A0C90FFB /* Pods-WPBaseTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPBaseTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		54C6657523D736B2B110193FBECCFA0B /* YYTextTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextTransaction.h; path = YYText/Utility/YYTextTransaction.h; sourceTree = "<group>"; };
@@ -662,6 +665,7 @@
 		6156B752F70E8486FCC50CD281D401C8 /* Pods-WPBaseTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPBaseTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6214F7B1B5DB324F96E547664D183B4F /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/NSButton+WebCache.m"; sourceTree = "<group>"; };
 		6278446DFF36A4C2AE9E4739401D8031 /* SDImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOCoder.m; path = SDWebImage/SDImageIOCoder.m; sourceTree = "<group>"; };
+		63318DAD7EFAD1FF4E6283B8DDA56D40 /* WPMarkDownParseDisorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseDisorder.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseDisorder.h; sourceTree = "<group>"; };
 		64484FE636C545A4A0B6C7A984C20FF5 /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/SDImageAPNGCoder.m; sourceTree = "<group>"; };
 		647F2D3DBD6729BCB9EC3C5F195ED256 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
 		649A8FD7BBBF3C15C80080B1281D8B77 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYText/Component/YYTextLayout.m; sourceTree = "<group>"; };
@@ -677,15 +681,11 @@
 		6A099BD7E63C1AFC8491F81E641AC3A6 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
 		6AB2AA9AE158EC562C3DA25D4B6B881E /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
 		6B184373963B4AE1C0BF5853FD09E57D /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
-		6D66E057B87D1DCC1C6495F8B699CE80 /* NSString+WPMarkDownParse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+WPMarkDownParse.m"; path = "WPMarkDownParse/Classes/Entry/NSString+WPMarkDownParse.m"; sourceTree = "<group>"; };
 		6E680E289F3FAEBF3D4E8ABEDCC425AF /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/SDAnimatedImage.h; sourceTree = "<group>"; };
 		6EFCBFB8CCE7664402279D0AB322AA35 /* YYTextMagnifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextMagnifier.h; path = YYText/Component/YYTextMagnifier.h; sourceTree = "<group>"; };
 		6F3F1ABDB0DC61B815A67B1FD0975D18 /* WPParseSectionsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPParseSectionsModel.h; sourceTree = "<group>"; };
 		6F43DBDE2DD2FC537360DCCAED71178A /* WPChained-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPChained-prefix.pch"; sourceTree = "<group>"; };
-		6F7A06B04DC101770CDEEE83E32210C3 /* WPMarkDownBaseParse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownBaseParse.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownBaseParse.m; sourceTree = "<group>"; };
 		700BC567D31C1D2E76D6582C7EEED02D /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
-		710A2CB757B41F3A95EC04E2BB256644 /* WPMarkDownParseQuoteParagraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseQuoteParagraph.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseQuoteParagraph.h; sourceTree = "<group>"; };
-		7154F9F233D70E132915B494112A4B23 /* NSString+WPMarkDownParse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+WPMarkDownParse.h"; path = "WPMarkDownParse/Classes/Entry/NSString+WPMarkDownParse.h"; sourceTree = "<group>"; };
 		715920A95B3CB809E6B9D50B1E32BFD0 /* WPBaseSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WPBaseSectionModel.m; sourceTree = "<group>"; };
 		715D247FB3144BC1A3AFC87CEBC0B1E2 /* Pods-WPBaseTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPBaseTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		71762A728913EB440C97D3616D291AF3 /* YYText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYText.framework; path = YYText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -694,11 +694,11 @@
 		7325ADF5DCA37E5E84FB35EC64A81F83 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		7346BEDB01C066EC82D2A077BE087B19 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
 		7374860874244AB962BC2E6D29130319 /* YYText-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-umbrella.h"; sourceTree = "<group>"; };
-		7442F6CD0D34F6F231A9BFC528AA0F1F /* WPMarkDownParseBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseBaseModel.m; path = WPMarkDownParse/Classes/Model/WPMarkDownParseBaseModel.m; sourceTree = "<group>"; };
 		75A70114C859A66F5AEE24970BC2587A /* WPBaseTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPBaseTableView.xcconfig; sourceTree = "<group>"; };
 		75B29CB39426F8FF2276C7F243936D43 /* UITableViewHeaderFooterView+WPBaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+WPBaseCategory.h"; sourceTree = "<group>"; };
 		7761B6036902D6D60EA7AF152F995028 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		77C16AA63ED687DC0AE1624E4443BE1C /* Pods-WPBaseTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPBaseTableView_Example-dummy.m"; sourceTree = "<group>"; };
+		7812CD20E03BCB3B5124B6462BC0005E /* WPMarkDownParseQuoteParagraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseQuoteParagraph.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseQuoteParagraph.m; sourceTree = "<group>"; };
 		7885EE003F23CCE2CFEFD640BEB80B2B /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		795455CBAC7552523E3B1324787E5356 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		7A3DCDC814210EFB360480C54081B62F /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
@@ -709,6 +709,7 @@
 		7CE2EFE67A2F60BE35F93A9F4A7CD8E3 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		7D01CBC9556305C2CC596448605C19E7 /* SDWebImageIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageIndicator.m; path = SDWebImage/SDWebImageIndicator.m; sourceTree = "<group>"; };
 		7D8B9E9F85C1D2BFFD69A720BD92F274 /* YYTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextView.m; path = YYText/YYTextView.m; sourceTree = "<group>"; };
+		7DC22870F4B7B216547B8C5DCDD58F42 /* WPMarkDownMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownMacro.h; path = WPMarkDownParse/Classes/Config/WPMarkDownMacro.h; sourceTree = "<group>"; };
 		7E552F7AFBC8F4C329F5C8267C5D62A0 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		7E9E84198C43560B45632F35D6DFCE5E /* WPCommonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WPCommonMacros.h; sourceTree = "<group>"; };
 		7F22D56F73C0023502AA705D686A0E0B /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
@@ -729,11 +730,14 @@
 		8A10350D17C5E76A16217A545F2BABCA /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		8BD44DC4A8A9DCE4ACA5FCE82025EA7C /* WPBaseTableView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WPBaseTableView.bundle; path = WPBaseTableView/WPBaseTableView.bundle; sourceTree = "<group>"; };
 		8C4D143D27C61AD42411E9BEBA54A303 /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+YYText.h"; path = "YYText/Utility/UIPasteboard+YYText.h"; sourceTree = "<group>"; };
+		8CED12A04FD1BCC25B6908B3A8AE3DC2 /* WPMarkDownParseTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseTitle.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseTitle.h; sourceTree = "<group>"; };
+		8CFE0A337D5350B66C8B4CC422A919D8 /* WPMarkDownParseLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseLink.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseLink.m; sourceTree = "<group>"; };
 		8D9119B0DE93526793F1178A29658720 /* YYText.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYText.modulemap; sourceTree = "<group>"; };
 		8DB525EF77799FD415CFFC6CF91BC3DF /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
 		8DE6B7F74D276F4205F99C3032ACE252 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
-		8EC0D0C675B42FAD09B2695BA16E1DC9 /* WPMarkDownParseFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseFactory.m; path = WPMarkDownParse/Classes/Entry/WPMarkDownParseFactory.m; sourceTree = "<group>"; };
 		8EC4CDA12D3F81BBB94C73D1516449AF /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		900AB2FF4F8508B32C55C2575BB776B6 /* WPMarkDownParseQuoteParagraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseQuoteParagraph.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseQuoteParagraph.h; sourceTree = "<group>"; };
+		9063ABD4F65C862BFC4F1A889EAB102E /* WPMarkDownParseOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseOrder.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseOrder.h; sourceTree = "<group>"; };
 		90DFAA15EA7535C9C02FBB4D6D77AC38 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		914AED27B9D19B8952F2EDE49F2BEBEF /* WPBaseTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPBaseTableView-umbrella.h"; sourceTree = "<group>"; };
 		91F3C8DD9F414F444B0EBA68371A664A /* UINavigationItem+WPAddBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+WPAddBarButtonItem.h"; path = "WPChained/Classes/BarButtonItem/UINavigationItem+WPAddBarButtonItem.h"; sourceTree = "<group>"; };
@@ -746,7 +750,6 @@
 		968D79D6A547B56C97D686B8AA97373D /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		96A12A47047CBA8940806E83E5503C38 /* WPBaseTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPBaseTableView-dummy.m"; sourceTree = "<group>"; };
 		978A5A7CAFC4026A03EC7B592D2E145F /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
-		97E6E12368817EFC0DD6C177F60003FF /* WPMarkDownMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownMacro.h; path = WPMarkDownParse/Classes/Config/WPMarkDownMacro.h; sourceTree = "<group>"; };
 		98758D8FEFDB5C993B43D53E9018520C /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+FDIndexPathHeightCache.m"; path = "Classes/UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
 		98F054B35B04C9D2005E2EA63724B967 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		9909C1D14D2795A32CB0E5E6E4DBD66F /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
@@ -757,14 +760,11 @@
 		9B5C7C0E38076037F00950103EC234D8 /* YYTextWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextWeakProxy.m; path = YYText/Utility/YYTextWeakProxy.m; sourceTree = "<group>"; };
 		9BD4E1B83086BCB43213791787462711 /* WPBaseTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPBaseTableView.framework; path = WPBaseTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9ED295A86C8326EC711466BD80A20757 /* WPMarkDownBaseParse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownBaseParse.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownBaseParse.h; sourceTree = "<group>"; };
-		9FA02845B890B0C74942D6ED09D45358 /* WPMarkDownParse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPMarkDownParse-umbrella.h"; sourceTree = "<group>"; };
 		9FEF5701D39205B7162B42344929D6C8 /* YYText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYText-dummy.m"; sourceTree = "<group>"; };
 		A04845BFEE7D31A0219822A4C97831FD /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		A09BB47304ECDF43EFB13AB3C2B4E1CA /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27616D8882CB78E70442352DFFF4F63 /* SDWebImageError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageError.m; path = SDWebImage/SDWebImageError.m; sourceTree = "<group>"; };
 		A29A7CA90399EDC3F69C6BD9C786139E /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
-		A3616D89C9F1C3C51D35EED3A599896C /* WPMarkDownParseStrageInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseStrageInterface.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseStrageInterface.h; sourceTree = "<group>"; };
 		A3B0632C71F473B57304977C596C8377 /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYText/Component/YYTextContainerView.h; sourceTree = "<group>"; };
 		A3CD393230E5F98BFA3612E8318963D3 /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "SDWebImage/Private/UIColor+HexString.m"; sourceTree = "<group>"; };
 		A54F78CDB9F613953D542403C974BA35 /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
@@ -772,6 +772,7 @@
 		A90B0DEDDECBD7F47578F39A8B82BC0C /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+YYText.m"; path = "YYText/Utility/UIPasteboard+YYText.m"; sourceTree = "<group>"; };
 		AAA84A6D0585BEA159C367456F3E3B37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AB35B1433803BC4D758AB9DEE9AD23DB /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		ABA9F5454863131EB8EC04144D2A1BC9 /* WPMarkDownParseLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseLink.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseLink.h; sourceTree = "<group>"; };
 		AC72B5B000AAC5C3E60C519C10C9D1F1 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		AD36625586C83827ADBCEDC54C97F23A /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
 		ADBFB89421D6D2E44D7FA904C1AEF3CF /* NSImage+Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+Compatibility.h"; path = "SDWebImage/NSImage+Compatibility.h"; sourceTree = "<group>"; };
@@ -781,10 +782,12 @@
 		AE6E500CE4549B5E94C445D64B7B9AA1 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		AED36FBDF8BEEC889882D6D5B9708067 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
 		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A1F18376968EC60852F06B8AC1466F /* WPMarkDownParse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPMarkDownParse.xcconfig; sourceTree = "<group>"; };
 		B1C7EEBFF329C179A2F079C3B9CAD834 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		B24E692076989271680D239FDC5796BF /* WPMarkDownParse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPMarkDownParse-dummy.m"; sourceTree = "<group>"; };
 		B26B8F17CD90A90B6DA3736EBD3B514E /* UITableView+FDTemplateLayoutCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell-dummy.m"; sourceTree = "<group>"; };
+		B2AA38D1E1C68159E8DA5BACE823EE07 /* WPMarkDownParseOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseOrder.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseOrder.m; sourceTree = "<group>"; };
 		B3480D48A0283B4780419E6249D1C8C0 /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/SDAnimatedImageView.m; sourceTree = "<group>"; };
+		B35B2D71BE7C1909C76057731AF31593 /* WPMarkDownParse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPMarkDownParse.modulemap; sourceTree = "<group>"; };
 		B362551715B6F5F4BCA0D3CFA01E8AB5 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		B3C30512FFF04CC695BE7EB35F4A4D6B /* Pods-WPBaseTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPBaseTableView_Tests.modulemap"; sourceTree = "<group>"; };
 		B4705A145DF8E94FC7E13E87F793554C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -794,21 +797,22 @@
 		B65D5860D2B12CDD04A35AD5AAC645F9 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		B68594A215C5F8617F575BA2F922A4FB /* UIImageView+WPLoadBundleImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WPLoadBundleImage.m"; sourceTree = "<group>"; };
 		B68F1AB9854DE054F4FF8CF70EE72C05 /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYText/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
+		B6E05FBB84944E5406CC88935B2FBB4F /* WPMarkDownParse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPMarkDownParse-prefix.pch"; sourceTree = "<group>"; };
 		B7A7A693316FF874B196B80499B0EDC7 /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAsyncLayer.h; path = YYText/Utility/YYTextAsyncLayer.h; sourceTree = "<group>"; };
+		B9639C6CE496F3AF4DF87EDCA176FD9A /* WPMarkDownParseBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseBaseModel.h; path = WPMarkDownParse/Classes/Model/WPMarkDownParseBaseModel.h; sourceTree = "<group>"; };
 		BA005C53A34598FA5571F07848DFB547 /* NSObject+AddParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddParams.h"; sourceTree = "<group>"; };
 		BD0ECFE7AED8CC634BBC7566F5629580 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		BD80F6E4F5A519EF7303F7C2588AAFC6 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
-		BDB508ED6F2B0383DE30C3766711D3E3 /* WPMarkDownParseTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseTitle.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseTitle.h; sourceTree = "<group>"; };
 		BE5D268D46D656A4FBCE590B136E2EA9 /* NSBezierPath+RoundedCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+RoundedCorners.m"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.m"; sourceTree = "<group>"; };
 		BEC1C8498FC979449857F20D39CCD956 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BEDF1205C4F1F424D021B5F09A27E4EC /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYText/YYTextView.h; sourceTree = "<group>"; };
-		BF265BD221610338527353B3910BCADB /* WPMarkDownParseBold.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseBold.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseBold.h; sourceTree = "<group>"; };
 		BF6BA5404812CD163236C47C0F36F230 /* SDImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageFrame.h; path = SDWebImage/SDImageFrame.h; sourceTree = "<group>"; };
 		BFBACE2315693DED37DD0F1E6DF07BAE /* SDImageGIFCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoderInternal.h; path = SDWebImage/Private/SDImageGIFCoderInternal.h; sourceTree = "<group>"; };
 		BFFD08221239881795C78E2E47BA8083 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/SDWebImageDefine.m; sourceTree = "<group>"; };
 		C027774FB7E21503FF80EA1FD65B3AF8 /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextKeyboardManager.h; path = YYText/Component/YYTextKeyboardManager.h; sourceTree = "<group>"; };
 		C02EF5F40BDC1BD5BFFAC06B515B0150 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
 		C0A951E475A65098013DADCA901B883A /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYText/String/YYTextArchiver.h; sourceTree = "<group>"; };
+		C0D1BA5BE1EDE3266341E1B6A845BA8F /* WPMarkDownParse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPMarkDownParse-dummy.m"; sourceTree = "<group>"; };
 		C195A7FD2A88A7A86D9F01910C9078BB /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYText/Component/YYTextInput.h; sourceTree = "<group>"; };
 		C34E21555DA9A9A3279712AAF39708B1 /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYText/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
 		C4F68088E1297119ED966B6BE55C3F21 /* Pods-WPBaseTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPBaseTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -827,14 +831,14 @@
 		CCF8F3DD7FF84B69C1AB85A0687FB686 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CCF919167DBD412EC2B2A998DB312367 /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
 		CD0BC3875D5169A101A0FBC2F21FAD69 /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/SDAnimatedImage.m; sourceTree = "<group>"; };
+		CD4E65430B51A7EFC295EB95738F9D74 /* WPMarkDownParseStrageInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseStrageInterface.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseStrageInterface.h; sourceTree = "<group>"; };
+		CEE031B8035D93FA5C750A163353AB82 /* WPMarkDownParseCodeBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseCodeBlock.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseCodeBlock.h; sourceTree = "<group>"; };
 		CF6E7BEEB454B1B2AA6C7BDE7C90EFB4 /* WPBaseTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPBaseTableView.modulemap; sourceTree = "<group>"; };
 		D09BC1A548395CC012E0E234A6C76773 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		D253F29FFA0DD5546E8B11F18D43AE92 /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		D3208AEB9102411D8B513A30FC054E0B /* WPChained.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WPChained.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3E5A6E8FC3C22E8E930B74EE860B3F6 /* WPMarkDownParseCodeBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseCodeBlock.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseCodeBlock.m; sourceTree = "<group>"; };
 		D469899E0814D8123CBFDF868DFCFFB7 /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+YYText.h"; path = "YYText/Utility/NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
 		D50B9DABB28A1AB311276F2AA73F6281 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
-		D565FEAB5AACDF4084567363D80F8C26 /* WPMarkDownParseLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseLink.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseLink.m; sourceTree = "<group>"; };
 		D5BF285EE4147A0118121BC5117210FF /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/SDDiskCache.h; sourceTree = "<group>"; };
 		D5CBBC8C3DE3D2C327B6E43D792A0DA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		D6903BCE8C4410F6AC1A56C0E2799E7C /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
@@ -847,15 +851,12 @@
 		D9BC46C05A188404C507CFE744B3682D /* UITableViewCell+BaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BaseCategory.h"; sourceTree = "<group>"; };
 		DA070AE84977C31B5164E7951C9F2816 /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/SDImageAPNGCoder.h; sourceTree = "<group>"; };
 		DAD4BE05936C7E6AF9FBC998B32B5C5C /* SDImageCacheDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheDefine.m; path = SDWebImage/SDImageCacheDefine.m; sourceTree = "<group>"; };
-		DB14318484B2C6B2C4841BB21B418ACF /* WPMarkDownParseLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseLink.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseLink.h; sourceTree = "<group>"; };
-		DB3170535A881EC24BBA83C1231E839C /* WPMarkDownParseItalic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseItalic.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseItalic.h; sourceTree = "<group>"; };
 		DCBE9B8453C3F8631F5C6CB8615477BF /* WPMarkDownParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPMarkDownParse.framework; path = WPMarkDownParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE100DA7617049488AC739FBADCC43AB /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
 		DE31F2B350A358DAC453054D8355A3BC /* Pods-WPBaseTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPBaseTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DEE57D489E9D5CE3ED28F1D94CCDC146 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
 		DEE7B172C2DB5E1DABF49296D446A710 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		E0500D57E90744D1437BFA6D6B387CCC /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
-		E1554D2D7D930AE9107D8C3CBFABD55F /* WPMarkDownParseQuoteParagraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseQuoteParagraph.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseQuoteParagraph.m; sourceTree = "<group>"; };
 		E1B1E27578C4285F4F9CAC6C038B7147 /* NSBezierPath+RoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+RoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.h"; sourceTree = "<group>"; };
 		E1FB863185B02C173CD7FE609C529714 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
 		E25BEAB1D181D9BE0A3385B4E420C440 /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/SDImageCoderHelper.m; sourceTree = "<group>"; };
@@ -865,7 +866,6 @@
 		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63F77F6F2442BF56BE1C0B323812282 /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
 		E6BC0BC7E861179BEF1E29E0DE045096 /* SDImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoader.h; path = SDWebImage/SDImageLoader.h; sourceTree = "<group>"; };
-		E73686D4317B39627712B2340FBB4E24 /* WPMarkDownParseBold.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMarkDownParseBold.m; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseBold.m; sourceTree = "<group>"; };
 		E7B3F4E01145D4B479E60F621726B7FB /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
 		E7DC43025FB4CD086A0DCF124195C47F /* UIButton+WPChained.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WPChained.h"; path = "WPChained/Classes/ButtonChained/UIButton+WPChained.h"; sourceTree = "<group>"; };
 		E7EEB81D4B89914D4B50635FAD7A70E0 /* UITableView+FDTemplateLayoutCell-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UITableView+FDTemplateLayoutCell-Info.plist"; sourceTree = "<group>"; };
@@ -881,7 +881,6 @@
 		EEBE98D8C51AF2E7E993DF04DC535E7B /* NSObject+Json.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Json.m"; sourceTree = "<group>"; };
 		EED9774B5718385CFD2459171070F455 /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/SDWebImageError.h; sourceTree = "<group>"; };
 		F0883F8C22785AFFCBFF007A3524FB6F /* Pods-WPBaseTableView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Tests-Info.plist"; sourceTree = "<group>"; };
-		F2DD227C3BB9BA9009B7C3B00E597C62 /* WPMarkDownParse-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPMarkDownParse-Info.plist"; sourceTree = "<group>"; };
 		F314B2FA50B90ADFAEDC78328B3D75FE /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		F3B585B19F5F4B13986CDCD618265D3C /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
 		F415216FE4AA88B1C850C2C3EF26FDB7 /* WPMutableParagraphStyleModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMutableParagraphStyleModel.h; path = WPChained/Classes/MutableAttributedStringChained/WPMutableParagraphStyleModel.h; sourceTree = "<group>"; };
@@ -892,14 +891,15 @@
 		F6606A817C7C4465BF49FAE755C1329F /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		F68B286B9FE321CE3672C683727DBD9B /* UITableView_FDTemplateLayoutCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UITableView_FDTemplateLayoutCell.framework; path = "UITableView+FDTemplateLayoutCell.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F00DC2E5E56A1E6B4CEEFD02C4F60B /* YYText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-prefix.pch"; sourceTree = "<group>"; };
-		F750C5DE09C9139735B5A83FF591B8FC /* WPMarkDownParseCodeBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseCodeBlock.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseCodeBlock.h; sourceTree = "<group>"; };
 		F9080F867C122122C45DD41D57983C6D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		F9825562EE85DEF5BAE5071337804AE4 /* SDImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCodersManager.h; path = SDWebImage/SDImageCodersManager.h; sourceTree = "<group>"; };
 		F9A37B2547C28254AA837D781106DF80 /* Pods-WPBaseTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPBaseTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9F8FF46B757B49E6E2EF1CD348A65FB /* WPMarkDownParseItalic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownParseItalic.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownParseItalic.h; sourceTree = "<group>"; };
 		FA25128CCA5277B7E6E0551737FDC7BB /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRubyAnnotation.h; path = YYText/String/YYTextRubyAnnotation.h; sourceTree = "<group>"; };
 		FAB46FDB3218224B369D89AB498A3646 /* YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYText.h; path = YYText/YYText.h; sourceTree = "<group>"; };
 		FAF00BD711B717D384FA937A7EB29018 /* WPBaseTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPBaseTableView-prefix.pch"; sourceTree = "<group>"; };
 		FB85EFE3332D2567EBFCB867CE2A4E3F /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		FBA0F6BA92849CEDF880DF4A273D4D74 /* WPMarkDownBaseParse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMarkDownBaseParse.h; path = WPMarkDownParse/Classes/Parse/WPMarkDownBaseParse.h; sourceTree = "<group>"; };
 		FC218F9A512D5065019FD34F1FBFB30B /* NSMutableAttributedString+WPAddAttributed.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+WPAddAttributed.m"; path = "WPChained/Classes/MutableAttributedStringChained/NSMutableAttributedString+WPAddAttributed.m"; sourceTree = "<group>"; };
 		FCEC6A4229B56842AD3E661EAECC21F0 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
 		FD394DCEB72298E940553C23C4C130C2 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/SDWebImageIndicator.h; sourceTree = "<group>"; };
@@ -1081,20 +1081,6 @@
 			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
-		1FEE5438C466085A9537575CC0F3490E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1D50E9BD14BA4712BCC90D042EF9DED5 /* WPMarkDownParse.modulemap */,
-				4F6901B4C625DF0A750767EF64AF10CE /* WPMarkDownParse.xcconfig */,
-				B24E692076989271680D239FDC5796BF /* WPMarkDownParse-dummy.m */,
-				F2DD227C3BB9BA9009B7C3B00E597C62 /* WPMarkDownParse-Info.plist */,
-				1E81A77055FDDC24EDDE1E4564DC785E /* WPMarkDownParse-prefix.pch */,
-				9FA02845B890B0C74942D6ED09D45358 /* WPMarkDownParse-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WPMarkDownParse";
-			sourceTree = "<group>";
-		};
 		2570240C0C112113FEE67B41F05FACB8 /* WPChained */ = {
 			isa = PBXGroup;
 			children = (
@@ -1121,43 +1107,6 @@
 			);
 			name = WPChained;
 			path = WPChained;
-			sourceTree = "<group>";
-		};
-		26F128173F8E2C3F04E22B75394EA489 /* WPMarkDownParse */ = {
-			isa = PBXGroup;
-			children = (
-				7154F9F233D70E132915B494112A4B23 /* NSString+WPMarkDownParse.h */,
-				6D66E057B87D1DCC1C6495F8B699CE80 /* NSString+WPMarkDownParse.m */,
-				9ED295A86C8326EC711466BD80A20757 /* WPMarkDownBaseParse.h */,
-				6F7A06B04DC101770CDEEE83E32210C3 /* WPMarkDownBaseParse.m */,
-				97E6E12368817EFC0DD6C177F60003FF /* WPMarkDownMacro.h */,
-				24C3BABF2ABE339A0533097DEDA366A1 /* WPMarkDownParseBaseModel.h */,
-				7442F6CD0D34F6F231A9BFC528AA0F1F /* WPMarkDownParseBaseModel.m */,
-				BF265BD221610338527353B3910BCADB /* WPMarkDownParseBold.h */,
-				E73686D4317B39627712B2340FBB4E24 /* WPMarkDownParseBold.m */,
-				F750C5DE09C9139735B5A83FF591B8FC /* WPMarkDownParseCodeBlock.h */,
-				D3E5A6E8FC3C22E8E930B74EE860B3F6 /* WPMarkDownParseCodeBlock.m */,
-				342290F796D2284FBC529676E3ACA6B8 /* WPMarkDownParseDisorder.h */,
-				09989454E1B4AD30F3C279B30E7608ED /* WPMarkDownParseDisorder.m */,
-				522E468F3E30852AC00991158A396A4D /* WPMarkDownParseFactory.h */,
-				8EC0D0C675B42FAD09B2695BA16E1DC9 /* WPMarkDownParseFactory.m */,
-				4DFE6F6355AC6497CF7268CCE1181360 /* WPMarkDownParseImage.h */,
-				0348A3B493251F5724E0E02403B38ECF /* WPMarkDownParseImage.m */,
-				DB3170535A881EC24BBA83C1231E839C /* WPMarkDownParseItalic.h */,
-				16E4FD4CE4159A4094D22C9317DB7125 /* WPMarkDownParseItalic.m */,
-				DB14318484B2C6B2C4841BB21B418ACF /* WPMarkDownParseLink.h */,
-				D565FEAB5AACDF4084567363D80F8C26 /* WPMarkDownParseLink.m */,
-				3A1F74FA42CE2C69AAD628D53C060E30 /* WPMarkDownParseOrder.h */,
-				11D44E39CB78F6B26196CE604B2C6087 /* WPMarkDownParseOrder.m */,
-				710A2CB757B41F3A95EC04E2BB256644 /* WPMarkDownParseQuoteParagraph.h */,
-				E1554D2D7D930AE9107D8C3CBFABD55F /* WPMarkDownParseQuoteParagraph.m */,
-				A3616D89C9F1C3C51D35EED3A599896C /* WPMarkDownParseStrageInterface.h */,
-				BDB508ED6F2B0383DE30C3766711D3E3 /* WPMarkDownParseTitle.h */,
-				3B8E460254F1B330822696106F758176 /* WPMarkDownParseTitle.m */,
-				1FEE5438C466085A9537575CC0F3490E /* Support Files */,
-			);
-			name = WPMarkDownParse;
-			path = WPMarkDownParse;
 			sourceTree = "<group>";
 		};
 		27D86982AC8792FC9A109B316010A86E /* BaseTableView */ = {
@@ -1436,6 +1385,20 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		79DA254C2E475331A38FFD6571D5E54B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B35B2D71BE7C1909C76057731AF31593 /* WPMarkDownParse.modulemap */,
+				B1A1F18376968EC60852F06B8AC1466F /* WPMarkDownParse.xcconfig */,
+				C0D1BA5BE1EDE3266341E1B6A845BA8F /* WPMarkDownParse-dummy.m */,
+				1C71224D8C2B98EB27BF76306FD01286 /* WPMarkDownParse-Info.plist */,
+				B6E05FBB84944E5406CC88935B2FBB4F /* WPMarkDownParse-prefix.pch */,
+				0D299D7FDA147A58EA061B7C98C4683A /* WPMarkDownParse-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WPMarkDownParse";
+			sourceTree = "<group>";
+		};
 		8BC88A1158C9B9734EBF91E336EEC2D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1444,7 +1407,7 @@
 				8E03EEFD2AD01995BCADF3AF2590FFCD /* SDWebImage */,
 				4DCFC17D76FEA4FE1776FEB3A31461B9 /* UITableView+FDTemplateLayoutCell */,
 				2570240C0C112113FEE67B41F05FACB8 /* WPChained */,
-				26F128173F8E2C3F04E22B75394EA489 /* WPMarkDownParse */,
+				E8B6CBC32F02C93018FF91BE17E5080E /* WPMarkDownParse */,
 				F9B669A991969B914C271D6DE9CE3FD9 /* YYText */,
 			);
 			name = Pods;
@@ -1615,6 +1578,43 @@
 			);
 			sourceTree = "<group>";
 		};
+		E8B6CBC32F02C93018FF91BE17E5080E /* WPMarkDownParse */ = {
+			isa = PBXGroup;
+			children = (
+				53151B2D5DFCD75F4E412BC86DE4393C /* NSString+WPMarkDownParse.h */,
+				1F025FDF49255E0CD511A68F6F96AC46 /* NSString+WPMarkDownParse.m */,
+				FBA0F6BA92849CEDF880DF4A273D4D74 /* WPMarkDownBaseParse.h */,
+				145B858D32453BBB39550230B22A4EB1 /* WPMarkDownBaseParse.m */,
+				7DC22870F4B7B216547B8C5DCDD58F42 /* WPMarkDownMacro.h */,
+				B9639C6CE496F3AF4DF87EDCA176FD9A /* WPMarkDownParseBaseModel.h */,
+				441DD804CE457ABF3B1A02DA0E473AF2 /* WPMarkDownParseBaseModel.m */,
+				29008B60F73400FA4D7D54AF5891EE88 /* WPMarkDownParseBold.h */,
+				538E6F24A1B6D1AF7D9342C0A73530FB /* WPMarkDownParseBold.m */,
+				CEE031B8035D93FA5C750A163353AB82 /* WPMarkDownParseCodeBlock.h */,
+				1AFAB62B067D18CE916DEEC15842032B /* WPMarkDownParseCodeBlock.m */,
+				63318DAD7EFAD1FF4E6283B8DDA56D40 /* WPMarkDownParseDisorder.h */,
+				36B3E2F7CBED7329905A5E131F6F08C0 /* WPMarkDownParseDisorder.m */,
+				4A0E2C2D23B43A455F5C1E56D8B59F28 /* WPMarkDownParseFade.h */,
+				175AF5A96B8A6BDEF7C1B42208FA1D54 /* WPMarkDownParseFade.m */,
+				23E28F8428905C067628528BAEA6CBA5 /* WPMarkDownParseImage.h */,
+				075D057F4CA58F91D6DCACB132A18456 /* WPMarkDownParseImage.m */,
+				F9F8FF46B757B49E6E2EF1CD348A65FB /* WPMarkDownParseItalic.h */,
+				046807A2AB44EF9C447BF877583BC96C /* WPMarkDownParseItalic.m */,
+				ABA9F5454863131EB8EC04144D2A1BC9 /* WPMarkDownParseLink.h */,
+				8CFE0A337D5350B66C8B4CC422A919D8 /* WPMarkDownParseLink.m */,
+				9063ABD4F65C862BFC4F1A889EAB102E /* WPMarkDownParseOrder.h */,
+				B2AA38D1E1C68159E8DA5BACE823EE07 /* WPMarkDownParseOrder.m */,
+				900AB2FF4F8508B32C55C2575BB776B6 /* WPMarkDownParseQuoteParagraph.h */,
+				7812CD20E03BCB3B5124B6462BC0005E /* WPMarkDownParseQuoteParagraph.m */,
+				CD4E65430B51A7EFC295EB95738F9D74 /* WPMarkDownParseStrageInterface.h */,
+				8CED12A04FD1BCC25B6908B3A8AE3DC2 /* WPMarkDownParseTitle.h */,
+				3C65017C077257532BB2A3883B7356CB /* WPMarkDownParseTitle.m */,
+				79DA254C2E475331A38FFD6571D5E54B /* Support Files */,
+			);
+			name = WPMarkDownParse;
+			path = WPMarkDownParse;
+			sourceTree = "<group>";
+		};
 		F9B669A991969B914C271D6DE9CE3FD9 /* YYText */ = {
 			isa = PBXGroup;
 			children = (
@@ -1734,29 +1734,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AF52961BA4FF73F2ACD59739C1A50FB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				839A5A19F0E38861BD1CCFD93E73DE13 /* NSString+WPMarkDownParse.h in Headers */,
-				4413A3F3CA28556848127B2D98F67522 /* WPMarkDownBaseParse.h in Headers */,
-				2CCC7E8DC684CEBC5D4CA81C49C6C96E /* WPMarkDownMacro.h in Headers */,
-				504DF53EA62BB01D7ECB2B537765EC8C /* WPMarkDownParse-umbrella.h in Headers */,
-				2E7B701DFCE87743312224C5441E25C8 /* WPMarkDownParseBaseModel.h in Headers */,
-				46808701887046EADE1C9BC754BE5708 /* WPMarkDownParseBold.h in Headers */,
-				F796EC91CAF2286558381772D9CACD6B /* WPMarkDownParseCodeBlock.h in Headers */,
-				D42784122CEE3633E6F324B5DFDE8948 /* WPMarkDownParseDisorder.h in Headers */,
-				048444B7EE68CD8D2A0FC27880CA6F27 /* WPMarkDownParseFactory.h in Headers */,
-				8D1D0E649A28C70E8FC7042CA41D806C /* WPMarkDownParseImage.h in Headers */,
-				3FA6B7128E9865D9E81F051991ABC227 /* WPMarkDownParseItalic.h in Headers */,
-				C73B48D0E6D12ED929A6DE0AC0C08B12 /* WPMarkDownParseLink.h in Headers */,
-				287E8818C3147FD3C5E211677BA2C9B3 /* WPMarkDownParseOrder.h in Headers */,
-				C93CAB185185BEF6CF97E3C22E1BCC58 /* WPMarkDownParseQuoteParagraph.h in Headers */,
-				921E4A316897364EF80733A2CBD0C3D0 /* WPMarkDownParseStrageInterface.h in Headers */,
-				3AA4B5245928CADEAAB4EF48400C24EE /* WPMarkDownParseTitle.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50B44E245948DF1D2AFE533BD43B462D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1774,6 +1751,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				3350DA8495718D301AD30D51AB2517EF /* Pods-WPBaseTableView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F8DB7D91ECE15C78DB955066DAB7D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12802DB9EBE34CE2B9D923D8DA82D870 /* NSString+WPMarkDownParse.h in Headers */,
+				988438FA7C30F84BDB2F6832866BFA13 /* WPMarkDownBaseParse.h in Headers */,
+				10BC71F753C62804395D81B9E2A78389 /* WPMarkDownMacro.h in Headers */,
+				744F121BA77094B7EE67FF24AD166D18 /* WPMarkDownParse-umbrella.h in Headers */,
+				F5615A64B5F111F2D8FD532B082AA131 /* WPMarkDownParseBaseModel.h in Headers */,
+				DA3BAF4F1847D2C7DF627618B8ECFC65 /* WPMarkDownParseBold.h in Headers */,
+				DF93C9D14FC6D24B834B64459FDE9B58 /* WPMarkDownParseCodeBlock.h in Headers */,
+				19F461AAB92FA22F54D386D24429D445 /* WPMarkDownParseDisorder.h in Headers */,
+				6C55D1C85030944A373E4997E79CFEE6 /* WPMarkDownParseFade.h in Headers */,
+				4ADCC8D7FB9040324872117AD3AD3189 /* WPMarkDownParseImage.h in Headers */,
+				7925980BD9AE549A1F8E701C6572FB84 /* WPMarkDownParseItalic.h in Headers */,
+				E48DA4C02F96B132CF13E5DA80127D58 /* WPMarkDownParseLink.h in Headers */,
+				7B39FFD6A09A95472D553508CFDD6B26 /* WPMarkDownParseOrder.h in Headers */,
+				8BD6ED2A9FFCE6577F36DD16B048B3E5 /* WPMarkDownParseQuoteParagraph.h in Headers */,
+				BEB4B1A6A8D280FC67F2D38C21CBEA57 /* WPMarkDownParseStrageInterface.h in Headers */,
+				685DAC8BBF892491E4D699389EA6F0B7 /* WPMarkDownParseTitle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2128,8 +2128,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E2546FEB0E2B586D8B3C7BE4ED75BD /* Build configuration list for PBXNativeTarget "WPMarkDownParse" */;
 			buildPhases = (
-				4AF52961BA4FF73F2ACD59739C1A50FB /* Headers */,
-				57140C7B10DEC796DAAF409614BEE688 /* Sources */,
+				78F8DB7D91ECE15C78DB955066DAB7D4 /* Headers */,
+				D5E1AFA614C61BF69F040FBB8C4EBE5E /* Sources */,
 				8B7E69EE866FA82C921DA5132A384C06 /* Frameworks */,
 				C2EF7F32B218C8868D379F458F0175FA /* Resources */,
 			);
@@ -2382,27 +2382,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57140C7B10DEC796DAAF409614BEE688 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EE178AB7EE071A4A13647286E94E03B /* NSString+WPMarkDownParse.m in Sources */,
-				607D9F4EB7CC762DAAC74CB812C725DC /* WPMarkDownBaseParse.m in Sources */,
-				6E925C6ED08370D682C83CC4FBED9E25 /* WPMarkDownParse-dummy.m in Sources */,
-				22EA9FB8B01653E38645FDC447A34FBE /* WPMarkDownParseBaseModel.m in Sources */,
-				D51CAC29FE745C463D112589DBDEFC3D /* WPMarkDownParseBold.m in Sources */,
-				7D62F05C57FE902D3B2A40869D6C9838 /* WPMarkDownParseCodeBlock.m in Sources */,
-				E95EBA465AC3F9A288804EE0DB7EFB11 /* WPMarkDownParseDisorder.m in Sources */,
-				6F1D75B70BCC83A0942BC44A5C0F0DDC /* WPMarkDownParseFactory.m in Sources */,
-				A3EE17EE0A7975718BD733EE674D9A27 /* WPMarkDownParseImage.m in Sources */,
-				744D2134C601E93B40F064E41490927A /* WPMarkDownParseItalic.m in Sources */,
-				92F36BE4C44D1A96C2D78A8612432C39 /* WPMarkDownParseLink.m in Sources */,
-				1212C587C2F6C55D95D1E5D6C4BAAEE1 /* WPMarkDownParseOrder.m in Sources */,
-				F93EE966BDD06C931CEE26CAE1649907 /* WPMarkDownParseQuoteParagraph.m in Sources */,
-				EB4D997519B8F3E5869E3E303577224B /* WPMarkDownParseTitle.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		615624F787E9B3939620E332FD97F01B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2445,6 +2424,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A766900DA4F0A1DDD1C60583DE48829B /* Pods-WPBaseTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E1AFA614C61BF69F040FBB8C4EBE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CE3074A135EBC2E0C6B29FD8A14E09 /* NSString+WPMarkDownParse.m in Sources */,
+				19ACF31F20F2AF3E8134B7EC5C577DF4 /* WPMarkDownBaseParse.m in Sources */,
+				B0B8436F0F58119B224E4E4D27C85FC5 /* WPMarkDownParse-dummy.m in Sources */,
+				8CD64A6D75F5CA1ACCB73C3FB4EBFCE7 /* WPMarkDownParseBaseModel.m in Sources */,
+				67C9EA4C70F6C3DF47856E1305432943 /* WPMarkDownParseBold.m in Sources */,
+				9202A73164A83E94D304CED7BF2C4045 /* WPMarkDownParseCodeBlock.m in Sources */,
+				218AE651BB54F84643F40BA1854F01F8 /* WPMarkDownParseDisorder.m in Sources */,
+				8DD4E835F14C12BF2013756C59A3679A /* WPMarkDownParseFade.m in Sources */,
+				D56C8CE2B72E8FECC1B0C49A8BC4FB4F /* WPMarkDownParseImage.m in Sources */,
+				2AA35F9B8FE891EDF28926EFF1BE454E /* WPMarkDownParseItalic.m in Sources */,
+				6D089D68100F52F7AAB43DE032BB2AF8 /* WPMarkDownParseLink.m in Sources */,
+				E97AFBE099D0FE2492C5372D0CD12796 /* WPMarkDownParseOrder.m in Sources */,
+				09AE6634B9C2536982E2FF05399A035A /* WPMarkDownParseQuoteParagraph.m in Sources */,
+				F275FACAD2CC51F3B4FAF7E8FADECB77 /* WPMarkDownParseTitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2978,7 +2978,7 @@
 		};
 		78E915106AC0B3C871CC95CE83C73B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F6901B4C625DF0A750767EF64AF10CE /* WPMarkDownParse.xcconfig */;
+			baseConfigurationReference = B1A1F18376968EC60852F06B8AC1466F /* WPMarkDownParse.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3233,7 +3233,7 @@
 		};
 		C26495762ED94C1C677E339CECDF86E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F6901B4C625DF0A750767EF64AF10CE /* WPMarkDownParse.xcconfig */;
+			baseConfigurationReference = B1A1F18376968EC60852F06B8AC1466F /* WPMarkDownParse.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

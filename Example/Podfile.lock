@@ -5,7 +5,7 @@ PODS:
     - SDWebImage/Core (= 5.0.2)
   - SDWebImage/Core (5.0.2)
   - "UITableView+FDTemplateLayoutCell (1.6)"
-  - WPBaseTableView (0.1.5):
+  - WPBaseTableView (0.1.5.1):
     - Masonry (= 1.1.0)
     - MJRefresh (= 3.1.15.6)
     - SDWebImage (= 5.0.2)
@@ -13,7 +13,7 @@ PODS:
     - WPMarkDownParse
     - YYText (= 1.0.7)
   - WPChained (0.1.2)
-  - WPMarkDownParse (0.1.1):
+  - WPMarkDownParse (0.1.4.1):
     - SDWebImage (= 5.0.2)
     - WPChained (= 0.1.2)
     - YYText (= 1.0.7)
@@ -41,9 +41,9 @@ SPEC CHECKSUMS:
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
-  WPBaseTableView: 68377bd4cf1605d7b941a6f59719d9cd513a0289
+  WPBaseTableView: a01aa5a28d69dd9ff7fb479bfd3ed96de337f6aa
   WPChained: 354502cdfaf040ae05dd41b115c9169da90967cf
-  WPMarkDownParse: 7e934ae9e0cf572669c86a2e72c166ddab5a45b6
+  WPMarkDownParse: 28428ce7b8dc6135e12b4334c2d05ea92046d800
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: 8a57b3a8325401653c042a8d5b31a37756648fde
