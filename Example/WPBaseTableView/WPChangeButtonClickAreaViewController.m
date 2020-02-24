@@ -7,7 +7,7 @@
 //
 
 #import "WPChangeButtonClickAreaViewController.h"
-#import "NSObject+AddParams.h"
+#import "NSObject+WPBaseTableView.h"
 
 @interface WPChangeButtonClickAreaViewController ()
 

@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import "WPBaseSectionTableViewViewController.h"
-@interface WPViewController : WPBaseSectionTableViewViewController
+#import "WPBaseSectionTableViewController.h"
+@interface WPViewController : WPBaseSectionTableViewController
 
 @end

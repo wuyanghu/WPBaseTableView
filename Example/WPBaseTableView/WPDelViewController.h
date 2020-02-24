@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WPBaseSectionTableViewViewController.h"
+#import "WPBaseSectionTableViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WPDelViewController : WPBaseSectionTableViewViewController
+@interface WPDelViewController : WPBaseSectionTableViewController
 
 @end
 

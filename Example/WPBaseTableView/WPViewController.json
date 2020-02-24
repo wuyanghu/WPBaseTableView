@@ -9,7 +9,7 @@
         [
             {
                 "title":"我的优势:采用json配置，能快速建立起一个列表，不需要一行代码，包括tableView的跳转事件,唯一需要做的就是检验json文件是否正确",
-                "desc":"使用:继承WPBaseSectionTableViewViewController,按类名新建json文件，按此数据配置"
+                "desc":"使用:继承WPBaseSectionTableViewController,按类名新建json文件，按此数据配置"
             },
             {
                 "title":"UIViewController纯代码或Xib创建",
