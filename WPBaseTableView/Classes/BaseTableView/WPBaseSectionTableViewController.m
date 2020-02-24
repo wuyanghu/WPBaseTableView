@@ -20,18 +20,10 @@
 #import "WPBaseHeaderFooterView.h"
 
 @interface WPBaseSectionTableViewController ()
-
+//@property (nonatomic,assign) WPBaseSectionTableViewLoadType loadType;
 @end
 
 @implementation WPBaseSectionTableViewController
-
-- (instancetype)init{
-    self = [super init];
-    if (self) {
-        [self loadConfigInfo];
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,22 +34,18 @@
     [self loadData:NO];
 }
 
-- (void)addSubView{
-    
-}
-
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - 载入配置信息
 
-- (void)loadConfigInfo{
+- (WPBaseSectionTableViewLoadType)loadType{
     NSData * data = [self readJsonDataWithName:NSStringFromClass([self class])];
     if(data){
-        self.loadType = WPBaseSectionTableViewLoadLocalType;
+        return WPBaseSectionTableViewLoadLocalType;
     }else{
-        self.loadType = WPBaseSectionTableViewNoLoadType;
+        return WPBaseSectionTableViewNoLoadType;
     }
 }
 
@@ -94,7 +82,7 @@
 
 #pragma mark - action
 //占位刷新:子类实现
-- (void)plactHolderRefreshAction{
+- (void)placeHolderRefreshAction{
     
 }
 

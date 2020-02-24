@@ -49,4 +49,26 @@ typedef enum:NSInteger {
 - (void)cellEditingDeleteAtIndexPath:(NSIndexPath *)indexPath;//左滑删除
 @end
 
+#pragma mark - 请求数据
+
+@protocol WPBaseTableViewRequest <NSObject>
+- (WPBaseSectionTableViewLoadType)loadType;
+- (void)requestData:(BOOL)isRefresh;
+@end
+
+#pragma mark - 占位
+@protocol WPBaseTableViewPlaceHolder <NSObject>
+- (void)placeHolderRefreshAction;
+@end
+
+#pragma mark - 浏览图片
+@protocol WPBaseTableViewPlaceBrowser <NSObject>
+- (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl;
+@end
+
+@protocol WPBaseTableViewDefualtModel <NSObject>
+@optional;
+- (WPBaseSectionModel *)defaultSectionsModel;
+@end
+
 #endif /* WPBaseSectionTableViewHeader_h */
