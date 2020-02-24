@@ -1,13 +1,13 @@
 //
-//  UITableViewCell+BaseCategory.m
+//  UITableViewCell+WPBaseTableView.m
 //  WPBase
 //
 //  Created by wupeng on 2019/11/10.
 //
 
-#import "UITableViewCell+BaseCategory.h"
+#import "UITableViewCell+WPBaseTableView.h"
 
-@implementation UITableViewCell (BaseCategory)
+@implementation UITableViewCell (WPBaseTableView)
 
 + (NSString *)cellIdentifier{
     return NSStringFromClass([self class]);

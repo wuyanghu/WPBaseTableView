@@ -7,7 +7,7 @@
 
 #import "WPParseSectionsModel.h"
 #import "WPBaseSectionModel.h"
-#import "NSObject+Json.h"
+#import "NSObject+WPBaseTableView.h"
 
 @implementation WPParseSectionsModel
 

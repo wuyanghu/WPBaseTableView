@@ -6,7 +6,7 @@
 //  Copyright © 2019 wupeng. All rights reserved.
 //
 
-#import "NSObject+Json.h"
+#import "NSObject+WPBaseTableView.h"
 #include <CommonCrypto/CommonCrypto.h>
 
 @implementation NSObject (Json)
@@ -98,3 +98,16 @@
 
 @end
 
+#import <objc/runtime.h>
+
+@implementation NSObject (WPAddParams)
+
+- (void)setWpAddParams:(NSDictionary *)wpAddParams{
+    objc_setAssociatedObject(self, @"addParams", wpAddParams, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSDictionary *)wpAddParams{
+    return objc_getAssociatedObject(self, @"addParams");
+}
+
+@end

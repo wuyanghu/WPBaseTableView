@@ -6,25 +6,24 @@
 //  Copyright © 2019 wupeng. All rights reserved.
 //
 
-#import "WPBaseSectionTableViewViewController.h"
-#import "NSObject+AddParams.h"
+#import "WPBaseSectionTableViewController.h"
+#import "NSObject+WPBaseTableView.h"
 #import "UITableViewHeaderFooterView+WPBaseCategory.h"
 #import "WPBaseSectionCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "WPBaseSectionModel.h"
 #import "WPParseSectionsModel.h"
-#import "NSObject+Json.h"
 #import "WPBaseHeader.h"
 #import "MJRefresh.h"
 #import "WPTableViewPlaceHolderView.h"
 #import "UITableView+Placeholder.h"
 #import "WPBaseHeaderFooterView.h"
 
-@interface WPBaseSectionTableViewViewController ()
+@interface WPBaseSectionTableViewController ()
 
 @end
 
-@implementation WPBaseSectionTableViewViewController
+@implementation WPBaseSectionTableViewController
 
 - (instancetype)init{
     self = [super init];
@@ -37,13 +36,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addSubView];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.view addSubview:self.tableView];
+    
     [self loadData:NO];
 }
 
 - (void)addSubView{
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.view addSubview:self.tableView];
     
 }
 
@@ -51,13 +50,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-#pragma mark - 通知
-
-- (void)vcJsonChanged{
-    [self loadData:NO];
-}
-
-#pragma mark - 加载数据
+#pragma mark - 载入配置信息
 
 - (void)loadConfigInfo{
     NSData * data = [self readJsonDataWithName:NSStringFromClass([self class])];
@@ -68,37 +61,35 @@
     }
 }
 
+#pragma mark - 加载数据
+
 - (void)loadData:(BOOL)isRefresh{
     if (self.loadType == WPBaseSectionTableViewNoLoadType) {
-        [self.tableView.mj_header endRefreshing];
+        [self loadNoData];
     }else if (self.loadType == WPBaseSectionTableViewLoadLocalType){
-        [self loadLocalJson];
-        [self.tableView.mj_header endRefreshing];
+        [self loadLocalJsonData];
     }else if(self.loadType == WPBaseSectionTableViewRequestType){
-        [self requestDetailInfo:isRefresh];
+        [self requestData:isRefresh];
     }
 }
 
+//不请求数据
+- (void)loadNoData{
+    [self.tableView.mj_header endRefreshing];
+}
+
 //加载本地数据
-- (void)loadLocalJson{
+- (void)loadLocalJsonData{
+    [self.tableView.mj_header endRefreshing];
+
     id json = [self readJsonWithName:NSStringFromClass([self class])];
     self.sectionsModel =  [WPParseSectionsModel parseLocalJsonToBaseSetcionModel:json];
     [self.tableView reloadData];
 }
 
-//request
-- (void)requestDetailInfo:(BOOL)isRefresh{
+//请求网络数据
+- (void)requestData:(BOOL)isRefresh{
     
-}
-
-//提供一个默认的section
-- (WPBaseSectionModel *)defaultSectionsModel{
-    if (!self.sectionsModel) {
-        self.sectionsModel = [WPBaseSectionsModel new];
-        WPBaseSectionModel * sectionModel = [WPBaseSectionModel new];
-        [self.sectionsModel.contentArray addObject:sectionModel];
-    }
-    return self.sectionsModel.contentArray.firstObject;
 }
 
 #pragma mark - action
@@ -295,6 +286,17 @@
 }
 
 #pragma mark - getter
+
+//提供一个默认的section
+- (WPBaseSectionModel *)defaultSectionsModel{
+    if (!self.sectionsModel) {
+        self.sectionsModel = [WPBaseSectionsModel new];
+        WPBaseSectionModel * sectionModel = [WPBaseSectionModel new];
+        [self.sectionsModel.contentArray addObject:sectionModel];
+    }
+    return self.sectionsModel.contentArray.firstObject;
+}
+
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];

@@ -9,7 +9,7 @@
 #ifndef WPBase_h
 #define WPBase_h
 
-#import "WPBaseSectionTableViewViewController.h"
+#import "WPBaseSectionTableViewController.h"
 #import "WPBaseHeader.h"
 
 #endif /* WPBase_h */

@@ -18,14 +18,14 @@
 
 + (NSBundle *)wp_tableViewBundle
 {
-    static NSBundle *searchBundle = nil;
-    if (nil == searchBundle) {
+    static NSBundle *tableViewBundle = nil;
+    if (nil == tableViewBundle) {
         //Default use `[NSBundle mainBundle]`.
-        searchBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
-        if (nil == searchBundle) { // Empty description resource file in `PYSearch.framework`.
-            searchBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"BaseSectionTableViewViewController")] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
+        tableViewBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
+        if (nil == tableViewBundle) { // Empty description resource file in `PYSearch.framework`.
+            tableViewBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"BaseSectionTableViewViewController")] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
         }
     }
-    return searchBundle;
+    return tableViewBundle;
 }
 @end

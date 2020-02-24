@@ -22,4 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *)convertToJsonData:(NSDictionary *)dict;// 字典转json字符串方法
 @end
 
+@interface NSObject (WPAddParams)
+@property (nonatomic,strong) NSDictionary * wpAddParams;
+@end
+
 NS_ASSUME_NONNULL_END
