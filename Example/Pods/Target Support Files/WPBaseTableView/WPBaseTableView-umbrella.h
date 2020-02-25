@@ -13,6 +13,7 @@
 #import "WPBaseHeaderFooterView.h"
 #import "WPBaseSectionCell.h"
 #import "WPBaseSectionModel.h"
+#import "WPBaseSectionTableView.h"
 #import "WPBaseSectionTableViewController.h"
 #import "WPBaseSectionTableViewHeader.h"
 #import "WPTableViewPlaceHolderView.h"

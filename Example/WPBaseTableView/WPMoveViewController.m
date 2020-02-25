@@ -32,9 +32,9 @@
     }];
 }
 
-- (void)registerCell{
-    [super registerCell];
-    [WPCustomCell registerClassWithTableView:self.tableView];
+- (void)registerCellTableView:(UITableView *)tableView{
+    [super registerCellTableView:tableView];
+    [WPCustomCell registerClassWithTableView:tableView];
 }
 
 - (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{

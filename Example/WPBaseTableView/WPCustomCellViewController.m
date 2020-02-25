@@ -20,10 +20,10 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)registerCell{
-    [super registerCell];
-    [WPCustomCell registerClassWithTableView:self.tableView];
-    [WPCustomXibCell registerNibWithTableView:self.tableView];
+- (void)registerCellTableView:(UITableView *)tableView{
+    [super registerCellTableView:tableView];
+    [WPCustomCell registerClassWithTableView:tableView];
+    [WPCustomXibCell registerNibWithTableView:tableView];
 }
 
 - (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{
