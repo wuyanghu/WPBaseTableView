@@ -6,9 +6,9 @@
 //
 
 #import "WPTableViewPlaceHolderView.h"
-#import "WPCommonMacros.h"
+#import "WPMacros.h"
 #import "Masonry.h"
-#import "UIImageView+WPLoadBundleImage.h"
+#import "NSObject+WPBaseTableView.h"
 
 typedef void(^WPTableViewPlaceHolderViewRefreshBlock)(void);
 
@@ -57,7 +57,7 @@ typedef void(^WPTableViewPlaceHolderViewRefreshBlock)(void);
 - (UIImageView *)imageView{
     if (!_imageView) {
         _imageView = [[UIImageView alloc] init];
-        [_imageView wp_loadBundelImage:@"wp_placeholder"];
+        _imageView.image = [self wp_loadBundelImage:@"wp_placeholder"];
     }
     return _imageView;
 }

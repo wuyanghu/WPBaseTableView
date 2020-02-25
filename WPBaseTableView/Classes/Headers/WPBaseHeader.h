@@ -9,7 +9,7 @@
 #define WPBaseHeader_h
 
     #ifdef __OBJC__
-    #import "WPCommonMacros.h"
+    #import "WPMacros.h"
     #endif
 
 #endif /* WPBaseHeader_h */

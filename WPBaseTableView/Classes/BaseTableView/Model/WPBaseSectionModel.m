@@ -6,7 +6,7 @@
 //
 
 #import "WPBaseSectionModel.h"
-#import "WPCommonMacros.h"
+#import "WPMacros.h"
 #import "YYText.h"
 #import "NSString+WPMarkDownParse.h"
 

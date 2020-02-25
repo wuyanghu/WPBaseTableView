@@ -10,10 +10,11 @@
 #import "WPBaseSectionModel.h"
 #import "UITableViewCell+WPBaseTableView.h"
 #import "WPBaseSectionTableViewHeader.h"
+#import "WPBaseSectionTableViewControllerHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WPBaseSectionTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,WPBaseTableViewCellConfig>
+@interface WPBaseSectionTableViewController : UIViewController<WPBaseTableViewCellConfig>
 @property (nonatomic,strong) WPBaseSectionsModel * sectionsModel;
 
 @end

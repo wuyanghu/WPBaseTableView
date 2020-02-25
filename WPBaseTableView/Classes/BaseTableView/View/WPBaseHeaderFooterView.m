@@ -6,9 +6,9 @@
 //
 
 #import "WPBaseHeaderFooterView.h"
-#import "WPCommonMacros.h"
+#import "WPMacros.h"
 #import "Masonry.h"
-#import "UIImageView+WPLoadBundleImage.h"
+#import "NSObject+WPBaseTableView.h"
 
 @interface WPBaseHeaderFooterView()
 @property (nonatomic,strong) UIButton * titleButton;
@@ -93,7 +93,7 @@
 - (UIImageView *)arrowImageView{
     if (!_arrowImageView) {
         _arrowImageView = [[UIImageView alloc] init];
-        [_arrowImageView wp_loadBundelImage:@"wp_arrows_next"];
+        _arrowImageView.image = [self wp_loadBundelImage:@"wp_arrows_next"];
         _imageViewTransform = _arrowImageView.transform;
     }
     return _arrowImageView;

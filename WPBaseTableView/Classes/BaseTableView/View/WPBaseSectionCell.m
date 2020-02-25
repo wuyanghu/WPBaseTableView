@@ -7,7 +7,7 @@
 
 #import "WPBaseSectionCell.h"
 #import "Masonry.h"
-#import "WPCommonMacros.h"
+#import "WPMacros.h"
 #import "WPBaseSectionModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UITableView+FDTemplateLayoutCell.h"

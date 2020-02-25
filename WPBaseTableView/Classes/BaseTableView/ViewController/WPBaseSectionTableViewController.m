@@ -20,7 +20,7 @@
 #import "UITableViewCell+WPBaseTableView.h"
 #import "UITableViewHeaderFooterView+WPBaseCategory.h"
 
-@interface WPBaseSectionTableViewController ()<WPBaseSectionTableViewDelegate,WPBaseTableViewPlaceHolder>
+@interface WPBaseSectionTableViewController ()<WPBaseTableViewCellConfig,WPBaseTableViewHeaderFooterConfig,WPBaseTableViewCellMove,WPBaseTableViewCellDelete,WPBaseTableViewPlaceBrowser,WPBaseTableViewPlaceHolder,WPBaseSectionTableViewData,WPBaseSectionTableViewDidSelectRow>
 @property (nonatomic,strong) WPBaseSectionTableView * sectionTableView;
 @end
 
@@ -84,13 +84,13 @@
 //请求网络数据
 - (void)requestData:(BOOL)isRefresh{}
 
-#pragma mark - action
+#pragma mark - WPBaseTableViewPlaceHolder
 - (void)placeHolderRefreshAction{}
 
 #pragma mark - 浏览图片
 - (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{}
 
-#pragma mark - configcell
+#pragma mark - WPBaseTableViewCellConfig
 
 - (void)registerCellTableView:(UITableView *)tableView{}
 
@@ -110,7 +110,7 @@
     }
 }
 
-#pragma mark - configHeader
+#pragma mark - WPBaseTableViewHeaderFooterConfig
 
 - (BOOL)hideHeaderFooterView{
     return NO;
@@ -144,58 +144,13 @@
     }
 }
 
-#pragma mark - tableView
+#pragma mark - WPBaseSectionTableViewDidSelectRow
 
-#pragma mark header
-- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if ([self hideHeaderFooterView]){
-        return nil;
-    }
-    
-    WPBaseHeaderFooterView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section]];
-    [self configureHeaderFooterView:headerView section:section];
-    return headerView;
+- (WPBaseSectionsModel *)getSectionsModel{
+    return self.sectionsModel;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if ([self hideHeaderFooterView]) {
-        return 0.01f;
-    }
-    return [tableView fd_heightForHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section] configuration:^(id headerFooterView) {
-        [self configureHeaderFooterView:headerFooterView section:section];
-    }];
-}
-
-#pragma mark content
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [tableView fd_heightForCellWithIdentifier:[self cellIdentifyWithIndexPath:indexPath] cacheByIndexPath:indexPath configuration:^(UITableViewCell *cell) {
-        [self configureCell:cell atIndexPath:indexPath];
-    }];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    WPBaseSectionModel * sectionModel = self.sectionsModel.contentArray[section];
-    if (sectionModel.expend) {
-        return 0;
-    }
-    return sectionModel.rowArray.count;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.sectionsModel.contentArray.count;
-}
-
-- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    NSString * identifier = [self cellIdentifyWithIndexPath:indexPath];
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    [self configureCell:cell atIndexPath:indexPath];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     WPBaseRowModel * contentModel = [self.sectionsModel getContentModelWithIndexPath:indexPath];
     NSString * className = contentModel.classname;
     NSString * storyBoardName = contentModel.storyboardname;
@@ -225,64 +180,26 @@
             ((void (*)(id, SEL))[objClass methodForSelector:selector])(objClass, selector);
         }
     }
-    
 }
 
-#pragma mark - 左滑删除
+#pragma mark - WPBaseTableViewCellDelete
 
 - (BOOL)isCellEditingDelete{
     return NO;
-}
-
--(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [self isCellEditingDelete];
-}
-
--(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return UITableViewCellEditingStyleDelete;
-}
-
--(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return @"删除";
-}
-
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        [self cellEditingDeleteAtIndexPath:indexPath];
-    }
 }
 
 - (void)cellEditingDeleteAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"编辑删除");//具体操作，子类实现
 }
 
-#pragma mark - 移动
+#pragma mark - WPBaseTableViewCellMove
 
 - (BOOL)isCellCanMove{
     return NO;
 }
 
-// 设置 cell 是否允许移动
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.isCellCanMove;
-}
-// 移动 cell 时触发
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-    // 移动cell之后更换数据数组里的循序
-    [self moveRowAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
-}
-//子类实现
 - (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
     
-}
-
-#pragma mark - WPBaseSectionTableViewDelegate
-
-- (void)sectionTableViewInitData:(UITableView *)tableView{
-    [self registerCellTableView:tableView];
-    [self registerHeaderFooterView];
 }
 
 #pragma mark - getter
@@ -303,8 +220,15 @@
 
 - (WPBaseSectionTableView *)sectionTableView{
     if (!_sectionTableView) {
-        _sectionTableView = [[WPBaseSectionTableView alloc] initWithDataSource:self delegate:self initDataDelegate:self];
+        _sectionTableView = [[WPBaseSectionTableView alloc] init];
+        _sectionTableView.cellConfigDelegate = self;
+        _sectionTableView.headerFooterConfigDelegate = self;
         _sectionTableView.placeHolderDelegate = self;
+        _sectionTableView.delDelegate = self;
+        _sectionTableView.moveDelegate = self;
+        _sectionTableView.browserDelegate = self;
+        _sectionTableView.tableViewData = self;
+        _sectionTableView.didSelectRow = self;
     }
     return _sectionTableView;
 }

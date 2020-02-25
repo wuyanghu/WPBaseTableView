@@ -15,6 +15,7 @@
 #import "WPBaseSectionModel.h"
 #import "WPBaseSectionTableView.h"
 #import "WPBaseSectionTableViewController.h"
+#import "WPBaseSectionTableViewControllerHeader.h"
 #import "WPBaseSectionTableViewHeader.h"
 #import "WPTableViewPlaceHolderView.h"
 #import "NSObject+WPBaseTableView.h"
@@ -23,7 +24,7 @@
 #import "UITableViewCell+WPBaseTableView.h"
 #import "UITableViewHeaderFooterView+WPBaseCategory.h"
 #import "WPBaseHeader.h"
-#import "WPCommonMacros.h"
+#import "WPMacros.h"
 #import "WPParseSectionsModel.h"
 #import "WPBaseTableView.h"
 
