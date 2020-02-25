@@ -8,6 +8,13 @@
 #ifndef WPBaseSectionTableViewHeader_h
 #define WPBaseSectionTableViewHeader_h
 
+#pragma mark - 数据源
+
+#import "WPBaseSectionModel.h"
+@protocol WPBaseTableViewData <NSObject>
+- (WPBaseSectionsModel *)getSectionsModel;
+@end
+
 #pragma mark - cell
 
 @protocol WPBaseTableViewCellConfig <NSObject>
@@ -27,6 +34,16 @@
 - (void)registerHeaderFooterView;
 - (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section;
 - (void)configureHeaderFooterView:(UITableViewHeaderFooterView *)view section:(NSInteger)section;
+
+@end
+
+#pragma mark - 上拉、下拉刷新
+@protocol WPBaseTableViewHeaderFooterRefresh <NSObject>
+
+- (BOOL)hideRefreshHeader;
+- (BOOL)hideRefreshFooter;
+- (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void(^)(void))block;
+- (void)refreshFooterActionWithTableView:(UITableView *)tableView finshBlock:(void(^)(BOOL isMore))block;
 
 @end
 
@@ -56,12 +73,7 @@
 - (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl;
 @end
 
-#import "WPBaseSectionModel.h"
-@protocol WPBaseSectionTableViewData <NSObject>
-- (WPBaseSectionsModel *)getSectionsModel;
-@end
-
-@protocol WPBaseSectionTableViewDidSelectRow <NSObject>
+@protocol WPBaseTableViewDidSelectRow <NSObject>
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 @end
 

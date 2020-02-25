@@ -13,14 +13,11 @@
 #import "WPBaseSectionModel.h"
 #import "WPParseSectionsModel.h"
 #import "WPBaseHeader.h"
-#import "MJRefresh.h"
-#import "WPTableViewPlaceHolderView.h"
 #import "WPBaseHeaderFooterView.h"
 #import "WPBaseSectionTableView.h"
-#import "UITableViewCell+WPBaseTableView.h"
 #import "UITableViewHeaderFooterView+WPBaseCategory.h"
 
-@interface WPBaseSectionTableViewController ()<WPBaseTableViewCellConfig,WPBaseTableViewHeaderFooterConfig,WPBaseTableViewCellMove,WPBaseTableViewCellDelete,WPBaseTableViewPlaceBrowser,WPBaseTableViewPlaceHolder,WPBaseSectionTableViewData,WPBaseSectionTableViewDidSelectRow>
+@interface WPBaseSectionTableViewController ()<WPBaseTableViewCellConfig,WPBaseTableViewHeaderFooterConfig,WPBaseTableViewCellMove,WPBaseTableViewCellDelete,WPBaseTableViewPlaceBrowser,WPBaseTableViewPlaceHolder,WPBaseTableViewData,WPBaseTableViewDidSelectRow,WPBaseTableViewHeaderFooterRefresh>
 @property (nonatomic,strong) WPBaseSectionTableView * sectionTableView;
 @end
 
@@ -58,9 +55,7 @@
 #pragma mark - 加载数据
 
 - (void)loadData:(BOOL)isRefresh{
-    if (self.loadType == WPBaseSectionTableViewNoLoadType) {
-        [self loadNoData];
-    }else if (self.loadType == WPBaseSectionTableViewLoadLocalType){
+    if (self.loadType == WPBaseSectionTableViewLoadLocalType){
         [self loadLocalJsonData];
     }else if(self.loadType == WPBaseSectionTableViewRequestType){
         [self requestData:isRefresh];
@@ -68,14 +63,10 @@
 }
 
 //不请求数据
-- (void)loadNoData{
-    [self.tableView.mj_header endRefreshing];
-}
+- (void)loadNoData{}
 
 //加载本地数据
 - (void)loadLocalJsonData{
-    [self.tableView.mj_header endRefreshing];
-
     id json = [self readJsonWithName:NSStringFromClass([self class])];
     self.sectionsModel =  [WPParseSectionsModel parseLocalJsonToBaseSetcionModel:json];
     [self.tableView reloadData];
@@ -83,6 +74,24 @@
 
 //请求网络数据
 - (void)requestData:(BOOL)isRefresh{}
+
+#pragma mark - WPBaseTableViewHeaderFooterRefresh
+
+- (BOOL)hideRefreshHeader{
+    return NO;
+}
+
+- (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(void))block{
+    block();
+}
+
+- (BOOL)hideRefreshFooter{
+    return NO;
+}
+
+- (void)refreshFooterActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(BOOL))block{
+    block(NO);
+}
 
 #pragma mark - WPBaseTableViewPlaceHolder
 - (void)placeHolderRefreshAction{}
@@ -102,7 +111,6 @@
     if ([cell isKindOfClass:[WPBaseSectionCell class]]) {
         CMWeakSelf;
         WPBaseSectionCell * sectionCell = (WPBaseSectionCell *)cell;
-        sectionCell.rowModel = [self.sectionsModel getContentModelWithIndexPath:indexPath];
         sectionCell.callBlock = ^() {
             CMStrongSelf;
             [self photoBrowserWithIndexPath:indexPath isUrl:YES];
@@ -125,7 +133,6 @@
 - (void)configureHeaderFooterView:(UITableViewHeaderFooterView *)view section:(NSInteger)section{
     if ([view isKindOfClass:[WPBaseHeaderFooterView class]]) {
         WPBaseHeaderFooterView * headerView = (WPBaseHeaderFooterView *)view;
-        headerView.sectionModel = self.sectionsModel.contentArray[section];
         CMWeakSelf;
         headerView.block = ^{
             CMStrongSelf;
@@ -144,7 +151,7 @@
     }
 }
 
-#pragma mark - WPBaseSectionTableViewDidSelectRow
+#pragma mark - WPBaseTableViewDidSelectRow
 
 - (WPBaseSectionsModel *)getSectionsModel{
     return self.sectionsModel;
@@ -198,9 +205,7 @@
     return NO;
 }
 
-- (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
-    
-}
+- (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{}
 
 #pragma mark - getter
 
@@ -229,6 +234,7 @@
         _sectionTableView.browserDelegate = self;
         _sectionTableView.tableViewData = self;
         _sectionTableView.didSelectRow = self;
+        _sectionTableView.headerFooterRefresh = self;
     }
     return _sectionTableView;
 }

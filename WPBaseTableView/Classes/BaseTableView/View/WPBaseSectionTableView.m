@@ -14,6 +14,7 @@
 #import "WPBaseHeaderFooterView.h"
 #import "WPBaseHeader.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "MJRefresh.h"
 
 @interface WPBaseSectionTableView()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView * tableView;
@@ -37,13 +38,29 @@
         _tableView.tableFooterView = [[UIView alloc] init];
         [self addSubview:_tableView];
         [self addPlaceHolderView:_tableView];
-        
-        [WPBaseSectionCell registerClassWithTableView:_tableView];
-        [WPBaseHeaderFooterView registerHeaderFooterClassWithTableView:_tableView];
-        if (self.cellConfigDelegate) [self.cellConfigDelegate registerCellTableView:_tableView];
-        if (self.headerFooterConfigDelegate) [self.headerFooterConfigDelegate registerHeaderFooterView];
+        [self setHeaderFooterRefresh];
+        [self registerCellTableView:_tableView];
+        [self registerHeaderFooterView];
     }
     return _tableView;
+}
+
+- (void)setHeaderFooterRefresh{
+    if (self.headerFooterRefresh) {
+        CMWeakSelf;
+        if (![self.headerFooterRefresh hideRefreshHeader]) {
+            _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+                CMStrongSelf;
+                [self refreshHeader];
+            }];
+        }
+        if (![self.headerFooterRefresh hideRefreshFooter]) {
+            _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+                CMStrongSelf;
+                [self refreshFooter];
+            }];
+        }
+    }
 }
 
 //设置占位
@@ -60,45 +77,132 @@
     return self.tableView;
 }
 
+#pragma mark - 代理调用，提供默认属性
+
+#pragma mark WPBaseTableViewCellConfig
+
+- (void)registerCellTableView:(UITableView *)tableView{
+    [WPBaseSectionCell registerClassWithTableView:_tableView];
+    if (self.cellConfigDelegate) [self.cellConfigDelegate registerCellTableView:_tableView];
+}
+
+- (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{
+    NSString * cellIdentify = WPBaseSectionCell.cellIdentifier;
+    if (self.cellConfigDelegate) {
+        cellIdentify = [self.cellConfigDelegate cellIdentifyWithIndexPath:indexPath];
+    }
+    return cellIdentify;
+}
+
+- (void)configureCell:(WPBaseSectionCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    if ([cell isKindOfClass:[WPBaseSectionCell class]]) {
+        WPBaseSectionsModel * sectionsModel = [self.tableViewData getSectionsModel];
+        cell.rowModel = [sectionsModel getContentModelWithIndexPath:indexPath];
+    }
+    if (self.cellConfigDelegate) [self.cellConfigDelegate configureCell:cell atIndexPath:indexPath];
+}
+
+#pragma mark WPBaseTableViewHeaderFooterConfig
+
+- (BOOL)hideHeaderFooterView{
+    BOOL hide = NO;
+    if (self.headerFooterConfigDelegate) {
+        hide = [self.headerFooterConfigDelegate hideHeaderFooterView];
+    }
+    return NO;
+}
+
+- (void)registerHeaderFooterView{
+    [WPBaseHeaderFooterView registerHeaderFooterClassWithTableView:_tableView];
+    if (self.headerFooterConfigDelegate) [self.headerFooterConfigDelegate registerHeaderFooterView];
+}
+
+- (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section{
+    NSString * cellIdentify = WPBaseHeaderFooterView.cellIdentifier;
+    if (self.headerFooterConfigDelegate) {
+        cellIdentify = [self.headerFooterConfigDelegate headerFooterViewIdentifyWithSection:section];
+    }
+    return cellIdentify;
+}
+
+- (void)configureHeaderFooterView:(WPBaseHeaderFooterView *)view section:(NSInteger)section{
+    WPBaseSectionsModel * sectionsModel = [self.tableViewData getSectionsModel];
+    view.sectionModel = sectionsModel.contentArray[section];
+    if (self.headerFooterConfigDelegate) {
+        [self.headerFooterConfigDelegate configureHeaderFooterView:view section:section];
+    }
+}
+
+#pragma mark WPBaseTableViewHeaderFooterRefresh
+
+- (BOOL)hideRefreshHeader{
+    BOOL hide = NO;
+    if (self.headerFooterRefresh) {
+        hide = [self.headerFooterRefresh hideRefreshHeader];
+    }
+    return hide;
+}
+
+- (BOOL)hideRefreshFooter{
+    BOOL hide = NO;
+    if (self.headerFooterRefresh) {
+        hide = [self.headerFooterRefresh hideRefreshFooter];
+    }
+    return hide;
+}
+
+- (void)refreshHeader{
+    [_tableView.mj_header beginRefreshing];
+    CMWeakSelf;
+    [self.headerFooterRefresh refreshHeaderActionWithTableView:_tableView finshBlock:^{
+        CMStrongSelf;
+        [self.tableView.mj_header endRefreshing];
+    }];
+}
+
+- (void)refreshFooter{
+    [_tableView.mj_footer beginRefreshing];
+    CMWeakSelf;
+    [self.headerFooterRefresh refreshFooterActionWithTableView:_tableView finshBlock:^(BOOL isMore) {
+        CMStrongSelf;
+        if (isMore) {
+            [self.tableView.mj_footer endRefreshing];
+        }else{
+            [self.tableView.mj_footer endRefreshingWithNoMoreData];
+        }
+    }];
+}
+
 #pragma mark - tableView
 
 #pragma mark header
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if (!self.headerFooterConfigDelegate) {
-        return nil;
-    }
-    if ([self.headerFooterConfigDelegate hideHeaderFooterView]){
+    if ([self hideHeaderFooterView]){
         return nil;
     }
     
-    WPBaseHeaderFooterView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self.headerFooterConfigDelegate headerFooterViewIdentifyWithSection:section]];
-    [self.headerFooterConfigDelegate configureHeaderFooterView:headerView section:section];
+    WPBaseHeaderFooterView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section]];
+    [self configureHeaderFooterView:headerView section:section];
     return headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (!self.headerFooterConfigDelegate) {
-        return 0.01f;
-    }
     
-    if ([self.headerFooterConfigDelegate hideHeaderFooterView]) {
+    if ([self hideHeaderFooterView]) {
         return 0.01f;
     }
         
-    NSString * identifier = [self.headerFooterConfigDelegate headerFooterViewIdentifyWithSection:section];
+    NSString * identifier = [self headerFooterViewIdentifyWithSection:section];
     return [tableView fd_heightForHeaderFooterViewWithIdentifier:identifier configuration:^(id headerFooterView) {
-        [self.headerFooterConfigDelegate configureHeaderFooterView:headerFooterView section:section];
+        [self configureHeaderFooterView:headerFooterView section:section];
     }];
 }
 
 #pragma mark content
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (!self.cellConfigDelegate) {
-        return 0.01f;
-    }
-    return [tableView fd_heightForCellWithIdentifier:[self.cellConfigDelegate cellIdentifyWithIndexPath:indexPath] cacheByIndexPath:indexPath configuration:^(UITableViewCell *cell) {
-        [self.cellConfigDelegate configureCell:cell atIndexPath:indexPath];
+    return [tableView fd_heightForCellWithIdentifier:[self cellIdentifyWithIndexPath:indexPath] cacheByIndexPath:indexPath configuration:^(UITableViewCell *cell) {
+        [self configureCell:cell atIndexPath:indexPath];
     }];
 }
 
@@ -118,9 +222,9 @@
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    NSString * identifier = [self.cellConfigDelegate cellIdentifyWithIndexPath:indexPath];
+    NSString * identifier = [self cellIdentifyWithIndexPath:indexPath];
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    [self.cellConfigDelegate configureCell:cell atIndexPath:indexPath];
+    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
@@ -157,7 +261,7 @@
     }
 }
 
-#pragma mark - 移动
+#pragma mark 移动
 
 // 设置 cell 是否允许移动
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {

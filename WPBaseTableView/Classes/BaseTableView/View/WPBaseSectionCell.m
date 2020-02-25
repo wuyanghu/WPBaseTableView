@@ -77,7 +77,7 @@
     }];
     
     offset = rowModel.descHeight == 0?0:10;
-    [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {        make.top.equalTo(self.titleLabel.mas_bottom).offset(offset);
+    [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {    make.top.equalTo(self.titleLabel.mas_bottom).offset(offset);
         make.height.mas_equalTo(rowModel.descHeight);
     }];
     

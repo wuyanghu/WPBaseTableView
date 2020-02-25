@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WPBaseTableView'
-  s.version          = '0.1.5.5'
+  s.version          = '0.1.5.6'
   s.summary          = '使用json配置TableView'
 
 # This description is used to generate tags and improve search results.

@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) id<WPBaseTableViewCellDelete> delDelegate;
 @property (nonatomic,weak) id<WPBaseTableViewCellMove> moveDelegate;
 @property (nonatomic,weak) id<WPBaseTableViewPlaceBrowser> browserDelegate;
-@property (nonatomic,weak) id<WPBaseSectionTableViewData> tableViewData;
-@property (nonatomic,weak) id<WPBaseSectionTableViewDidSelectRow> didSelectRow;
-
+@property (nonatomic,weak) id<WPBaseTableViewData> tableViewData;
+@property (nonatomic,weak) id<WPBaseTableViewDidSelectRow> didSelectRow;
+@property (nonatomic,weak) id<WPBaseTableViewHeaderFooterRefresh> headerFooterRefresh;
 - (UITableView *)getTableView;
 
 @end
