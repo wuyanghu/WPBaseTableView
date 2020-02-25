@@ -38,28 +38,26 @@
         _tableView.tableFooterView = [[UIView alloc] init];
         [self addSubview:_tableView];
         [self addPlaceHolderView:_tableView];
-        [self setHeaderFooterRefresh];
+        [self addHeaderFooterRefresh];
         [self registerCellTableView:_tableView];
         [self registerHeaderFooterView];
     }
     return _tableView;
 }
 
-- (void)setHeaderFooterRefresh{
-    if (self.headerFooterRefresh) {
-        CMWeakSelf;
-        if (![self.headerFooterRefresh hideRefreshHeader]) {
-            _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-                CMStrongSelf;
-                [self refreshHeader];
-            }];
-        }
-        if (![self.headerFooterRefresh hideRefreshFooter]) {
-            _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-                CMStrongSelf;
-                [self refreshFooter];
-            }];
-        }
+- (void)addHeaderFooterRefresh{
+    CMWeakSelf;
+    if (![self hideRefreshHeader]) {
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            CMStrongSelf;
+            [self refreshHeader];
+        }];
+    }
+    if (![self hideRefreshFooter]) {
+        _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            CMStrongSelf;
+            [self refreshFooter];
+        }];
     }
 }
 
@@ -138,7 +136,11 @@
 - (BOOL)hideRefreshHeader{
     BOOL hide = NO;
     if (self.headerFooterRefresh) {
-        hide = [self.headerFooterRefresh hideRefreshHeader];
+        if ([self.headerFooterRefresh respondsToSelector:@selector(hideRefreshHeader)]) {
+            hide = [self.headerFooterRefresh hideRefreshHeader];
+        }else if([self.headerFooterRefresh respondsToSelector:@selector(refreshHeaderActionWithTableView:finshBlock:)]){
+            hide = NO;
+        }
     }
     return hide;
 }
@@ -146,8 +148,13 @@
 - (BOOL)hideRefreshFooter{
     BOOL hide = NO;
     if (self.headerFooterRefresh) {
-        hide = [self.headerFooterRefresh hideRefreshFooter];
+        if ([self.headerFooterRefresh respondsToSelector:@selector(hideRefreshFooter)]) {
+            hide = [self.headerFooterRefresh hideRefreshFooter];
+        }else if ([self.headerFooterRefresh respondsToSelector:@selector(refreshFooterActionWithTableView:finshBlock:)]) {
+            hide = NO;
+        }
     }
+    
     return hide;
 }
 

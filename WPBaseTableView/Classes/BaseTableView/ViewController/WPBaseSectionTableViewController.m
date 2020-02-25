@@ -81,12 +81,12 @@
     return NO;
 }
 
-- (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(void))block{
-    block();
-}
-
 - (BOOL)hideRefreshFooter{
     return NO;
+}
+
+- (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(void))block{
+    block();
 }
 
 - (void)refreshFooterActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(BOOL))block{

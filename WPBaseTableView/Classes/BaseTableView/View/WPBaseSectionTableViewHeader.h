@@ -39,7 +39,7 @@
 
 #pragma mark - 上拉、下拉刷新
 @protocol WPBaseTableViewHeaderFooterRefresh <NSObject>
-
+@optional
 - (BOOL)hideRefreshHeader;
 - (BOOL)hideRefreshFooter;
 - (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void(^)(void))block;
