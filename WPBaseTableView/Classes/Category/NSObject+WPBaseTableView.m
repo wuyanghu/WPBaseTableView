@@ -111,3 +111,26 @@
 }
 
 @end
+
+@implementation NSObject(WPLoadBundle)
+
+- (UIImage *)wp_loadBundelImage:(NSString *)name{
+    NSBundle *bundle = [self.class wp_tableViewBundle];
+    UIImage *image = [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
+    return image;
+}
+
++ (NSBundle *)wp_tableViewBundle
+{
+    static NSBundle *tableViewBundle = nil;
+    if (nil == tableViewBundle) {
+        //Default use `[NSBundle mainBundle]`.
+        tableViewBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
+        if (nil == tableViewBundle) { // Empty description resource file in `PYSearch.framework`.
+            tableViewBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"WPBaseSectionTableViewController")] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
+        }
+    }
+    return tableViewBundle;
+}
+
+@end

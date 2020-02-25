@@ -9,7 +9,7 @@
 
 @implementation UIImageView (WPLoadBundleImage)
 
-- (void)wpLoadBundelImageWithName:(NSString *)imgName
+- (void)wp_loadBundelImage:(NSString *)imgName
 {
     NSBundle *bundle = [self.class wp_tableViewBundle];
     UIImage *image = [UIImage imageNamed:imgName inBundle:bundle compatibleWithTraitCollection:nil];
@@ -23,7 +23,7 @@
         //Default use `[NSBundle mainBundle]`.
         tableViewBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
         if (nil == tableViewBundle) { // Empty description resource file in `PYSearch.framework`.
-            tableViewBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"BaseSectionTableViewViewController")] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
+            tableViewBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:NSClassFromString(@"WPBaseSectionTableViewController")] pathForResource:@"WPBaseTableView" ofType:@"bundle"]];
         }
     }
     return tableViewBundle;

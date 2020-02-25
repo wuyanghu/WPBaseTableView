@@ -26,4 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSDictionary * wpAddParams;
 @end
 
+@interface NSObject(WPLoadBundle)
+- (UIImage *)wp_loadBundelImage:(NSString *)name;
+@end
 NS_ASSUME_NONNULL_END

@@ -18,7 +18,8 @@ typedef enum:NSInteger {
 
 @protocol WPBaseTableViewCellConfig <NSObject>
 
-- (void)registerCell;
+- (UITableView *)tableView;
+- (void)registerCellTableView:(UITableView *)tableView;
 - (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
@@ -28,6 +29,7 @@ typedef enum:NSInteger {
 
 @protocol WPBaseTableViewHeaderFooterConfig <NSObject>
 
+- (BOOL)hideHeaderFooterView;
 - (void)registerHeaderFooterView;
 - (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section;
 - (void)configureHeaderFooterView:(UITableViewHeaderFooterView *)view section:(NSInteger)section;
@@ -65,6 +67,8 @@ typedef enum:NSInteger {
 @protocol WPBaseTableViewPlaceBrowser <NSObject>
 - (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl;
 @end
+
+#import "WPBaseSectionModel.h"
 
 @protocol WPBaseTableViewDefualtModel <NSObject>
 @optional;

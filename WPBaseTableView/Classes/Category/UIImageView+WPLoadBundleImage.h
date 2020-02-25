@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (WPLoadBundleImage)
-- (void)wpLoadBundelImageWithName:(NSString *)imgName;
+- (void)wp_loadBundelImage:(NSString *)imgName;
 @end
 
 NS_ASSUME_NONNULL_END

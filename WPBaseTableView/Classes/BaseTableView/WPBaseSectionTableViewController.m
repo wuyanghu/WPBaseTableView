@@ -8,7 +8,6 @@
 
 #import "WPBaseSectionTableViewController.h"
 #import "NSObject+WPBaseTableView.h"
-#import "UITableViewHeaderFooterView+WPBaseCategory.h"
 #import "WPBaseSectionCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "WPBaseSectionModel.h"
@@ -16,11 +15,13 @@
 #import "WPBaseHeader.h"
 #import "MJRefresh.h"
 #import "WPTableViewPlaceHolderView.h"
-#import "UITableView+Placeholder.h"
 #import "WPBaseHeaderFooterView.h"
+#import "WPBaseSectionTableView.h"
+#import "UITableViewCell+WPBaseTableView.h"
+#import "UITableViewHeaderFooterView+WPBaseCategory.h"
 
-@interface WPBaseSectionTableViewController ()
-//@property (nonatomic,assign) WPBaseSectionTableViewLoadType loadType;
+@interface WPBaseSectionTableViewController ()<WPBaseSectionTableViewDelegate,WPBaseTableViewPlaceHolder>
+@property (nonatomic,strong) WPBaseSectionTableView * sectionTableView;
 @end
 
 @implementation WPBaseSectionTableViewController
@@ -29,9 +30,14 @@
     [super viewDidLoad];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.view addSubview:self.tableView];
+    [self.view addSubview:self.sectionTableView];
     
     [self loadData:NO];
+}
+
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    self.sectionTableView.frame = self.view.bounds;
 }
 
 - (void)dealloc{
@@ -76,27 +82,17 @@
 }
 
 //请求网络数据
-- (void)requestData:(BOOL)isRefresh{
-    
-}
+- (void)requestData:(BOOL)isRefresh{}
 
 #pragma mark - action
-//占位刷新:子类实现
-- (void)placeHolderRefreshAction{
-    
-}
+- (void)placeHolderRefreshAction{}
 
 #pragma mark - 浏览图片
-
-- (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{
-    
-}
+- (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{}
 
 #pragma mark - configcell
 
-- (void)registerCell{
-    [WPBaseSectionCell registerClassWithTableView:_tableView];
-}
+- (void)registerCellTableView:(UITableView *)tableView{}
 
 - (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{
     return WPBaseSectionCell.cellIdentifier;
@@ -116,9 +112,11 @@
 
 #pragma mark - configHeader
 
-- (void)registerHeaderFooterView{
-    [WPBaseHeaderFooterView registerHeaderFooterClassWithTableView:_tableView];
+- (BOOL)hideHeaderFooterView{
+    return NO;
 }
+
+- (void)registerHeaderFooterView{}
 
 - (NSString *)headerFooterViewIdentifyWithSection:(NSInteger)section{
     return WPBaseHeaderFooterView.cellIdentifier;
@@ -150,12 +148,19 @@
 
 #pragma mark header
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if ([self hideHeaderFooterView]){
+        return nil;
+    }
+    
     WPBaseHeaderFooterView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section]];
     [self configureHeaderFooterView:headerView section:section];
     return headerView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if ([self hideHeaderFooterView]) {
+        return 0.01f;
+    }
     return [tableView fd_heightForHeaderFooterViewWithIdentifier:[self headerFooterViewIdentifyWithSection:section] configuration:^(id headerFooterView) {
         [self configureHeaderFooterView:headerFooterView section:section];
     }];
@@ -183,7 +188,7 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     NSString * identifier = [self cellIdentifyWithIndexPath:indexPath];
-    UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -273,6 +278,13 @@
     
 }
 
+#pragma mark - WPBaseSectionTableViewDelegate
+
+- (void)sectionTableViewInitData:(UITableView *)tableView{
+    [self registerCellTableView:tableView];
+    [self registerHeaderFooterView];
+}
+
 #pragma mark - getter
 
 //提供一个默认的section
@@ -286,15 +298,15 @@
 }
 
 - (UITableView *)tableView{
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-        _tableView.dataSource = self;
-        _tableView.delegate = self;
-        [self registerCell];
-        [self registerHeaderFooterView];
-        _tableView.tableFooterView = [[UIView alloc] init];
+    return [_sectionTableView getTableView];
+}
+
+- (WPBaseSectionTableView *)sectionTableView{
+    if (!_sectionTableView) {
+        _sectionTableView = [[WPBaseSectionTableView alloc] initWithDataSource:self delegate:self initDataDelegate:self];
+        _sectionTableView.placeHolderDelegate = self;
     }
-    return _tableView;
+    return _sectionTableView;
 }
 
 @end

@@ -93,7 +93,7 @@
 - (UIImageView *)arrowImageView{
     if (!_arrowImageView) {
         _arrowImageView = [[UIImageView alloc] init];
-        [_arrowImageView wpLoadBundelImageWithName:@"wp_arrows_next"];
+        [_arrowImageView wp_loadBundelImage:@"wp_arrows_next"];
         _imageViewTransform = _arrowImageView.transform;
     }
     return _arrowImageView;

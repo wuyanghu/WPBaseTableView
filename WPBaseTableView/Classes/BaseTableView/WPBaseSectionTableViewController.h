@@ -14,7 +14,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WPBaseSectionTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,WPBaseTableViewCellConfig>
-@property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) WPBaseSectionsModel * sectionsModel;
 
 @end

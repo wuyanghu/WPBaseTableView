@@ -57,7 +57,7 @@ typedef void(^WPTableViewPlaceHolderViewRefreshBlock)(void);
 - (UIImageView *)imageView{
     if (!_imageView) {
         _imageView = [[UIImageView alloc] init];
-        [_imageView wpLoadBundelImageWithName:@"wp_plachholder"];
+        [_imageView wp_loadBundelImage:@"wp_placeholder"];
     }
     return _imageView;
 }
