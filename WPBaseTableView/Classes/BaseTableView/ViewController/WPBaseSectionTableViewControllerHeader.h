@@ -18,14 +18,14 @@ typedef enum:NSInteger {
 
 #pragma mark - 提供默认数据
 
-@protocol WPBaseTableViewDefualtModel <NSObject>
+@protocol WPBaseTableViewControllerDefualtModel <NSObject>
 @optional;
 - (WPBaseSectionModel *)defaultSectionsModel;
 @end
 
 #pragma mark - 请求数据
 
-@protocol WPBaseTableViewRequest <NSObject>
+@protocol WPBaseTableViewControllerRequest <NSObject>
 - (WPBaseSectionTableViewLoadType)loadType;
 - (void)requestData:(BOOL)isRefresh;
 @end

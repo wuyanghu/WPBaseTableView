@@ -32,6 +32,9 @@
     }];
 }
 
+#pragma mark - tableView delegate
+
+#pragma mark WPBaseTableViewCellConfig
 - (void)registerCellTableView:(UITableView *)tableView{
     [super registerCellTableView:tableView];
     [WPCustomCell registerClassWithTableView:tableView];
@@ -40,6 +43,12 @@
 - (NSString *)cellIdentifyWithIndexPath:(NSIndexPath *)indexPath{
     return WPCustomCell.cellIdentifier;
 }
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    cell.textLabel.text = [[self.sectionsModel getContentModelWithIndexPath:indexPath] title];
+}
+
+#pragma mark WPBaseTableViewCellMove
 
 - (BOOL)isCellCanMove{
     return YES;
@@ -52,19 +61,5 @@
 - (void)moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
     NSLog(@"移动自己实现吧!");
 }
-
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
-    cell.textLabel.text = [[self.sectionsModel getContentModelWithIndexPath:indexPath] title];
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

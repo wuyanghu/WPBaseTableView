@@ -168,20 +168,11 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WPViewController.h */,
 				6003F5A6195388D20070C39A /* WPViewController.m */,
-				7670562623C8CC4500C07A20 /* WPStoryboardViewController.h */,
-				7670562723C8CC4500C07A20 /* WPStoryboardViewController.m */,
-				4B4B37FB23A8733800D2BBDA /* WPViewController.json */,
-				4B4B37FD23A8775400D2BBDA /* WPChangeButtonClickAreaViewController.h */,
-				4B4B37FE23A8775400D2BBDA /* WPChangeButtonClickAreaViewController.m */,
+				7625EA5124061156003E8F9A /* BaseOperation */,
+				7625EA502406112D003E8F9A /* ModeOrDel */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				7670562923C95A5100C07A20 /* WPMoveViewController.h */,
-				7670562A23C95A5100C07A20 /* WPMoveViewController.m */,
-				7670562C23C95A6100C07A20 /* WPMoveViewController.json */,
-				7670562E23C95BF800C07A20 /* WPDelViewController.h */,
-				7670562F23C95BF800C07A20 /* WPDelViewController.m */,
-				7670563123C95C0A00C07A20 /* WPDelViewController.json */,
 				7670564023C9639700C07A20 /* CustomCell */,
 			);
 			name = "Example for WPBaseTableView";
@@ -237,6 +228,31 @@
 				7C1C22E3E702B76F7DFB63ED /* Pods-WPBaseTableView_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7625EA502406112D003E8F9A /* ModeOrDel */ = {
+			isa = PBXGroup;
+			children = (
+				7670562923C95A5100C07A20 /* WPMoveViewController.h */,
+				7670562A23C95A5100C07A20 /* WPMoveViewController.m */,
+				7670562C23C95A6100C07A20 /* WPMoveViewController.json */,
+				7670562E23C95BF800C07A20 /* WPDelViewController.h */,
+				7670562F23C95BF800C07A20 /* WPDelViewController.m */,
+				7670563123C95C0A00C07A20 /* WPDelViewController.json */,
+			);
+			name = ModeOrDel;
+			sourceTree = "<group>";
+		};
+		7625EA5124061156003E8F9A /* BaseOperation */ = {
+			isa = PBXGroup;
+			children = (
+				7670562623C8CC4500C07A20 /* WPStoryboardViewController.h */,
+				7670562723C8CC4500C07A20 /* WPStoryboardViewController.m */,
+				4B4B37FB23A8733800D2BBDA /* WPViewController.json */,
+				4B4B37FD23A8775400D2BBDA /* WPChangeButtonClickAreaViewController.h */,
+				4B4B37FE23A8775400D2BBDA /* WPChangeButtonClickAreaViewController.m */,
+			);
+			name = BaseOperation;
 			sourceTree = "<group>";
 		};
 		7670564023C9639700C07A20 /* CustomCell */ = {

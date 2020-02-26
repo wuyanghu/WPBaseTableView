@@ -92,10 +92,11 @@
     return cellIdentify;
 }
 
-- (void)configureCell:(WPBaseSectionCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     if ([cell isKindOfClass:[WPBaseSectionCell class]]) {
+        WPBaseSectionCell * sectionCell = (WPBaseSectionCell *)cell;
         WPBaseSectionsModel * sectionsModel = [self.tableViewData getSectionsModel];
-        cell.rowModel = [sectionsModel getContentModelWithIndexPath:indexPath];
+        sectionCell.rowModel = [sectionsModel getContentModelWithIndexPath:indexPath];
     }
     if (self.cellConfigDelegate) [self.cellConfigDelegate configureCell:cell atIndexPath:indexPath];
 }

@@ -75,31 +75,9 @@
 //请求网络数据
 - (void)requestData:(BOOL)isRefresh{}
 
-#pragma mark - WPBaseTableViewHeaderFooterRefresh
+#pragma mark - tableView Delegate
 
-- (BOOL)hideRefreshHeader{
-    return NO;
-}
-
-- (BOOL)hideRefreshFooter{
-    return NO;
-}
-
-- (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(void))block{
-    block();
-}
-
-- (void)refreshFooterActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(BOOL))block{
-    block(NO);
-}
-
-#pragma mark - WPBaseTableViewPlaceHolder
-- (void)placeHolderRefreshAction{}
-
-#pragma mark - 浏览图片
-- (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{}
-
-#pragma mark - WPBaseTableViewCellConfig
+#pragma mark WPBaseTableViewCellConfig
 
 - (void)registerCellTableView:(UITableView *)tableView{}
 
@@ -118,7 +96,31 @@
     }
 }
 
-#pragma mark - WPBaseTableViewHeaderFooterConfig
+#pragma mark WPBaseTableViewHeaderFooterRefresh
+
+- (BOOL)hideRefreshHeader{
+    return NO;
+}
+
+- (BOOL)hideRefreshFooter{
+    return NO;
+}
+
+- (void)refreshHeaderActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(void))block{
+    block();
+}
+
+- (void)refreshFooterActionWithTableView:(UITableView *)tableView finshBlock:(void (^)(BOOL))block{
+    block(NO);
+}
+
+#pragma mark WPBaseTableViewPlaceHolder
+- (void)placeHolderRefreshAction{}
+
+#pragma mark WPBaseTableViewPlaceBrowser
+- (void)photoBrowserWithIndexPath:(NSIndexPath *)indexPath isUrl:(BOOL)isUrl{}
+
+#pragma mark WPBaseTableViewHeaderFooterConfig
 
 - (BOOL)hideHeaderFooterView{
     return NO;
@@ -151,7 +153,7 @@
     }
 }
 
-#pragma mark - WPBaseTableViewDidSelectRow
+#pragma mark WPBaseTableViewDidSelectRow
 
 - (WPBaseSectionsModel *)getSectionsModel{
     return self.sectionsModel;
@@ -189,7 +191,7 @@
     }
 }
 
-#pragma mark - WPBaseTableViewCellDelete
+#pragma mark WPBaseTableViewCellDelete
 
 - (BOOL)isCellEditingDelete{
     return NO;
@@ -199,7 +201,7 @@
     NSLog(@"编辑删除");//具体操作，子类实现
 }
 
-#pragma mark - WPBaseTableViewCellMove
+#pragma mark WPBaseTableViewCellMove
 
 - (BOOL)isCellCanMove{
     return NO;
