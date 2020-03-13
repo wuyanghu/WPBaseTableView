@@ -165,6 +165,9 @@
     [self.headerFooterRefresh refreshHeaderActionWithTableView:_tableView finshBlock:^{
         CMStrongSelf;
         [self.tableView.mj_header endRefreshing];
+        if (![self hideRefreshFooter]) {//如果底部没有隐藏，重置
+            [self.tableView.mj_footer resetNoMoreData];
+        }
     }];
 }
 
